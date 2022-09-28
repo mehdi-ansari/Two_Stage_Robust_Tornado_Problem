@@ -68,6 +68,7 @@ class masterProblem:
         self.model.write(str(self.Param.ROOT_DIR)+'/Results/master.sol')
         self.master_sol_dict['iteration{}'.format(iteration)] = {}
         self.master_sol_dict['iteration{}'.format(iteration)]['optimal_value'] = self.model.objVal
+        self.master_sol_dict['iteration{}'.format(iteration)]['theta'] = self.theta.x
         self.master_sol_dict['iteration{}'.format(iteration)]['f_sol'] = self.model.getAttr('x', self.f_var)
         for key, value in self.r_var.items():
             self.master_sol_dict['iteration{}'.format(iteration)]['r_sol[{}]'.format(key)] = self.model.getAttr('x', value)

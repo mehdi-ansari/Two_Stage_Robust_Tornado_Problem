@@ -16,13 +16,12 @@ class UncertaintySet:
     def __init__(self, Param):
         self.Param = Param
         
-    def check_feasibility(self, z_sol):
-        model = gb.Model("Uncertainy")
-        active_index = []
-        for l, soluation in z_sol.items():
-            if soluation >= 0.5:
-                active_index.append(l)
-                
+    def check_feasibility(self, damaged_location_coordindates):
+        model = gb.Model("Uncertainy")    
+
+        active_index = damaged_location_coordindates.keys()
+        coordinates = damaged_location_coordindates
+            
         
         #variables    
         t = model.addVars(active_index, lb=0, ub=1, vtype=GRB.CONTINUOUS, name = "t")
@@ -34,11 +33,10 @@ class UncertaintySet:
         tail_y = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "tail_y")
         
         #constraints
-        coordinates = self.Param.InputData.coordinates
         for l in active_index:
             model.addConstr((1-t[l])*head_x + t[l]*tail_x - coordinates[l][0] == v_x[l])
             model.addConstr((1-t[l])*head_y + t[l]*tail_y - coordinates[l][1] == v_y[l])
-            model.addConstr(v_x[l]*v_x[l] + v_y[l]*v_y[l] <= self.Param.delta**2)
+            model.addConstr(v_x[l]*v_x[l] + v_y[l]*v_y[l] <= self.Param.width**2)
             
             model.addConstr(head_x*head_x - 2*head_x*tail_x + tail_x*tail_x +
                         head_y*head_y - 2*head_y*tail_y + tail_y*tail_y <= self.Param.length**2)
@@ -56,15 +54,15 @@ class UncertaintySet:
                     side2 = p2
         
             #Confined the space
-        model.addConstr(head_x >= coordinates[side1][0] - self.Param.delta)
-        model.addConstr(head_x <= coordinates[side1][0] + self.Param.delta)
-        model.addConstr(head_y >= coordinates[side1][1] - self.Param.delta)
-        model.addConstr(head_y <= coordinates[side1][1] + self.Param.delta)
+        model.addConstr(head_x >= coordinates[side1][0] - self.Param.width)
+        model.addConstr(head_x <= coordinates[side1][0] + self.Param.width)
+        model.addConstr(head_y >= coordinates[side1][1] - self.Param.width)
+        model.addConstr(head_y <= coordinates[side1][1] + self.Param.width)
         
-        model.addConstr(tail_x >= coordinates[side2][0] - self.Param.delta)
-        model.addConstr(tail_x <= coordinates[side2][0] + self.Param.delta)
-        model.addConstr(tail_y >= coordinates[side2][1] - self.Param.delta)
-        model.addConstr(tail_y <= coordinates[side2][1] + self.Param.delta)
+        model.addConstr(tail_x >= coordinates[side2][0] - self.Param.width)
+        model.addConstr(tail_x <= coordinates[side2][0] + self.Param.width)
+        model.addConstr(tail_y >= coordinates[side2][1] - self.Param.width)
+        model.addConstr(tail_y <= coordinates[side2][1] + self.Param.width)
         
         #solve
         model.params.NonConvex = 2
@@ -73,10 +71,12 @@ class UncertaintySet:
         
         
         if model.Status == 2:
-            head = [model.getAttr('x', head_x), model.getAttr('x', head_y)]
-            tail = [model.getAttr('x', tail_x), model.getAttr('x', tail_y)]
+            head = [head_x.x, head_y.x]
+            tail = [tail_x.x, tail_y.x]
         else: 
-            print("model.Status:", model.Status)    
+            print("model.Status:", model.Status)
+            head = None
+            tail = None
         
         return {'status': model.Status, 'head': head, 'tail': tail}
         

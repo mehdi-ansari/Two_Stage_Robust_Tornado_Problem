@@ -8,11 +8,14 @@ import gurobipy as gb
 from gurobipy import GRB
 import numpy as np
 from .ValidCuts import valid_cuts_sets
+from .UncertaintySet import UncertaintySet
 
 class Subproblem:
-    def __init__(self, Param):
+    def __init__(self, Param, f_sol):
         self.ValidCuts = valid_cuts_sets(Param)
+        self.UncertaintySet = UncertaintySet(Param)
         self.Param = Param
+        self.f_sol = f_sol
         self.model = gb.Model("subproblem_model")
         
         #variables
@@ -32,6 +35,9 @@ class Subproblem:
         self.add_infeasible_triple_cuts()
         # self.add_infeasible_quadruple_cuts()   #It is not ready to use!
         
+        self.head = []
+        self.tail = []
+        
         
     def add_infeasible_pair_cuts(self):
         for pair in self.ValidCuts.infeasible_pair:
@@ -47,5 +53,5 @@ class Subproblem:
     
     
     def generate_constraint(self, r_sol):
-        self.model.addConstr(self.eta <= gb.quicksum(self.Param.InputData.second_stage_dislocation[l][s][p] * self.z_var[l] * r_sol[l][s][p]
+        self.model.addConstr(self.eta <= gb.quicksum(self.Param.InputData.second_stage_dislocation[l][s][p] * self.z_var[l] * r_sol[(l,s,p)]
                                             for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx))

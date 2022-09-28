@@ -163,6 +163,7 @@ class StabbingLine:
 
     def find_line_intersecting_maximal_circles(self):
         maxx = 0
+        max_overlap_point = {}
         for i in self.centers.keys():
             overlaps = self.max_overlap(i)
 
