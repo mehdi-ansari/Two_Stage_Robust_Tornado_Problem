@@ -8,13 +8,18 @@ from multiprocessing import Process
 from config.definitions import ROOT_DIR
 from Processing.Ingestion.Parameter import Parameter
 from solverEngines.CCGAlgorithm import CCGAlgorithm
+from Processing.Postprocessing.Results import Results
 
 
 def main():        
     
     modelParameter = Parameter(ROOT_DIR)
-    CCGAlgorithm(modelParameter)
+    CCG = CCGAlgorithm(modelParameter)
+    CCG.run()
     
+    results = Results(CCG, ROOT_DIR)
+    results.print_results()
+    results.make_file()
 
 if __name__ == '__main__':
     
