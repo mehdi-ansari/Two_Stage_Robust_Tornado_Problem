@@ -14,7 +14,7 @@ class Parameter:
         self.ROOT_DIR = ROOT_DIR
         user = UserInput(ROOT_DIR)
         self.budget = float(user.input_dict['budget'])
-        self.lenght = float(user.input_dict['length'])
+        self.length = float(user.input_dict['length'])
         self.width = float(user.input_dict['width'])
         
         if user.input_dict['number_of_clusters'] is not None:

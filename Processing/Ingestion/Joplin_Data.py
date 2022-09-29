@@ -24,7 +24,7 @@ class JoplinData:
         self.block_data = pd.read_excel(str(ROOT_DIR)+'/Data/Joplin_Data/ListExcel.xlsx')
         self.INCORE_data = pd.read_csv(str(ROOT_DIR)+'/Data/Joplin_Data/IN-CORE_2ev2_housingunitallocation_1238.csv')
         
-        self.repair_time = 100
+        self.repair_time = 60
         
         self.integrate_data()
         self.df_locations = self.df
@@ -93,16 +93,21 @@ class JoplinData:
 
         '''
         RD = ReferenceData(elapsed_days=self.repair_time)
+        self.population = {}
         for index,rows in location_dataframe.iterrows():
             self.coordinates[rows['Block id']] = (round(rows['Longitud']*54.6,3), round(rows['Latitude']*69,3))
             self.first_stage_dislocation[rows['Block id']] = {i: 0 for i in self.retrofitting_strategies}
             self.cost_retrofitting[rows['Block id']] = {'Do_nothing': rows['Cost nothing'], 'R1': rows['Cost R1'], 'R2': rows['Cost R2'], 'R3': rows['Cost R3']}
-            self.second_stage_dislocation[rows['Block id']] = {self.retrofitting_strategies[i]: {'Do_nothing': round(np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])*rows['Population']), 'Recover': 0} 
+            self.second_stage_dislocation[rows['Block id']] = {self.retrofitting_strategies[i]: {'Do_nothing': round(((1/np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])) + 1)/2 * np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])*rows['Population']), 
+                                                                                                 'Recover': round(np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])*rows['Population'])} 
                                                                                        for i in range(len(self.retrofitting_strategies))}
+            '''self.second_stage_dislocation[rows['Block id']] = {self.retrofitting_strategies[i]: {'Do_nothing': round(np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])*rows['Population']), 
+                                                                                                 'Recover': round(np.dot(RD.P_NotRecoverd, rows['ProbR'+str(i)])*rows['Population'])} 
+                                                                                       for i in range(len(self.retrofitting_strategies))}'''
             self.cost_recovery[rows['Block id']] = {self.retrofitting_strategies[i]: {'Do_nothing': 0, 'Recover': round(np.dot(RD.costPercentage, rows['ProbR'+str(i)])*rows['Area']*RD.cost_per_ft2)} 
                                                                                        for i in range(len(self.retrofitting_strategies))}
-
-        
+            
+            self.population[rows['Block id']] = rows['Population']
         
 
     def find_Kmeans(self, **kwargs):
