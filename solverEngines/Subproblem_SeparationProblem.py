@@ -133,10 +133,6 @@ class SeparationProblem(Subproblem):
                         isFeasible = False
                         self.model.cbLazy(gb.quicksum(self.z_var[loc] for loc in damaged_location_coordindates.keys()) <= len(damaged_location_coordindates)-1)
                         self.infeasible_collection.append({'locations': damaged_location_coordindates.keys(), 'maximal_intersections': len(damaged_location_coordindates)-1})
-            
-            else:
-                print("Error!, delete it later")
-                input()
                         
         
         ##if solution is feasible, investigate the new upperbound

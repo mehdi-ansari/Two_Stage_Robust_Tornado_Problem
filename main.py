@@ -11,7 +11,7 @@ from solverEngines.CCGAlgorithm import CCGAlgorithm
 from Processing.Postprocessing.Results import Results
 
 
-def main():        
+def main():
     
     modelParameter = Parameter(ROOT_DIR)
     CCG = CCGAlgorithm(modelParameter)

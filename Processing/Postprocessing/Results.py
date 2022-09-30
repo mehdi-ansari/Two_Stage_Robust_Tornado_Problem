@@ -76,6 +76,8 @@ class Results:
             csv_file.write('Subproblem Callbacks Run Time:'+ "," + str(self.subproblem_callback_run_time)+ '\n')
             csv_file.write('Number of Uncertainty Set Check Call:'+ "," + str(self.number_uncertaintySet_check)+ '\n')
             csv_file.write('Uncertainty Set Check Run Time:'+ "," + str(self.uncertaintySet_check_run_time)+ '\n')
+            csv_file.write('Head of worst tornado:'+ "," +str(round(self.head_worst[0]/54.6, 3)) + "," +str(round(self.head_worst[1]/69, 3))+'\n')
+            csv_file.write('Tail of worst tornado:'+ "," +str(round(self.tail_worst[0]/54.6, 3)) + "," +str(round(self.tail_worst[1]/69, 3))+'\n')
             
             csv_file.write('\n'+'Block ID' +','+ 
                            'coordinate_x' + ','+
