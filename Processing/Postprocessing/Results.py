@@ -48,12 +48,16 @@ class Results:
         self.retrofit_indx = list(self.Param.InputData.retrofitting_strategies)
         self.recovery_indx = list(self.Param.InputData.recovery_strategies)
         self.z_worst={}
+        self.head_worst = 0
+        self.tail_worst = 0
         for i in self.r_sols.keys():
             if abs(self.theta - sum(self.Param.InputData.second_stage_dislocation[l][s][p]*self.z_sol[i][l]*self.r_sols[i][(l,s,p)]
                                                        for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx)) < 0.01:
 
                 self.z_worst = self.z_sol[i]
                 self.r_worst = self.r_sols[i]
+                self.head_worst = self.CCGAlgorithm.tornado_head[i]
+                self.tail_worst = self.CCGAlgorithm.tornado_tail[i]
                 break
         
     def make_file(self):
