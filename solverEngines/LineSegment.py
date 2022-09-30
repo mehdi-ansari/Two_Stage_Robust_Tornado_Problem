@@ -51,12 +51,14 @@ class Segment:
         x_tangent = delta*np.cos(angle) + coordinate[0]
         y_tangent = delta*np.sin(angle) + coordinate[1]
         b_tangent = y_tangent - slop_tangent*x_tangent
+
     
         
         max_length = 0
         for i, coord_i in self.damaged_location_coordindates.items():
             for j, coord_j in self.damaged_location_coordindates.items():
-                if (distance_point_line(slop_tangent, b_tangent, coord_i) < 0.99*delta) and (distance_point_line(slop_tangent, b_tangent, coord_j) < 0.99*delta):
+
+                if (distance_point_line(slop_tangent, b_tangent, coord_i) < delta) and (distance_point_line(slop_tangent, b_tangent, coord_j) < delta):
                     #intersection of line y=mx+b and circle (x-x0)^2+(y-y0)^2=delta^2
                     A1 = slop_tangent**2 + 1
                     B1 = -2 * coord_i[0] + 2 * slop_tangent * (b_tangent - coord_i[1])
@@ -83,13 +85,14 @@ class Segment:
                     minimum_dist_intersection = np.inf
                     intSec1 = [0,0]
                     intSec2 = [0,0]
+
                     for k in intersections_set1:
                         for l in intersections_set2:
                             if minimum_dist_intersection > Euclidean_distance(k, l):
                                 minimum_dist_intersection = Euclidean_distance(k, l)
                                 intSec1 = k
                                 intSec2 = l
-                    
+                                
                     if max_length < minimum_dist_intersection:
                         max_length = minimum_dist_intersection
                         self.side1_index = i

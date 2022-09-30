@@ -68,8 +68,3 @@ class CCGAlgorithm:
             self.master_problem.generate_constraints(self.iteration, self.z_sol)
             
         self.run_time = time.time() - self.run_time
-        
-        
-
-
-

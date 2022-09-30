@@ -9,6 +9,7 @@ from config.definitions import ROOT_DIR
 from Processing.Ingestion.Parameter import Parameter
 from solverEngines.CCGAlgorithm import CCGAlgorithm
 from Processing.Postprocessing.Results import Results
+from Processing.Postprocessing.Figures import Figures
 
 
 def main():
@@ -20,6 +21,10 @@ def main():
     results = Results(CCG, ROOT_DIR)
     results.print_results()
     results.make_file()
+    
+    Figures(results)
+    
+    
 
 if __name__ == '__main__':
     

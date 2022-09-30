@@ -106,7 +106,7 @@ class SeparationProblem(Subproblem):
         if do_check == True and len(damaged_location_coordindates)>0:
             stabbing_line_algorithm = StabbingLine(damaged_location_coordindates, np.ones(len(damaged_location_coordindates)), self.Param.width, self.Param.length+2*self.Param.width)
             line_intersecting_maximal_circles = stabbing_line_algorithm.find_line_intersecting_maximal_circles()
-            
+
             #if there is no line crossing through all cirlces whose centers are active locations with radius delta:
             if len(damaged_location_coordindates) > line_intersecting_maximal_circles['max_stabbed_weighted_circles'] + 1:
                 isFeasible = False
@@ -116,6 +116,7 @@ class SeparationProblem(Subproblem):
             #else, if there is a line, check is there a line segment intersecting all circles too?
             elif len(damaged_location_coordindates) == line_intersecting_maximal_circles['max_stabbed_weighted_circles'] + 1:
                 lineSegment = Segment(line_intersecting_maximal_circles, self.Param, damaged_location_coordindates)
+
                 if lineSegment.isSegment():
                     isFeasible = True
                     self.head = lineSegment.intersection1

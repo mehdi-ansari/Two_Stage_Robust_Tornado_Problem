@@ -132,8 +132,8 @@ class StabbingLine:
                         init += coef[number_b]
                     else:
                         collect_set[0][1] = coef[number_b]
-                        collect_set[1][1] = -coef[number_b]
-                        
+                        collect_set[1][1] = -coef[number_b]                    
+            
                     Set_A = np.r_[Set_A, collect_set]
                 
                 else:   #Euclidean_distance(B, C) > 2*r

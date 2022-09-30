@@ -5,6 +5,7 @@ Created on Mon Sep 26 22:16:15 2022
 @author: mehdi
 """
 from datetime import datetime
+from solverEngines.UncertaintySet import UncertaintySet
 
 class Results:
     def __init__(self, CCGAlgorithm, ROOT_DIR):
@@ -56,8 +57,14 @@ class Results:
 
                 self.z_worst = self.z_sol[i]
                 self.r_worst = self.r_sols[i]
-                self.head_worst = self.CCGAlgorithm.tornado_head[i]
-                self.tail_worst = self.CCGAlgorithm.tornado_tail[i]
+                
+                damaged_location_coordindates = {}
+                for l, soluation in self.z_worst.items():
+                    if soluation >= 0.5:
+                        damaged_location_coordindates[l] = self.Param.InputData.coordinates[l]
+                check_for_line = UncertaintySet(self.Param).check_feasibility(damaged_location_coordindates)
+                self.head_worst = check_for_line['head']
+                self.tail_worst = check_for_line['tail']
                 break
         
     def make_file(self):
