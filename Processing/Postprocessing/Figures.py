@@ -34,3 +34,5 @@ class Figures:
                             else: color = 'yellow'
             
             plt.scatter(x_coord, y_coord, c = color)
+            # plt.xlim([-94.58, -94.43])
+            # plt.ylim([37, 37.15])

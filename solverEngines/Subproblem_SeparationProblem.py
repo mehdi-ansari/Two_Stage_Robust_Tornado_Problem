@@ -32,8 +32,7 @@ class SeparationProblem(Subproblem):
         Recovery0.solve()
         Recovery0.get_solutions()
         r_sol = Recovery0.recovery_sol_dict['r_sol']
-        self.generate_constraint(r_sol)
-        
+        self.generate_constraint(r_sol)       
         
 
     

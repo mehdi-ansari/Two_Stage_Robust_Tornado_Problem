@@ -38,7 +38,7 @@ class UncertaintySet:
             model.addConstr((1-t[l])*head_y + t[l]*tail_y - coordinates[l][1] == v_y[l])
             model.addConstr(v_x[l]*v_x[l] + v_y[l]*v_y[l] <= self.Param.width**2)
             
-            model.addConstr(head_x*head_x - 2*head_x*tail_x + tail_x*tail_x +
+        model.addConstr(head_x*head_x - 2*head_x*tail_x + tail_x*tail_x +
                         head_y*head_y - 2*head_y*tail_y + tail_y*tail_y <= self.Param.length**2)
     
         #Auxiliary Constraints
@@ -68,6 +68,8 @@ class UncertaintySet:
         model.params.NonConvex = 2
         model.params.TimeLimit = 900
         model.optimize()
+        #model.write('check feasibility.lp')
+        #model.write('check feasibility.sol')
         
         
         if model.Status == 2:
