@@ -34,8 +34,11 @@ class SeparationProblem(Subproblem):
         r_sol = Recovery0.recovery_sol_dict['r_sol']
         self.generate_constraint(r_sol)       
         
+        #self.test_this_solution()
+    '''def test_this_solution(self):
+        for l in [32,56,55,8,78,22,54,75,72,53,2,89,43,9,40,46,5]:
+            self.model.addConstr(self.z_var[l] == 1)'''
 
-    
     def add_infeasible_collection_cuts(self):
         '''
         Infeasible collections from previous iterations (user search cuts)
@@ -50,7 +53,7 @@ class SeparationProblem(Subproblem):
             
         
     
-    def solve(self):
+    def solve(self):        
         self.model.read(str(self.Param.ROOT_DIR)+'/solverEngines/Subproblem_parameter_set.prm')
         self.model.write(str(self.Param.ROOT_DIR)+'/Results/subprblem.lp')
         self.model.params.lazyConstraints = 1
@@ -114,25 +117,25 @@ class SeparationProblem(Subproblem):
             
             #else, if there is a line, check is there a line segment intersecting all circles too?
             elif len(damaged_location_coordindates) == line_intersecting_maximal_circles['max_stabbed_weighted_circles'] + 1:
-                lineSegment = Segment(line_intersecting_maximal_circles, self.Param, damaged_location_coordindates)
+                '''lineSegment = Segment(line_intersecting_maximal_circles, self.Param, damaged_location_coordindates)
 
                 if lineSegment.isSegment():
                     isFeasible = True
                     self.head = lineSegment.intersection1
                     self.tail = lineSegment.intersection2
+                else:'''
+                self.number_uncertaintySet_check += 1
+                uncertaintySet_check_run_time_begin = time.time()
+                check_uncertainty_set = self.UncertaintySet.check_feasibility(damaged_location_coordindates)
+                self.uncertaintySet_check_run_time += time.time() - uncertaintySet_check_run_time_begin
+                if check_uncertainty_set['status'] == 2:
+                    isFeasible = True
+                    self.head = check_uncertainty_set['head']
+                    self.tail = check_uncertainty_set['tail']
                 else:
-                    self.number_uncertaintySet_check += 1
-                    uncertaintySet_check_run_time_begin = time.time()
-                    check_uncertainty_set = self.UncertaintySet.check_feasibility(damaged_location_coordindates)
-                    self.uncertaintySet_check_run_time += time.time() - uncertaintySet_check_run_time_begin
-                    if check_uncertainty_set['status'] == 2:
-                        isFeasible = True
-                        self.head = check_uncertainty_set['head']
-                        self.tail = check_uncertainty_set['tail']
-                    else:
-                        isFeasible = False
-                        self.model.cbLazy(gb.quicksum(self.z_var[loc] for loc in damaged_location_coordindates.keys()) <= len(damaged_location_coordindates)-1)
-                        self.infeasible_collection.append({'locations': damaged_location_coordindates.keys(), 'maximal_intersections': len(damaged_location_coordindates)-1})
+                    isFeasible = False
+                    self.model.cbLazy(gb.quicksum(self.z_var[loc] for loc in damaged_location_coordindates.keys()) <= len(damaged_location_coordindates)-1)
+                    self.infeasible_collection.append({'locations': damaged_location_coordindates.keys(), 'maximal_intersections': len(damaged_location_coordindates)-1})
                         
         
         ##if solution is feasible, investigate the new upperbound

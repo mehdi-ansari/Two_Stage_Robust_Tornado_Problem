@@ -1,5 +1,5 @@
 input_data_name Joplin
-budget 30000000
+budget 0
 length 5
 width 0.375
-number_of_clusters 10
+number_of_clusters 100
