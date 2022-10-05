@@ -488,7 +488,7 @@ Subject To
    + 1.8384607e+07 _r0[3,R1,Recover] + 1.3190225e+07 _r0[3,R2,Recover]
    + 8.030579e+06 _r0[3,R3,Recover] + 396329 _r0[66,Do_nothing,Recover]
    + 396210 _r0[66,R1,Recover] + 284265 _r0[66,R2,Recover]
-   + 173069 _r0[66,R3,Recover] <= 0
+   + 173069 _r0[66,R3,Recover] <= 1.5e+07
  R102: - _f[32,Do_nothing] + _r0[32,Do_nothing,Do_nothing]
    + _r0[32,Do_nothing,Recover] = 0
  R103: - _f[32,R1] + _r0[32,R1,Do_nothing] + _r0[32,R1,Recover] = 0
@@ -1077,7 +1077,19 @@ Subject To
    - 1171 _r1[46,Do_nothing,Recover] - 1181 _r1[46,R1,Do_nothing]
    - 1170 _r1[46,R1,Recover] - 1043 _r1[46,R2,Do_nothing]
    - 894 _r1[46,R2,Recover] - 970 _r1[46,R3,Do_nothing]
-   - 748 _r1[46,R3,Recover] >= 0
+   - 748 _r1[46,R3,Recover] - 441 _r1[6,Do_nothing,Do_nothing]
+   - 437 _r1[6,Do_nothing,Recover] - 441 _r1[6,R1,Do_nothing]
+   - 437 _r1[6,R1,Recover] - 389 _r1[6,R2,Do_nothing]
+   - 334 _r1[6,R2,Recover] - 362 _r1[6,R3,Do_nothing]
+   - 279 _r1[6,R3,Recover] - 339 _r1[96,Do_nothing,Do_nothing]
+   - 336 _r1[96,Do_nothing,Recover] - 339 _r1[96,R1,Do_nothing]
+   - 336 _r1[96,R1,Recover] - 299 _r1[96,R2,Do_nothing]
+   - 256 _r1[96,R2,Recover] - 278 _r1[96,R3,Do_nothing]
+   - 214 _r1[96,R3,Recover] - 195 _r1[29,Do_nothing,Do_nothing]
+   - 193 _r1[29,Do_nothing,Recover] - 195 _r1[29,R1,Do_nothing]
+   - 193 _r1[29,R1,Recover] - 172 _r1[29,R2,Do_nothing]
+   - 148 _r1[29,R2,Recover] - 160 _r1[29,R3,Do_nothing]
+   - 124 _r1[29,R3,Recover] >= 0
  R503: 184945 _f[32,R1] + 232438 _f[32,R2] + 417219 _f[32,R3]
    + 77012 _f[70,R1] + 96789 _f[70,R2] + 173733 _f[70,R3] + 42150 _f[5,R1]
    + 52975 _f[5,R2] + 95089 _f[5,R3] + 83838 _f[85,R1] + 105366 _f[85,R2]
@@ -1462,7 +1474,7 @@ Subject To
    + 1.8384607e+07 _r1[3,R1,Recover] + 1.3190225e+07 _r1[3,R2,Recover]
    + 8.030579e+06 _r1[3,R3,Recover] + 396329 _r1[66,Do_nothing,Recover]
    + 396210 _r1[66,R1,Recover] + 284265 _r1[66,R2,Recover]
-   + 173069 _r1[66,R3,Recover] <= 0
+   + 173069 _r1[66,R3,Recover] <= 1.5e+07
  R504: - _f[32,Do_nothing] + _r1[32,Do_nothing,Do_nothing]
    + _r1[32,Do_nothing,Recover] = 0
  R505: - _f[32,R1] + _r1[32,R1,Do_nothing] + _r1[32,R1,Recover] = 0
