@@ -5,6 +5,7 @@ Created on Mon Sep 26 22:16:15 2022
 @author: mehdi
 """
 from datetime import datetime
+from solverEngines.UncertaintySet import UncertaintySet
 
 class Results:
     def __init__(self, CCGAlgorithm, ROOT_DIR):
@@ -48,12 +49,22 @@ class Results:
         self.retrofit_indx = list(self.Param.InputData.retrofitting_strategies)
         self.recovery_indx = list(self.Param.InputData.recovery_strategies)
         self.z_worst={}
+        self.head_worst = 0
+        self.tail_worst = 0
         for i in self.r_sols.keys():
             if abs(self.theta - sum(self.Param.InputData.second_stage_dislocation[l][s][p]*self.z_sol[i][l]*self.r_sols[i][(l,s,p)]
                                                        for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx)) < 0.01:
 
                 self.z_worst = self.z_sol[i]
                 self.r_worst = self.r_sols[i]
+                
+                damaged_location_coordindates = {}
+                for l, soluation in self.z_worst.items():
+                    if soluation >= 0.5:
+                        damaged_location_coordindates[l] = self.Param.InputData.coordinates[l]
+                check_for_line = UncertaintySet(self.Param).check_feasibility(damaged_location_coordindates)
+                self.head_worst = check_for_line['head']
+                self.tail_worst = check_for_line['tail']
                 break
         
     def make_file(self):
@@ -72,6 +83,8 @@ class Results:
             csv_file.write('Subproblem Callbacks Run Time:'+ "," + str(self.subproblem_callback_run_time)+ '\n')
             csv_file.write('Number of Uncertainty Set Check Call:'+ "," + str(self.number_uncertaintySet_check)+ '\n')
             csv_file.write('Uncertainty Set Check Run Time:'+ "," + str(self.uncertaintySet_check_run_time)+ '\n')
+            csv_file.write('Head of worst tornado:'+ "," +str(round(self.head_worst[0]/54.6, 3)) + "," +str(round(self.head_worst[1]/69, 3))+'\n')
+            csv_file.write('Tail of worst tornado:'+ "," +str(round(self.tail_worst[0]/54.6, 3)) + "," +str(round(self.tail_worst[1]/69, 3))+'\n')
             
             csv_file.write('\n'+'Block ID' +','+ 
                            'coordinate_x' + ','+

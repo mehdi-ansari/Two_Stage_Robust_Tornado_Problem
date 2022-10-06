@@ -24,6 +24,8 @@ class CCGAlgorithm:
         self.upper_bound = np.inf
         self.lower_bound = -np.inf
         self.z_sol = {self.iteration: {l: 0.0 for l in Param.InputData.coordinates}}
+        self.tornado_head = {}
+        self.tornado_tail = {}
         
         self.master_problem = masterProblem(Param)
         self.master_problem.generate_column(self.iteration)
@@ -59,12 +61,10 @@ class CCGAlgorithm:
 
             self.iteration += 1
             self.z_sol[self.iteration] = self.subproblem.subproblem_sol_dict['z_sol']
+            self.tornado_head[self.iteration] = self.subproblem.head
+            self.tornado_tail[self.iteration] = self.subproblem.tail
+            
             self.master_problem.generate_column(self.iteration)
             self.master_problem.generate_constraints(self.iteration, self.z_sol)
             
         self.run_time = time.time() - self.run_time
-        
-        
-
-
-

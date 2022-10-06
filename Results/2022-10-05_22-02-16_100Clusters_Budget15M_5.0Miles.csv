@@ -1,0 +1,11 @@
+Budget :,15000000.0,Tornado Length:,5.0
+Best Bound:,13483
+Best Objective:,13545
+Gap:,0.0
+CCG Run time:,262.57
+CCG Iteration:,3
+Subproblem Run time:,261.93
+Number of Subproblem Callbacks:,35
+Subproblem Callbacks Run Time:,7.2
+Number of Uncertainty Set Check Call:,7
+Uncertainty Set Check Run Time:,2.56

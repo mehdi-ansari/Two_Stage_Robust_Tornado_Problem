@@ -75,65 +75,69 @@ class valid_cuts_sets:
     def Tri_conflict_set(self):
         for loc1, coord1 in self.coordinates.items():
             for loc2, coord2 in self.coordinates.items():
-                self.Minus_Gamma[(loc1,loc2)] = []
-                
-                Bound = boundary_l2(coord1, coord2, self.delta)
-
-                if 2*self.delta < Bound.dist:
-                    set_intrsectFeas_index = list(set(self.feasible_pair_dict[loc1]).intersection(set(self.feasible_pair_dict[loc2])))
-                    for k in set_intrsectFeas_index:
-                        line1 = False 
-                        line2 = False
-                        line3 = False
-                        line4 = False
-                        line5 = False
-                        line6 = False
+                if self.coordinates[loc1][0] < self.coordinates[loc2][0]:
+                    self.Minus_Gamma[(loc1,loc2)] = []
+                    
+                    Bound = boundary_l2(coord1, coord2, self.delta)
+    
+                    if 2*self.delta < Bound.dist:
+                        set_intrsectFeas_index = list(set(self.feasible_pair_dict[loc1]).intersection(set(self.feasible_pair_dict[loc2])))
                         
-                        #The upper parallel line---------------------------------------
-                        if self.coordinates[k][1] > Bound.line1(self.coordinates[k][0]):
-                            line1 = True
-                          
-                        #The lower parallel line---------------------------------------
-                        if self.coordinates[k][1] < Bound.line2(self.coordinates[k][0]):
-                            line2 = True
-                            
-                        #Clockwise rotating--------------------------------------------
-                        if Bound.theta + Bound.alpha < np.pi/2:
-                            if self.coordinates[k][1] > Bound.line3(self.coordinates[k][0]):
-                                line3 = True
-                            
-                            if self.coordinates[k][1] < Bound.line5(self.coordinates[k][0]):
-                                line5 = True
+                        for k in set_intrsectFeas_index:
+                            if self.coordinates[loc2][0] < self.coordinates[k][0]: 
+                                line1 = False 
+                                line2 = False
+                                line3 = False
+                                line4 = False
+                                line5 = False
+                                line6 = False
                                 
-                        else:
-                            if self.coordinates[k][1] < Bound.line3(self.coordinates[k][0]):
-                                line3 = True
-                                
-                            if self.coordinates[k][1] > Bound.line5(self.coordinates[k][0]):
-                                line5 = True
-                                
-                        #Counter-Clockwise rotating------------------------------------
-                        if Bound.theta - Bound.alpha > -np.pi/2:
-                            if self.coordinates[k][1] < Bound.line4(self.coordinates[k][0]):
-                                line4 = True
-                            
-                            if self.coordinates[k][1] > Bound.line6(self.coordinates[k][0]):
-                                line6 = True
-                                
-                        else:
-                            if self.coordinates[k][1] > Bound.line4(self.coordinates[k][0]):
-                                line4 = True
-                                
-                            if self.coordinates[k][1] < Bound.line6(self.coordinates[k][0]):
-                                line6 = True
-                             
-                        #Infeasible triple
-                        if (line1==True and line3==True and line6==True) or (line2==True and line4==True and line5==True):
-                            self.infeasible_tri.append((loc1,loc2,k))
-                         
-                        #New 3/27/2022 --- quadrant_infeasible: 
-                        else:
-                            self.Minus_Gamma[(loc1,loc2)].append(k)                 
+                                #The upper parallel line---------------------------------------
+                                if self.coordinates[k][1] > Bound.line1(self.coordinates[k][0]):
+                                    line1 = True
+                                  
+                                #The lower parallel line---------------------------------------
+                                if self.coordinates[k][1] < Bound.line2(self.coordinates[k][0]):
+                                    line2 = True
+                                    
+                                #Clockwise rotating--------------------------------------------
+                                if Bound.theta + Bound.alpha < np.pi/2:
+                                    if self.coordinates[k][1] > Bound.line3(self.coordinates[k][0]):
+                                        line3 = True
+                                    
+                                    if self.coordinates[k][1] < Bound.line5(self.coordinates[k][0]):
+                                        line5 = True
+                                        
+                                else:
+                                    if self.coordinates[k][1] < Bound.line3(self.coordinates[k][0]):
+                                        line3 = True
+                                        
+                                    if self.coordinates[k][1] > Bound.line5(self.coordinates[k][0]):
+                                        line5 = True
+                                        
+                                #Counter-Clockwise rotating------------------------------------
+                                if Bound.theta - Bound.alpha > -np.pi/2:
+                                    if self.coordinates[k][1] < Bound.line4(self.coordinates[k][0]):
+                                        line4 = True
+                                    
+                                    if self.coordinates[k][1] > Bound.line6(self.coordinates[k][0]):
+                                        line6 = True
+                                        
+                                else:
+                                    if self.coordinates[k][1] > Bound.line4(self.coordinates[k][0]):
+                                        line4 = True
+                                        
+                                    if self.coordinates[k][1] < Bound.line6(self.coordinates[k][0]):
+                                        line6 = True
+                                     
+                                #Infeasible triple
+                                if (line1==True and line3==True and line6==True) or (line2==True and line4==True and line5==True):
+                                    self.infeasible_tri.append((loc1,loc2,k))
+                                    
+                                 
+                                #New 3/27/2022 --- quadrant_infeasible: 
+                                else:
+                                    self.Minus_Gamma[(loc1,loc2)].append(k)                 
     
     
     '''def quad_conflict_set(self, timelimit):
