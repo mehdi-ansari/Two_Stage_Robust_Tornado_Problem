@@ -117,25 +117,25 @@ class SeparationProblem(Subproblem):
             
             #else, if there is a line, check is there a line segment intersecting all circles too?
             elif len(damaged_location_coordindates) == line_intersecting_maximal_circles['max_stabbed_weighted_circles'] + 1:
-                '''lineSegment = Segment(line_intersecting_maximal_circles, self.Param, damaged_location_coordindates)
+                lineSegment = Segment(line_intersecting_maximal_circles, self.Param, damaged_location_coordindates)
 
                 if lineSegment.isSegment():
                     isFeasible = True
                     self.head = lineSegment.intersection1
                     self.tail = lineSegment.intersection2
-                else:'''
-                self.number_uncertaintySet_check += 1
-                uncertaintySet_check_run_time_begin = time.time()
-                check_uncertainty_set = self.UncertaintySet.check_feasibility(damaged_location_coordindates)
-                self.uncertaintySet_check_run_time += time.time() - uncertaintySet_check_run_time_begin
-                if check_uncertainty_set['status'] == 2:
-                    isFeasible = True
-                    self.head = check_uncertainty_set['head']
-                    self.tail = check_uncertainty_set['tail']
                 else:
-                    isFeasible = False
-                    self.model.cbLazy(gb.quicksum(self.z_var[loc] for loc in damaged_location_coordindates.keys()) <= len(damaged_location_coordindates)-1)
-                    self.infeasible_collection.append({'locations': damaged_location_coordindates.keys(), 'maximal_intersections': len(damaged_location_coordindates)-1})
+                    self.number_uncertaintySet_check += 1
+                    uncertaintySet_check_run_time_begin = time.time()
+                    check_uncertainty_set = self.UncertaintySet.check_feasibility(damaged_location_coordindates)
+                    self.uncertaintySet_check_run_time += time.time() - uncertaintySet_check_run_time_begin
+                    if check_uncertainty_set['status'] == 2:
+                        isFeasible = True
+                        self.head = check_uncertainty_set['head']
+                        self.tail = check_uncertainty_set['tail']
+                    else:
+                        isFeasible = False
+                        self.model.cbLazy(gb.quicksum(self.z_var[loc] for loc in damaged_location_coordindates.keys()) <= len(damaged_location_coordindates)-1)
+                        self.infeasible_collection.append({'locations': damaged_location_coordindates.keys(), 'maximal_intersections': len(damaged_location_coordindates)-1})
                         
         
         ##if solution is feasible, investigate the new upperbound
