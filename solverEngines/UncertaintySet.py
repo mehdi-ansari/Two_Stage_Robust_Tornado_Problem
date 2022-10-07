@@ -83,5 +83,54 @@ class UncertaintySet:
         return {'status': model.Status, 'head': head, 'tail': tail}
         
 
-    def add_uncertainty_constraint(self, model):
-        pass
+    def add_uncertainty_constraint(self, model, z_var):
+        coordinates = self.Param.InputData.coordinates
+        
+        BigM = self.compute_BigM(coordinates)
+        
+        t = model.addVars(coordinates.keys(), lb=0, ub=1, vtype=GRB.CONTINUOUS, name = "t")
+        v_x = model.addVars(coordinates.keys(), lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "v_x")
+        v_y = model.addVars(coordinates.keys(), lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "v_y")
+        head_x = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "head_x")
+        head_y = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "head_y")
+        tail_x = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "tail_x")
+        tail_y = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "tail_y")
+        
+        #constraints
+        for l in coordinates.keys():
+            model.addConstr((1-t[l])*head_x + t[l]*tail_x - coordinates[l][0] == v_x[l])
+            model.addConstr((1-t[l])*head_y + t[l]*tail_y - coordinates[l][1] == v_y[l])
+            model.addConstr(v_x[l]*v_x[l] + v_y[l]*v_y[l] <= self.Param.width**2 + (2*self.Param.width*BigM[l] + BigM[l]**2)*(1-z_var[l]))
+            
+        model.addConstr(head_x*head_x - 2*head_x*tail_x + tail_x*tail_x +
+                        head_y*head_y - 2*head_y*tail_y + tail_y*tail_y <= self.Param.length**2)
+        
+    
+    def compute_BigM(self, coordinates):
+        max_x = -np.inf
+        min_x = np.inf
+        max_y = -np.inf
+        min_y = np.inf
+        
+        for indx, coord in coordinates.items():
+            if max_x < coord[0]:
+                max_x = coord[0]
+            if min_x > coord[0]:
+                min_x = coord[0]
+            
+            if max_y < coord[1]:
+                max_y = coord[1]
+            if min_y > coord[1]:
+                min_y = coord[1]
+
+        
+        bigMs = {}
+        for i,b in coordinates.items():
+            dist1 = Euclidean_distance(b, (max_x, max_y))
+            dist2 = Euclidean_distance(b, (max_x, min_y))
+            dist3 = Euclidean_distance(b, (min_x, max_y))
+            dist4 = Euclidean_distance(b, (min_x, min_y))
+            
+            bigMs[i] = max(dist1, dist2, dist3, dist4)
+        
+        return bigMs

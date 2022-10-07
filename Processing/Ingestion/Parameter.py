@@ -12,21 +12,22 @@ class Parameter:
     #def __init__(self, InputDataName: str, number_of_clusters=None, **kwargs):
     def __init__(self, ROOT_DIR):
         self.ROOT_DIR = ROOT_DIR
-        user = UserInput(ROOT_DIR)
-        self.budget = float(user.input_dict['budget'])
-        self.length = float(user.input_dict['length'])
-        self.width = float(user.input_dict['width'])
+        self.user = UserInput(ROOT_DIR)
+        self.budget = float(self.user.input_dict['budget'])
+        self.length = float(self.user.input_dict['length'])
+        self.width = float(self.user.input_dict['width'])
+        self.subproblem_method = self.user.input_dict['subproblem_formulation']
         
-        if user.input_dict['number_of_clusters'] is not None:
-            self.number_of_clusters = int(user.input_dict['number_of_clusters'])
+        if self.user.input_dict['number_of_clusters'] is not None:
+            self.number_of_clusters = int(self.user.input_dict['number_of_clusters'])
         else:
             self.number_of_clusters = None
         
-        if user.input_dict['input_data_name'] == 'Joplin':
+        if self.user.input_dict['input_data_name'] == 'Joplin':
             self.InputData = JoplinData(ROOT_DIR, self.number_of_clusters)
         
-        elif user.input_dict['InputDataName'] == 'Sample':
-            pass
+        elif self.user.input_dict['input_data_name'][:6] == 'Sample':
+            self.InputData = SampleData(ROOT_DIR, self.user.input_dict['input_data_name'])
 
 
 '''
