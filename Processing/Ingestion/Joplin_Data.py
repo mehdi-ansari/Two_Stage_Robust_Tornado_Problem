@@ -22,7 +22,7 @@ class JoplinData:
         self.recovery_strategies = ('Do_nothing', 'Recover')
         
         self.block_data = pd.read_excel(str(ROOT_DIR)+'/Data/Joplin_Data/ListExcel.xlsx')
-        self.INCORE_data = pd.read_csv(str(ROOT_DIR)+'/Data/Joplin_Data/IN-CORE_2ev2_housingunitallocation_1238.csv')
+        self.INCORE_data = pd.read_csv(str(ROOT_DIR)+'/Data/IN-CORE_2ev2_housingunitallocation_1238.csv')
         
         self.repair_time = 60
         

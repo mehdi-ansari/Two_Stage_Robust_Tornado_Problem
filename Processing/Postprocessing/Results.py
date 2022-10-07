@@ -20,7 +20,7 @@ class Results:
         
         self.lower_bound = round(CCGAlgorithm.lower_bound)
         self.upper_bound = round(CCGAlgorithm.upper_bound)
-        self.gap = round((self.upper_bound - self.lower_bound)/self.lower_bound, 2)
+        self.gap = round((self.upper_bound - self.lower_bound)/(self.lower_bound+0.00001), 2)
         self.run_time = round(CCGAlgorithm.run_time, 2)
         self.iteration = CCGAlgorithm.iteration
         self.subproblem_run_time = round(CCGAlgorithm.subproblem_run_time, 2)
@@ -71,7 +71,7 @@ class Results:
         now = datetime.now()
         now = str(now.date())+'_'+now.strftime("%H-%M-%S")
         
-        with open(str(self.ROOT_DIR)+'/Results/{}_{}Clusters_Budget{}M_{}Miles.csv'.format(now, len(self.Param.InputData.coordinates) ,round(self.Param.budget/1000000),self.Param.length),'w') as csv_file:
+        with open(str(self.ROOT_DIR)+'/Results/{}_{}_{}Clusters_Budget{}M_{}Miles.csv'.format(now, self.Param.user.input_dict['input_data_name'], len(self.Param.InputData.coordinates) ,round(self.Param.budget/1000000),self.Param.length),'w') as csv_file:
             csv_file.write("Budget :" + "," + str(self.Param.budget) + ',' + "Tornado Length:" + "," + str(self.Param.length) +'\n')
             csv_file.write('Best Bound:'+ "," + str(self.lower_bound)+ '\n')
             csv_file.write('Best Objective:'+ "," + str(self.upper_bound)+ '\n')

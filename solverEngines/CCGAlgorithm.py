@@ -8,6 +8,7 @@ import numpy as np
 import time
 from .masterProblem import masterProblem
 from .Subproblem_SeparationProblem import SeparationProblem
+from .Subproblem_OriginalProblem import OriginalProblem
 
 class CCGAlgorithm:
     def __init__(self, Param):
@@ -43,21 +44,33 @@ class CCGAlgorithm:
             self.lower_bound = self.master_problem.master_sol_dict['iteration{}'.format(self.iteration)]['optimal_value']
             self.f_sol = self.master_problem.master_sol_dict['iteration{}'.format(self.iteration)]['f_sol']
             
-            subproblem_run_time_begin = time.time() 
-            self.subproblem = SeparationProblem(self.Param, self.f_sol, self.infeasible_collection, self.feasible_collection)
-            self.subproblem.solve()
-            self.subproblem.get_solutions()
-            self.upper_bound = min(self.upper_bound, self.subproblem.subproblem_sol_dict['optimal_value'] 
-                                   + sum(self.Param.InputData.first_stage_dislocation[l][s]*self.f_sol[(l,s)] for l in self.Param.InputData.first_stage_dislocation.keys() for s in self.Param.InputData.retrofitting_strategies))
-            self.infeasible_collection = self.subproblem.infeasible_collection
-            self.feasible_collection = self.subproblem.feasible_collection
+            subproblem_run_time_begin = time.time()
+            if self.Param.subproblem_method == 'Decomposed':
+                self.subproblem = SeparationProblem(self.Param, self.f_sol, self.infeasible_collection, self.feasible_collection)
+                self.subproblem.solve()
+                self.subproblem.get_solutions()
+                self.upper_bound = min(self.upper_bound, self.subproblem.subproblem_sol_dict['optimal_value'] 
+                                       + sum(self.Param.InputData.first_stage_dislocation[l][s]*self.f_sol[(l,s)] for l in self.Param.InputData.first_stage_dislocation.keys() for s in self.Param.InputData.retrofitting_strategies))
+                
+                self.infeasible_collection = self.subproblem.infeasible_collection
+                self.feasible_collection = self.subproblem.feasible_collection
+
+                self.number_uncertaintySet_check += self.subproblem.number_uncertaintySet_check
+                self.uncertaintySet_check_run_time += self.subproblem.uncertaintySet_check_run_time
+            
+            
+            if self.Param.subproblem_method == 'Original':
+                self.subproblem = OriginalProblem(self.Param, self.f_sol)
+                self.subproblem.solve()
+                self.subproblem.get_solutions()
+                self.upper_bound = min(self.upper_bound, self.subproblem.subproblem_sol_dict['optimal_value'] 
+                                       + sum(self.Param.InputData.first_stage_dislocation[l][s]*self.f_sol[(l,s)] for l in self.Param.InputData.first_stage_dislocation.keys() for s in self.Param.InputData.retrofitting_strategies))
+            
+            
             
             self.subproblem_run_time += time.time() - subproblem_run_time_begin
             self.number_subproblem_callbacks += self.subproblem.number_callbacks
             self.subproblem_callback_run_time += self.subproblem.callback_run_time
-            self.number_uncertaintySet_check += self.subproblem.number_uncertaintySet_check
-            self.uncertaintySet_check_run_time += self.subproblem.uncertaintySet_check_run_time
-            
 
             self.iteration += 1
             self.z_sol[self.iteration] = self.subproblem.subproblem_sol_dict['z_sol']
