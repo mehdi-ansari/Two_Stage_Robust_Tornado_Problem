@@ -29,6 +29,7 @@ class Results:
         self.number_uncertaintySet_check = CCGAlgorithm.number_uncertaintySet_check
         self.uncertaintySet_check_run_time = round(CCGAlgorithm.uncertaintySet_check_run_time, 2)
         
+        self.print_results()
         self.find_worst_case_tornado()
         
     def print_results(self):
