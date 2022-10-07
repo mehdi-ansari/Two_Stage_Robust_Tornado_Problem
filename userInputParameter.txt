@@ -1,6 +1,6 @@
-input_data_name Sample4
-subproblem_formulation Original
+input_data_name Joplin
+subproblem_formulation Decomposed
 budget 30000000
 length 5
 width 0.375
-number_of_clusters 10
+number_of_clusters 100

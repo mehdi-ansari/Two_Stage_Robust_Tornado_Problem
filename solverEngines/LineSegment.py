@@ -58,7 +58,7 @@ class Segment:
         for i, coord_i in self.damaged_location_coordindates.items():
             for j, coord_j in self.damaged_location_coordindates.items():
 
-                if (distance_point_line(slop_tangent, b_tangent, coord_i) < delta) and (distance_point_line(slop_tangent, b_tangent, coord_j) < delta):
+                #if (distance_point_line(slop_tangent, b_tangent, coord_i) < delta) and (distance_point_line(slop_tangent, b_tangent, coord_j) < delta):
                     #intersection of line y=mx+b and circle (x-x0)^2+(y-y0)^2=delta^2
                     A1 = slop_tangent**2 + 1
                     B1 = -2 * coord_i[0] + 2 * slop_tangent * (b_tangent - coord_i[1])
