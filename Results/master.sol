@@ -1,5 +1,5 @@
 # Solution for model master_model
-# Objective value = 13013
+# Objective value = 13312
 _f[32,Do_nothing] 0
 _f[32,R1] 0
 _f[32,R2] 0
@@ -10,8 +10,8 @@ _f[70,R2] 0
 _f[70,R3] 0
 _f[5,Do_nothing] 0
 _f[5,R1] 0
-_f[5,R2] 0
-_f[5,R3] 1
+_f[5,R2] 1
+_f[5,R3] 0
 _f[85,Do_nothing] 1
 _f[85,R1] 0
 _f[85,R2] 0
@@ -346,8 +346,8 @@ _f[6,R2] 0
 _f[6,R3] 1
 _f[96,Do_nothing] 0
 _f[96,R1] 0
-_f[96,R2] 0
-_f[96,R3] 1
+_f[96,R2] 1
+_f[96,R3] 0
 _f[74,Do_nothing] 1
 _f[74,R1] 0
 _f[74,R2] 0
@@ -400,7 +400,7 @@ _f[66,Do_nothing] 1
 _f[66,R1] 0
 _f[66,R2] 0
 _f[66,R3] 0
-_Theta 13013
+_Theta 13312
 _r0[32,Do_nothing,Do_nothing] 0
 _r0[32,Do_nothing,Recover] 0
 _r0[32,R1,Do_nothing] 0
@@ -421,9 +421,9 @@ _r0[5,Do_nothing,Do_nothing] 0
 _r0[5,Do_nothing,Recover] 0
 _r0[5,R1,Do_nothing] 0
 _r0[5,R1,Recover] 0
-_r0[5,R2,Do_nothing] 0
+_r0[5,R2,Do_nothing] 1
 _r0[5,R2,Recover] 0
-_r0[5,R3,Do_nothing] 1
+_r0[5,R3,Do_nothing] 0
 _r0[5,R3,Recover] 0
 _r0[85,Do_nothing,Do_nothing] 1
 _r0[85,Do_nothing,Recover] 0
@@ -1093,9 +1093,9 @@ _r0[96,Do_nothing,Do_nothing] 0
 _r0[96,Do_nothing,Recover] 0
 _r0[96,R1,Do_nothing] 0
 _r0[96,R1,Recover] 0
-_r0[96,R2,Do_nothing] 0
+_r0[96,R2,Do_nothing] 1
 _r0[96,R2,Recover] 0
-_r0[96,R3,Do_nothing] 1
+_r0[96,R3,Do_nothing] 0
 _r0[96,R3,Recover] 0
 _r0[74,Do_nothing,Do_nothing] 1
 _r0[74,Do_nothing,Recover] 0
@@ -1221,10 +1221,10 @@ _r1[5,Do_nothing,Do_nothing] 0
 _r1[5,Do_nothing,Recover] 0
 _r1[5,R1,Do_nothing] 0
 _r1[5,R1,Recover] 0
-_r1[5,R2,Do_nothing] 0
+_r1[5,R2,Do_nothing] 1
 _r1[5,R2,Recover] 0
 _r1[5,R3,Do_nothing] 0
-_r1[5,R3,Recover] 1
+_r1[5,R3,Recover] 0
 _r1[85,Do_nothing,Do_nothing] 1
 _r1[85,Do_nothing,Recover] 0
 _r1[85,R1,Do_nothing] 0
@@ -1247,8 +1247,8 @@ _r1[92,R1,Do_nothing] 0
 _r1[92,R1,Recover] 0
 _r1[92,R2,Do_nothing] 0
 _r1[92,R2,Recover] 0
-_r1[92,R3,Do_nothing] 1
-_r1[92,R3,Recover] 0
+_r1[92,R3,Do_nothing] 0
+_r1[92,R3,Recover] 1
 _r1[38,Do_nothing,Do_nothing] 1
 _r1[38,Do_nothing,Recover] 0
 _r1[38,R1,Do_nothing] 0
@@ -1375,8 +1375,8 @@ _r1[78,R1,Do_nothing] 0
 _r1[78,R1,Recover] 0
 _r1[78,R2,Do_nothing] 0
 _r1[78,R2,Recover] 0
-_r1[78,R3,Do_nothing] 0
-_r1[78,R3,Recover] 1
+_r1[78,R3,Do_nothing] 1
+_r1[78,R3,Recover] 0
 _r1[34,Do_nothing,Do_nothing] 0
 _r1[34,Do_nothing,Recover] 0
 _r1[34,R1,Do_nothing] 0
@@ -1807,8 +1807,8 @@ _r1[40,R1,Do_nothing] 0
 _r1[40,R1,Recover] 0
 _r1[40,R2,Do_nothing] 0
 _r1[40,R2,Recover] 0
-_r1[40,R3,Do_nothing] 0
-_r1[40,R3,Recover] 1
+_r1[40,R3,Do_nothing] 1
+_r1[40,R3,Recover] 0
 _r1[30,Do_nothing,Do_nothing] 1
 _r1[30,Do_nothing,Recover] 0
 _r1[30,R1,Do_nothing] 0
@@ -1893,9 +1893,9 @@ _r1[96,Do_nothing,Do_nothing] 0
 _r1[96,Do_nothing,Recover] 0
 _r1[96,R1,Do_nothing] 0
 _r1[96,R1,Recover] 0
-_r1[96,R2,Do_nothing] 0
+_r1[96,R2,Do_nothing] 1
 _r1[96,R2,Recover] 0
-_r1[96,R3,Do_nothing] 1
+_r1[96,R3,Do_nothing] 0
 _r1[96,R3,Recover] 0
 _r1[74,Do_nothing,Do_nothing] 1
 _r1[74,Do_nothing,Recover] 0
@@ -2021,10 +2021,10 @@ _r2[5,Do_nothing,Do_nothing] 0
 _r2[5,Do_nothing,Recover] 0
 _r2[5,R1,Do_nothing] 0
 _r2[5,R1,Recover] 0
-_r2[5,R2,Do_nothing] 0
+_r2[5,R2,Do_nothing] 1
 _r2[5,R2,Recover] 0
 _r2[5,R3,Do_nothing] 0
-_r2[5,R3,Recover] 1
+_r2[5,R3,Recover] 0
 _r2[85,Do_nothing,Do_nothing] 1
 _r2[85,Do_nothing,Recover] 0
 _r2[85,R1,Do_nothing] 0
@@ -2047,8 +2047,8 @@ _r2[92,R1,Do_nothing] 0
 _r2[92,R1,Recover] 0
 _r2[92,R2,Do_nothing] 0
 _r2[92,R2,Recover] 0
-_r2[92,R3,Do_nothing] 1
-_r2[92,R3,Recover] 0
+_r2[92,R3,Do_nothing] 0
+_r2[92,R3,Recover] 1
 _r2[38,Do_nothing,Do_nothing] 1
 _r2[38,Do_nothing,Recover] 0
 _r2[38,R1,Do_nothing] 0
@@ -2175,8 +2175,8 @@ _r2[78,R1,Do_nothing] 0
 _r2[78,R1,Recover] 0
 _r2[78,R2,Do_nothing] 0
 _r2[78,R2,Recover] 0
-_r2[78,R3,Do_nothing] 0
-_r2[78,R3,Recover] 1
+_r2[78,R3,Do_nothing] 1
+_r2[78,R3,Recover] 0
 _r2[34,Do_nothing,Do_nothing] 0
 _r2[34,Do_nothing,Recover] 0
 _r2[34,R1,Do_nothing] 0
@@ -2607,8 +2607,8 @@ _r2[40,R1,Do_nothing] 0
 _r2[40,R1,Recover] 0
 _r2[40,R2,Do_nothing] 0
 _r2[40,R2,Recover] 0
-_r2[40,R3,Do_nothing] 0
-_r2[40,R3,Recover] 1
+_r2[40,R3,Do_nothing] 1
+_r2[40,R3,Recover] 0
 _r2[30,Do_nothing,Do_nothing] 1
 _r2[30,Do_nothing,Recover] 0
 _r2[30,R1,Do_nothing] 0
@@ -2693,9 +2693,9 @@ _r2[96,Do_nothing,Do_nothing] 0
 _r2[96,Do_nothing,Recover] 0
 _r2[96,R1,Do_nothing] 0
 _r2[96,R1,Recover] 0
-_r2[96,R2,Do_nothing] 0
+_r2[96,R2,Do_nothing] 1
 _r2[96,R2,Recover] 0
-_r2[96,R3,Do_nothing] 1
+_r2[96,R3,Do_nothing] 0
 _r2[96,R3,Recover] 0
 _r2[74,Do_nothing,Do_nothing] 1
 _r2[74,Do_nothing,Recover] 0

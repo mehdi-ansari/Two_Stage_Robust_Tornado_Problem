@@ -488,7 +488,7 @@ Subject To
    + 1.8384607e+07 _r0[3,R1,Recover] + 1.3190225e+07 _r0[3,R2,Recover]
    + 8.030579e+06 _r0[3,R3,Recover] + 396329 _r0[66,Do_nothing,Recover]
    + 396210 _r0[66,R1,Recover] + 284265 _r0[66,R2,Recover]
-   + 173069 _r0[66,R3,Recover] <= 3e+07
+   + 173069 _r0[66,R3,Recover] <= 1.5e+07
  R102: - _f[32,Do_nothing] + _r0[32,Do_nothing,Do_nothing]
    + _r0[32,Do_nothing,Recover] = 0
  R103: - _f[32,R1] + _r0[32,R1,Do_nothing] + _r0[32,R1,Recover] = 0
@@ -1462,7 +1462,7 @@ Subject To
    + 1.8384607e+07 _r1[3,R1,Recover] + 1.3190225e+07 _r1[3,R2,Recover]
    + 8.030579e+06 _r1[3,R3,Recover] + 396329 _r1[66,Do_nothing,Recover]
    + 396210 _r1[66,R1,Recover] + 284265 _r1[66,R2,Recover]
-   + 173069 _r1[66,R3,Recover] <= 3e+07
+   + 173069 _r1[66,R3,Recover] <= 1.5e+07
  R504: - _f[32,Do_nothing] + _r1[32,Do_nothing,Do_nothing]
    + _r1[32,Do_nothing,Recover] = 0
  R505: - _f[32,R1] + _r1[32,R1,Do_nothing] + _r1[32,R1,Recover] = 0
@@ -2440,7 +2440,7 @@ Subject To
    + 1.8384607e+07 _r2[3,R1,Recover] + 1.3190225e+07 _r2[3,R2,Recover]
    + 8.030579e+06 _r2[3,R3,Recover] + 396329 _r2[66,Do_nothing,Recover]
    + 396210 _r2[66,R1,Recover] + 284265 _r2[66,R2,Recover]
-   + 173069 _r2[66,R3,Recover] <= 3e+07
+   + 173069 _r2[66,R3,Recover] <= 1.5e+07
  R906: - _f[32,Do_nothing] + _r2[32,Do_nothing,Do_nothing]
    + _r2[32,Do_nothing,Recover] = 0
  R907: - _f[32,R1] + _r2[32,R1,Do_nothing] + _r2[32,R1,Recover] = 0
