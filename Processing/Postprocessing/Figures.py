@@ -25,18 +25,33 @@ class Figures:
             xT = Results.head_worst[0]/54.6
             yT = Results.head_worst[1]/69
             xH = Results.tail_worst[0]/54.6
-            yH = Results.tail_worst[1]/69        
+            yH = Results.tail_worst[1]/69       
+            
+        slope_lineSegment = np.arctan((yT-yH)/(xT-xH))
+        
+        '''#For plotting long line:
+        slop = (yT-yH)/(xT-xH)
+        yInetercpt = yH - slop* xH
+        
+        xH -= 10
+        yH = slop * xH + yInetercpt
+        
+        xT += 10
+        yT = slop * xT + yInetercpt
+        
+        #############################'''
+        
         
         lines = boundary_l2((xH, yH), (xT,yT), scaled_width/2)
         
         ax.plot([xH, xT], [yH, yT], c = 'red')
         
-        xH_line1 = xH - scaled_width * np.sin(np.arctan((yT-yH)/(xT-xH)))
-        xT_line1 = xT - scaled_width * np.sin(np.arctan((yT-yH)/(xT-xH)))
+        xH_line1 = xH - scaled_width * np.sin(slope_lineSegment)
+        xT_line1 = xT - scaled_width * np.sin(slope_lineSegment)
         ax.plot([xH_line1, xT_line1], [lines.line1(xH_line1), lines.line1(xT_line1)], linestyle='dashed', color='red', linewidth=1)
         
-        xH_line2 = xH + scaled_width * np.sin(np.arctan((yT-yH)/(xT-xH)))
-        xT_line2 = xT + scaled_width * np.sin(np.arctan((yT-yH)/(xT-xH)))
+        xH_line2 = xH + scaled_width * np.sin(slope_lineSegment)
+        xT_line2 = xT + scaled_width * np.sin(slope_lineSegment)
         ax.plot([xH_line2, xT_line2], [lines.line2(xH_line2), lines.line2(xT_line2)], linestyle='dashed', color='red', linewidth=1)
         
         circle1 = plt.Circle((xH, yH), scaled_width, linestyle='dashed', color='red', linewidth=1, fill=False)           
@@ -75,5 +90,5 @@ class Figures:
                                 color = 'yellow'
             
             plt.scatter(x_coord, y_coord, marker = symbol, c = color)
-            # plt.xlim([-94.58, -94.43])
-            # plt.ylim([37, 37.15])
+            plt.xlim([-94.582, -94.404])
+            plt.ylim([37.0154, 37.148])
