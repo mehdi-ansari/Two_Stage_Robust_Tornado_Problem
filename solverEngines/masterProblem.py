@@ -7,6 +7,7 @@ Created on Thu Sep  1 14:25:17 2022
 import gurobipy as gb
 from gurobipy import GRB
 import numpy as np
+import random
 
 class masterProblem:
     def __init__(self, Param):
@@ -35,6 +36,7 @@ class masterProblem:
         
         self.master_sol_dict = {}
         
+        #self.fix_random_solution()        
         
         
     def generate_column(self, iteration):
@@ -72,3 +74,25 @@ class masterProblem:
         self.master_sol_dict['iteration{}'.format(iteration)]['f_sol'] = self.model.getAttr('x', self.f_var)
         for key, value in self.r_var.items():
             self.master_sol_dict['iteration{}'.format(iteration)]['r_sol[{}]'.format(key)] = self.model.getAttr('x', value)
+            
+            
+    def fix_random_solution(self):
+        budget_to_retrofit = 0.6 * self.Param.budget
+        self.model.addConstr(gb.quicksum(self.Param.InputData.cost_retrofitting[l][s] * self.f_var[l,s] for l in self.location_indx for s in self.retrofit_indx)
+                             <= budget_to_retrofit)
+        
+
+        loc_ret = []
+        for loc in self.location_indx:
+            for ret in self.retrofit_indx:
+                loc_ret.append((loc, ret))
+        random.shuffle(loc_ret)
+        
+        fixed_index = []
+        for pair in loc_ret:
+            if pair[0] not in fixed_index and pair[1] != 'Do_nothing':
+                if self.Param.InputData.cost_retrofitting[pair[0]][pair[1]] < budget_to_retrofit:
+                    budget_to_retrofit -= self.Param.InputData.cost_retrofitting[pair[0]][pair[1]]
+                    fixed_index.append(pair[0])
+                    
+                    self.model.addConstr(self.f_var[pair[0], pair[1]] == 1)

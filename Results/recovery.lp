@@ -1,7 +1,19 @@
 \ Model recoveryProblem_model
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  432 _r[21,Do_nothing,Do_nothing] + 428 _r[21,Do_nothing,Recover]
+  803 _r[32,Do_nothing,Do_nothing] + 795 _r[32,Do_nothing,Recover]
+   + 803 _r[32,R1,Do_nothing] + 795 _r[32,R1,Recover]
+   + 709 _r[32,R2,Do_nothing] + 607 _r[32,R2,Recover]
+   + 659 _r[32,R3,Do_nothing] + 508 _r[32,R3,Recover]
+   + 135 _r[5,Do_nothing,Do_nothing] + 134 _r[5,Do_nothing,Recover]
+   + 135 _r[5,R1,Do_nothing] + 134 _r[5,R1,Recover]
+   + 119 _r[5,R2,Do_nothing] + 102 _r[5,R2,Recover]
+   + 111 _r[5,R3,Do_nothing] + 85 _r[5,R3,Recover]
+   + 526 _r[92,Do_nothing,Do_nothing] + 521 _r[92,Do_nothing,Recover]
+   + 526 _r[92,R1,Do_nothing] + 521 _r[92,R1,Recover]
+   + 465 _r[92,R2,Do_nothing] + 398 _r[92,R2,Recover]
+   + 432 _r[92,R3,Do_nothing] + 333 _r[92,R3,Recover]
+   + 432 _r[21,Do_nothing,Do_nothing] + 428 _r[21,Do_nothing,Recover]
    + 432 _r[21,R1,Do_nothing] + 428 _r[21,R1,Recover]
    + 381 _r[21,R2,Do_nothing] + 327 _r[21,R2,Recover]
    + 355 _r[21,R3,Do_nothing] + 273 _r[21,R3,Recover]
@@ -77,18 +89,6 @@ Minimize
    + 1181 _r[46,R1,Do_nothing] + 1170 _r[46,R1,Recover]
    + 1043 _r[46,R2,Do_nothing] + 894 _r[46,R2,Recover]
    + 970 _r[46,R3,Do_nothing] + 748 _r[46,R3,Recover]
-   + 781 _r[51,Do_nothing,Do_nothing] + 774 _r[51,Do_nothing,Recover]
-   + 781 _r[51,R1,Do_nothing] + 774 _r[51,R1,Recover]
-   + 689 _r[51,R2,Do_nothing] + 591 _r[51,R2,Recover]
-   + 641 _r[51,R3,Do_nothing] + 494 _r[51,R3,Recover]
-   + 339 _r[96,Do_nothing,Do_nothing] + 336 _r[96,Do_nothing,Recover]
-   + 339 _r[96,R1,Do_nothing] + 336 _r[96,R1,Recover]
-   + 299 _r[96,R2,Do_nothing] + 256 _r[96,R2,Recover]
-   + 278 _r[96,R3,Do_nothing] + 214 _r[96,R3,Recover]
-   + 195 _r[29,Do_nothing,Do_nothing] + 193 _r[29,Do_nothing,Recover]
-   + 195 _r[29,R1,Do_nothing] + 193 _r[29,R1,Recover]
-   + 172 _r[29,R2,Do_nothing] + 148 _r[29,R2,Recover]
-   + 160 _r[29,R3,Do_nothing] + 124 _r[29,R3,Recover]
 Subject To
  R0: 1.6250306e+07 _r[32,Do_nothing,Recover]
    + 1.6245457e+07 _r[32,R1,Recover] + 1.1655471e+07 _r[32,R2,Recover]
@@ -372,19 +372,19 @@ Subject To
    + 1.8384607e+07 _r[3,R1,Recover] + 1.3190225e+07 _r[3,R2,Recover]
    + 8.030579e+06 _r[3,R3,Recover] + 396329 _r[66,Do_nothing,Recover]
    + 396210 _r[66,R1,Recover] + 284265 _r[66,R2,Recover]
-   + 173069 _r[66,R3,Recover] <= 2.0835663e+07
- R1: _r[32,Do_nothing,Do_nothing] + _r[32,Do_nothing,Recover] = 0
+   + 173069 _r[66,R3,Recover] <= 1.5e+07
+ R1: _r[32,Do_nothing,Do_nothing] + _r[32,Do_nothing,Recover] = 1
  R2: _r[32,R1,Do_nothing] + _r[32,R1,Recover] = 0
  R3: _r[32,R2,Do_nothing] + _r[32,R2,Recover] = 0
- R4: _r[32,R3,Do_nothing] + _r[32,R3,Recover] = 1
+ R4: _r[32,R3,Do_nothing] + _r[32,R3,Recover] = 0
  R5: _r[70,Do_nothing,Do_nothing] + _r[70,Do_nothing,Recover] = 1
  R6: _r[70,R1,Do_nothing] + _r[70,R1,Recover] = 0
  R7: _r[70,R2,Do_nothing] + _r[70,R2,Recover] = 0
  R8: _r[70,R3,Do_nothing] + _r[70,R3,Recover] = 0
- R9: _r[5,Do_nothing,Do_nothing] + _r[5,Do_nothing,Recover] = 0
+ R9: _r[5,Do_nothing,Do_nothing] + _r[5,Do_nothing,Recover] = 1
  R10: _r[5,R1,Do_nothing] + _r[5,R1,Recover] = 0
  R11: _r[5,R2,Do_nothing] + _r[5,R2,Recover] = 0
- R12: _r[5,R3,Do_nothing] + _r[5,R3,Recover] = 1
+ R12: _r[5,R3,Do_nothing] + _r[5,R3,Recover] = 0
  R13: _r[85,Do_nothing,Do_nothing] + _r[85,Do_nothing,Recover] = 1
  R14: _r[85,R1,Do_nothing] + _r[85,R1,Recover] = 0
  R15: _r[85,R2,Do_nothing] + _r[85,R2,Recover] = 0
@@ -393,30 +393,30 @@ Subject To
  R18: _r[71,R1,Do_nothing] + _r[71,R1,Recover] = 0
  R19: _r[71,R2,Do_nothing] + _r[71,R2,Recover] = 0
  R20: _r[71,R3,Do_nothing] + _r[71,R3,Recover] = 0
- R21: _r[92,Do_nothing,Do_nothing] + _r[92,Do_nothing,Recover] = 0
+ R21: _r[92,Do_nothing,Do_nothing] + _r[92,Do_nothing,Recover] = 1
  R22: _r[92,R1,Do_nothing] + _r[92,R1,Recover] = 0
  R23: _r[92,R2,Do_nothing] + _r[92,R2,Recover] = 0
- R24: _r[92,R3,Do_nothing] + _r[92,R3,Recover] = 1
+ R24: _r[92,R3,Do_nothing] + _r[92,R3,Recover] = 0
  R25: _r[38,Do_nothing,Do_nothing] + _r[38,Do_nothing,Recover] = 1
  R26: _r[38,R1,Do_nothing] + _r[38,R1,Recover] = 0
  R27: _r[38,R2,Do_nothing] + _r[38,R2,Recover] = 0
  R28: _r[38,R3,Do_nothing] + _r[38,R3,Recover] = 0
- R29: _r[21,Do_nothing,Do_nothing] + _r[21,Do_nothing,Recover] = 0
+ R29: _r[21,Do_nothing,Do_nothing] + _r[21,Do_nothing,Recover] = 1
  R30: _r[21,R1,Do_nothing] + _r[21,R1,Recover] = 0
  R31: _r[21,R2,Do_nothing] + _r[21,R2,Recover] = 0
- R32: _r[21,R3,Do_nothing] + _r[21,R3,Recover] = 1
+ R32: _r[21,R3,Do_nothing] + _r[21,R3,Recover] = 0
  R33: _r[41,Do_nothing,Do_nothing] + _r[41,Do_nothing,Recover] = 1
  R34: _r[41,R1,Do_nothing] + _r[41,R1,Recover] = 0
  R35: _r[41,R2,Do_nothing] + _r[41,R2,Recover] = 0
  R36: _r[41,R3,Do_nothing] + _r[41,R3,Recover] = 0
- R37: _r[56,Do_nothing,Do_nothing] + _r[56,Do_nothing,Recover] = 0
+ R37: _r[56,Do_nothing,Do_nothing] + _r[56,Do_nothing,Recover] = 1
  R38: _r[56,R1,Do_nothing] + _r[56,R1,Recover] = 0
  R39: _r[56,R2,Do_nothing] + _r[56,R2,Recover] = 0
- R40: _r[56,R3,Do_nothing] + _r[56,R3,Recover] = 1
- R41: _r[80,Do_nothing,Do_nothing] + _r[80,Do_nothing,Recover] = 0
+ R40: _r[56,R3,Do_nothing] + _r[56,R3,Recover] = 0
+ R41: _r[80,Do_nothing,Do_nothing] + _r[80,Do_nothing,Recover] = 1
  R42: _r[80,R1,Do_nothing] + _r[80,R1,Recover] = 0
  R43: _r[80,R2,Do_nothing] + _r[80,R2,Recover] = 0
- R44: _r[80,R3,Do_nothing] + _r[80,R3,Recover] = 1
+ R44: _r[80,R3,Do_nothing] + _r[80,R3,Recover] = 0
  R45: _r[62,Do_nothing,Do_nothing] + _r[62,Do_nothing,Recover] = 1
  R46: _r[62,R1,Do_nothing] + _r[62,R1,Recover] = 0
  R47: _r[62,R2,Do_nothing] + _r[62,R2,Recover] = 0
@@ -429,10 +429,10 @@ Subject To
  R54: _r[10,R1,Do_nothing] + _r[10,R1,Recover] = 0
  R55: _r[10,R2,Do_nothing] + _r[10,R2,Recover] = 0
  R56: _r[10,R3,Do_nothing] + _r[10,R3,Recover] = 0
- R57: _r[55,Do_nothing,Do_nothing] + _r[55,Do_nothing,Recover] = 0
+ R57: _r[55,Do_nothing,Do_nothing] + _r[55,Do_nothing,Recover] = 1
  R58: _r[55,R1,Do_nothing] + _r[55,R1,Recover] = 0
  R59: _r[55,R2,Do_nothing] + _r[55,R2,Recover] = 0
- R60: _r[55,R3,Do_nothing] + _r[55,R3,Recover] = 1
+ R60: _r[55,R3,Do_nothing] + _r[55,R3,Recover] = 0
  R61: _r[36,Do_nothing,Do_nothing] + _r[36,Do_nothing,Recover] = 1
  R62: _r[36,R1,Do_nothing] + _r[36,R1,Recover] = 0
  R63: _r[36,R2,Do_nothing] + _r[36,R2,Recover] = 0
@@ -445,10 +445,10 @@ Subject To
  R70: _r[48,R1,Do_nothing] + _r[48,R1,Recover] = 0
  R71: _r[48,R2,Do_nothing] + _r[48,R2,Recover] = 0
  R72: _r[48,R3,Do_nothing] + _r[48,R3,Recover] = 0
- R73: _r[8,Do_nothing,Do_nothing] + _r[8,Do_nothing,Recover] = 0
+ R73: _r[8,Do_nothing,Do_nothing] + _r[8,Do_nothing,Recover] = 1
  R74: _r[8,R1,Do_nothing] + _r[8,R1,Recover] = 0
  R75: _r[8,R2,Do_nothing] + _r[8,R2,Recover] = 0
- R76: _r[8,R3,Do_nothing] + _r[8,R3,Recover] = 1
+ R76: _r[8,R3,Do_nothing] + _r[8,R3,Recover] = 0
  R77: _r[15,Do_nothing,Do_nothing] + _r[15,Do_nothing,Recover] = 1
  R78: _r[15,R1,Do_nothing] + _r[15,R1,Recover] = 0
  R79: _r[15,R2,Do_nothing] + _r[15,R2,Recover] = 0
@@ -457,14 +457,14 @@ Subject To
  R82: _r[61,R1,Do_nothing] + _r[61,R1,Recover] = 0
  R83: _r[61,R2,Do_nothing] + _r[61,R2,Recover] = 0
  R84: _r[61,R3,Do_nothing] + _r[61,R3,Recover] = 0
- R85: _r[78,Do_nothing,Do_nothing] + _r[78,Do_nothing,Recover] = 0
+ R85: _r[78,Do_nothing,Do_nothing] + _r[78,Do_nothing,Recover] = 1
  R86: _r[78,R1,Do_nothing] + _r[78,R1,Recover] = 0
  R87: _r[78,R2,Do_nothing] + _r[78,R2,Recover] = 0
- R88: _r[78,R3,Do_nothing] + _r[78,R3,Recover] = 1
- R89: _r[34,Do_nothing,Do_nothing] + _r[34,Do_nothing,Recover] = 0
+ R88: _r[78,R3,Do_nothing] + _r[78,R3,Recover] = 0
+ R89: _r[34,Do_nothing,Do_nothing] + _r[34,Do_nothing,Recover] = 1
  R90: _r[34,R1,Do_nothing] + _r[34,R1,Recover] = 0
  R91: _r[34,R2,Do_nothing] + _r[34,R2,Recover] = 0
- R92: _r[34,R3,Do_nothing] + _r[34,R3,Recover] = 1
+ R92: _r[34,R3,Do_nothing] + _r[34,R3,Recover] = 0
  R93: _r[100,Do_nothing,Do_nothing] + _r[100,Do_nothing,Recover] = 1
  R94: _r[100,R1,Do_nothing] + _r[100,R1,Recover] = 0
  R95: _r[100,R2,Do_nothing] + _r[100,R2,Recover] = 0
@@ -485,18 +485,18 @@ Subject To
  R110: _r[1,R1,Do_nothing] + _r[1,R1,Recover] = 0
  R111: _r[1,R2,Do_nothing] + _r[1,R2,Recover] = 0
  R112: _r[1,R3,Do_nothing] + _r[1,R3,Recover] = 0
- R113: _r[22,Do_nothing,Do_nothing] + _r[22,Do_nothing,Recover] = 0
+ R113: _r[22,Do_nothing,Do_nothing] + _r[22,Do_nothing,Recover] = 1
  R114: _r[22,R1,Do_nothing] + _r[22,R1,Recover] = 0
  R115: _r[22,R2,Do_nothing] + _r[22,R2,Recover] = 0
- R116: _r[22,R3,Do_nothing] + _r[22,R3,Recover] = 1
+ R116: _r[22,R3,Do_nothing] + _r[22,R3,Recover] = 0
  R117: _r[31,Do_nothing,Do_nothing] + _r[31,Do_nothing,Recover] = 1
  R118: _r[31,R1,Do_nothing] + _r[31,R1,Recover] = 0
  R119: _r[31,R2,Do_nothing] + _r[31,R2,Recover] = 0
  R120: _r[31,R3,Do_nothing] + _r[31,R3,Recover] = 0
- R121: _r[54,Do_nothing,Do_nothing] + _r[54,Do_nothing,Recover] = 0
+ R121: _r[54,Do_nothing,Do_nothing] + _r[54,Do_nothing,Recover] = 1
  R122: _r[54,R1,Do_nothing] + _r[54,R1,Recover] = 0
  R123: _r[54,R2,Do_nothing] + _r[54,R2,Recover] = 0
- R124: _r[54,R3,Do_nothing] + _r[54,R3,Recover] = 1
+ R124: _r[54,R3,Do_nothing] + _r[54,R3,Recover] = 0
  R125: _r[82,Do_nothing,Do_nothing] + _r[82,Do_nothing,Recover] = 1
  R126: _r[82,R1,Do_nothing] + _r[82,R1,Recover] = 0
  R127: _r[82,R2,Do_nothing] + _r[82,R2,Recover] = 0
@@ -505,10 +505,10 @@ Subject To
  R130: _r[11,R1,Do_nothing] + _r[11,R1,Recover] = 0
  R131: _r[11,R2,Do_nothing] + _r[11,R2,Recover] = 0
  R132: _r[11,R3,Do_nothing] + _r[11,R3,Recover] = 0
- R133: _r[75,Do_nothing,Do_nothing] + _r[75,Do_nothing,Recover] = 0
+ R133: _r[75,Do_nothing,Do_nothing] + _r[75,Do_nothing,Recover] = 1
  R134: _r[75,R1,Do_nothing] + _r[75,R1,Recover] = 0
  R135: _r[75,R2,Do_nothing] + _r[75,R2,Recover] = 0
- R136: _r[75,R3,Do_nothing] + _r[75,R3,Recover] = 1
+ R136: _r[75,R3,Do_nothing] + _r[75,R3,Recover] = 0
  R137: _r[50,Do_nothing,Do_nothing] + _r[50,Do_nothing,Recover] = 1
  R138: _r[50,R1,Do_nothing] + _r[50,R1,Recover] = 0
  R139: _r[50,R2,Do_nothing] + _r[50,R2,Recover] = 0
@@ -521,10 +521,10 @@ Subject To
  R146: _r[99,R1,Do_nothing] + _r[99,R1,Recover] = 0
  R147: _r[99,R2,Do_nothing] + _r[99,R2,Recover] = 0
  R148: _r[99,R3,Do_nothing] + _r[99,R3,Recover] = 0
- R149: _r[72,Do_nothing,Do_nothing] + _r[72,Do_nothing,Recover] = 0
+ R149: _r[72,Do_nothing,Do_nothing] + _r[72,Do_nothing,Recover] = 1
  R150: _r[72,R1,Do_nothing] + _r[72,R1,Recover] = 0
  R151: _r[72,R2,Do_nothing] + _r[72,R2,Recover] = 0
- R152: _r[72,R3,Do_nothing] + _r[72,R3,Recover] = 1
+ R152: _r[72,R3,Do_nothing] + _r[72,R3,Recover] = 0
  R153: _r[47,Do_nothing,Do_nothing] + _r[47,Do_nothing,Recover] = 1
  R154: _r[47,R1,Do_nothing] + _r[47,R1,Recover] = 0
  R155: _r[47,R2,Do_nothing] + _r[47,R2,Recover] = 0
@@ -545,10 +545,10 @@ Subject To
  R170: _r[98,R1,Do_nothing] + _r[98,R1,Recover] = 0
  R171: _r[98,R2,Do_nothing] + _r[98,R2,Recover] = 0
  R172: _r[98,R3,Do_nothing] + _r[98,R3,Recover] = 0
- R173: _r[53,Do_nothing,Do_nothing] + _r[53,Do_nothing,Recover] = 0
+ R173: _r[53,Do_nothing,Do_nothing] + _r[53,Do_nothing,Recover] = 1
  R174: _r[53,R1,Do_nothing] + _r[53,R1,Recover] = 0
  R175: _r[53,R2,Do_nothing] + _r[53,R2,Recover] = 0
- R176: _r[53,R3,Do_nothing] + _r[53,R3,Recover] = 1
+ R176: _r[53,R3,Do_nothing] + _r[53,R3,Recover] = 0
  R177: _r[65,Do_nothing,Do_nothing] + _r[65,Do_nothing,Recover] = 1
  R178: _r[65,R1,Do_nothing] + _r[65,R1,Recover] = 0
  R179: _r[65,R2,Do_nothing] + _r[65,R2,Recover] = 0
@@ -573,10 +573,10 @@ Subject To
  R198: _r[28,R1,Do_nothing] + _r[28,R1,Recover] = 0
  R199: _r[28,R2,Do_nothing] + _r[28,R2,Recover] = 0
  R200: _r[28,R3,Do_nothing] + _r[28,R3,Recover] = 0
- R201: _r[2,Do_nothing,Do_nothing] + _r[2,Do_nothing,Recover] = 0
+ R201: _r[2,Do_nothing,Do_nothing] + _r[2,Do_nothing,Recover] = 1
  R202: _r[2,R1,Do_nothing] + _r[2,R1,Recover] = 0
  R203: _r[2,R2,Do_nothing] + _r[2,R2,Recover] = 0
- R204: _r[2,R3,Do_nothing] + _r[2,R3,Recover] = 1
+ R204: _r[2,R3,Do_nothing] + _r[2,R3,Recover] = 0
  R205: _r[81,Do_nothing,Do_nothing] + _r[81,Do_nothing,Recover] = 1
  R206: _r[81,R1,Do_nothing] + _r[81,R1,Recover] = 0
  R207: _r[81,R2,Do_nothing] + _r[81,R2,Recover] = 0
@@ -589,10 +589,10 @@ Subject To
  R214: _r[88,R1,Do_nothing] + _r[88,R1,Recover] = 0
  R215: _r[88,R2,Do_nothing] + _r[88,R2,Recover] = 0
  R216: _r[88,R3,Do_nothing] + _r[88,R3,Recover] = 0
- R217: _r[89,Do_nothing,Do_nothing] + _r[89,Do_nothing,Recover] = 0
+ R217: _r[89,Do_nothing,Do_nothing] + _r[89,Do_nothing,Recover] = 1
  R218: _r[89,R1,Do_nothing] + _r[89,R1,Recover] = 0
  R219: _r[89,R2,Do_nothing] + _r[89,R2,Recover] = 0
- R220: _r[89,R3,Do_nothing] + _r[89,R3,Recover] = 1
+ R220: _r[89,R3,Do_nothing] + _r[89,R3,Recover] = 0
  R221: _r[25,Do_nothing,Do_nothing] + _r[25,Do_nothing,Recover] = 1
  R222: _r[25,R1,Do_nothing] + _r[25,R1,Recover] = 0
  R223: _r[25,R2,Do_nothing] + _r[25,R2,Recover] = 0
@@ -601,10 +601,10 @@ Subject To
  R226: _r[91,R1,Do_nothing] + _r[91,R1,Recover] = 0
  R227: _r[91,R2,Do_nothing] + _r[91,R2,Recover] = 0
  R228: _r[91,R3,Do_nothing] + _r[91,R3,Recover] = 0
- R229: _r[43,Do_nothing,Do_nothing] + _r[43,Do_nothing,Recover] = 0
+ R229: _r[43,Do_nothing,Do_nothing] + _r[43,Do_nothing,Recover] = 1
  R230: _r[43,R1,Do_nothing] + _r[43,R1,Recover] = 0
  R231: _r[43,R2,Do_nothing] + _r[43,R2,Recover] = 0
- R232: _r[43,R3,Do_nothing] + _r[43,R3,Recover] = 1
+ R232: _r[43,R3,Do_nothing] + _r[43,R3,Recover] = 0
  R233: _r[76,Do_nothing,Do_nothing] + _r[76,Do_nothing,Recover] = 1
  R234: _r[76,R1,Do_nothing] + _r[76,R1,Recover] = 0
  R235: _r[76,R2,Do_nothing] + _r[76,R2,Recover] = 0
@@ -629,10 +629,10 @@ Subject To
  R254: _r[26,R1,Do_nothing] + _r[26,R1,Recover] = 0
  R255: _r[26,R2,Do_nothing] + _r[26,R2,Recover] = 0
  R256: _r[26,R3,Do_nothing] + _r[26,R3,Recover] = 0
- R257: _r[9,Do_nothing,Do_nothing] + _r[9,Do_nothing,Recover] = 0
+ R257: _r[9,Do_nothing,Do_nothing] + _r[9,Do_nothing,Recover] = 1
  R258: _r[9,R1,Do_nothing] + _r[9,R1,Recover] = 0
  R259: _r[9,R2,Do_nothing] + _r[9,R2,Recover] = 0
- R260: _r[9,R3,Do_nothing] + _r[9,R3,Recover] = 1
+ R260: _r[9,R3,Do_nothing] + _r[9,R3,Recover] = 0
  R261: _r[60,Do_nothing,Do_nothing] + _r[60,Do_nothing,Recover] = 1
  R262: _r[60,R1,Do_nothing] + _r[60,R1,Recover] = 0
  R263: _r[60,R2,Do_nothing] + _r[60,R2,Recover] = 0
@@ -673,18 +673,18 @@ Subject To
  R298: _r[87,R1,Do_nothing] + _r[87,R1,Recover] = 0
  R299: _r[87,R2,Do_nothing] + _r[87,R2,Recover] = 0
  R300: _r[87,R3,Do_nothing] + _r[87,R3,Recover] = 0
- R301: _r[40,Do_nothing,Do_nothing] + _r[40,Do_nothing,Recover] = 0
+ R301: _r[40,Do_nothing,Do_nothing] + _r[40,Do_nothing,Recover] = 1
  R302: _r[40,R1,Do_nothing] + _r[40,R1,Recover] = 0
  R303: _r[40,R2,Do_nothing] + _r[40,R2,Recover] = 0
- R304: _r[40,R3,Do_nothing] + _r[40,R3,Recover] = 1
+ R304: _r[40,R3,Do_nothing] + _r[40,R3,Recover] = 0
  R305: _r[30,Do_nothing,Do_nothing] + _r[30,Do_nothing,Recover] = 1
  R306: _r[30,R1,Do_nothing] + _r[30,R1,Recover] = 0
  R307: _r[30,R2,Do_nothing] + _r[30,R2,Recover] = 0
  R308: _r[30,R3,Do_nothing] + _r[30,R3,Recover] = 0
- R309: _r[27,Do_nothing,Do_nothing] + _r[27,Do_nothing,Recover] = 0
+ R309: _r[27,Do_nothing,Do_nothing] + _r[27,Do_nothing,Recover] = 1
  R310: _r[27,R1,Do_nothing] + _r[27,R1,Recover] = 0
  R311: _r[27,R2,Do_nothing] + _r[27,R2,Recover] = 0
- R312: _r[27,R3,Do_nothing] + _r[27,R3,Recover] = 1
+ R312: _r[27,R3,Do_nothing] + _r[27,R3,Recover] = 0
  R313: _r[73,Do_nothing,Do_nothing] + _r[73,Do_nothing,Recover] = 1
  R314: _r[73,R1,Do_nothing] + _r[73,R1,Recover] = 0
  R315: _r[73,R2,Do_nothing] + _r[73,R2,Recover] = 0
@@ -697,10 +697,10 @@ Subject To
  R322: _r[35,R1,Do_nothing] + _r[35,R1,Recover] = 0
  R323: _r[35,R2,Do_nothing] + _r[35,R2,Recover] = 0
  R324: _r[35,R3,Do_nothing] + _r[35,R3,Recover] = 0
- R325: _r[46,Do_nothing,Do_nothing] + _r[46,Do_nothing,Recover] = 0
+ R325: _r[46,Do_nothing,Do_nothing] + _r[46,Do_nothing,Recover] = 1
  R326: _r[46,R1,Do_nothing] + _r[46,R1,Recover] = 0
  R327: _r[46,R2,Do_nothing] + _r[46,R2,Recover] = 0
- R328: _r[46,R3,Do_nothing] + _r[46,R3,Recover] = 1
+ R328: _r[46,R3,Do_nothing] + _r[46,R3,Recover] = 0
  R329: _r[39,Do_nothing,Do_nothing] + _r[39,Do_nothing,Recover] = 1
  R330: _r[39,R1,Do_nothing] + _r[39,R1,Recover] = 0
  R331: _r[39,R2,Do_nothing] + _r[39,R2,Recover] = 0
@@ -713,14 +713,14 @@ Subject To
  R338: _r[52,R1,Do_nothing] + _r[52,R1,Recover] = 0
  R339: _r[52,R2,Do_nothing] + _r[52,R2,Recover] = 0
  R340: _r[52,R3,Do_nothing] + _r[52,R3,Recover] = 0
- R341: _r[6,Do_nothing,Do_nothing] + _r[6,Do_nothing,Recover] = 0
+ R341: _r[6,Do_nothing,Do_nothing] + _r[6,Do_nothing,Recover] = 1
  R342: _r[6,R1,Do_nothing] + _r[6,R1,Recover] = 0
  R343: _r[6,R2,Do_nothing] + _r[6,R2,Recover] = 0
- R344: _r[6,R3,Do_nothing] + _r[6,R3,Recover] = 1
- R345: _r[96,Do_nothing,Do_nothing] + _r[96,Do_nothing,Recover] = 0
+ R344: _r[6,R3,Do_nothing] + _r[6,R3,Recover] = 0
+ R345: _r[96,Do_nothing,Do_nothing] + _r[96,Do_nothing,Recover] = 1
  R346: _r[96,R1,Do_nothing] + _r[96,R1,Recover] = 0
  R347: _r[96,R2,Do_nothing] + _r[96,R2,Recover] = 0
- R348: _r[96,R3,Do_nothing] + _r[96,R3,Recover] = 1
+ R348: _r[96,R3,Do_nothing] + _r[96,R3,Recover] = 0
  R349: _r[74,Do_nothing,Do_nothing] + _r[74,Do_nothing,Recover] = 1
  R350: _r[74,R1,Do_nothing] + _r[74,R1,Recover] = 0
  R351: _r[74,R2,Do_nothing] + _r[74,R2,Recover] = 0
