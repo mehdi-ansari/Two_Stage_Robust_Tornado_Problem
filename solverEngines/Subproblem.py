@@ -38,6 +38,8 @@ class Subproblem:
         self.head = []
         self.tail = []
         
+        #self.UncertaintySet.add_uncertainty_constraint(self.model, self.z_var)
+        self.fix_solution()
         
     def add_infeasible_pair_cuts(self):
         for pair in self.ValidCuts.infeasible_pair:
@@ -55,3 +57,13 @@ class Subproblem:
     def generate_constraint(self, r_sol):
         self.model.addConstr(self.eta <= gb.quicksum(self.Param.InputData.second_stage_dislocation[l][s][p] * self.z_var[l] * r_sol[(l,s,p)]
                                             for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx))
+        
+    def fix_solution(self):
+        #sol = [32,5,92,21,56,80,55,8,78,34,22,
+               #54,75,72,53,2,89,43,9,40,27,46]
+   
+        sol = [32,70,5,85,71,92,-1,21,41,56,80,62,-1,10,-1,36,44,48,-1,15,61,78,-1,100,90,64,-1,1,22,31,54,82,-1,75,50,-1,99,72,47,-1,77,95,98,53,65,63,14,23,93,28,2,-1,-1,88,89,25,91,43,76,42,-1,17,37,26,9,60,16,83,13,67,59,58,4,68,87,40,-1,27,73,84,35,46,39,51,52,6,96,74,86,29,18,24,94,33,12,57,97,69,3,66]
+        
+        for s in sol:
+            if s != -1:
+                self.model.addConstr(self.z_var[s] == 0)

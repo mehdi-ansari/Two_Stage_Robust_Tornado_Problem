@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import gurobipy as gb
 from gurobipy import GRB
+import numpy as np
 
 def Euclidean_distance(a,b):
     return np.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)
@@ -96,6 +97,19 @@ class UncertaintySet:
         tail_x = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "tail_x")
         tail_y = model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "tail_y")
         
+        '''x_rand = np.random.uniform(-5164, (-5154-5164)/2)
+        y_rand = np.random.uniform(2553, 2563)
+        angle = np.random.uniform(-np.pi/2, np.pi/2)
+        model.addConstr(head_x == x_rand)
+        model.addConstr(head_y == y_rand)
+        model.addConstr(tail_x >= x_rand + 4.9*np.cos(angle))
+        model.addConstr(tail_y >= y_rand + 4.9*np.sin(angle))
+        model.params.NonConvex = 2
+        model.addConstr(head_x == -94.567 * 54.6)
+        model.addConstr(head_y == 37.06 * 69)
+        model.addConstr(tail_x == -94.479 * 54.6)
+        model.addConstr(tail_y == 37.078 * 69)
+        model.params.NonConvex = 2'''
         #constraints
         for l in coordinates.keys():
             model.addConstr((1-t[l])*head_x + t[l]*tail_x - coordinates[l][0] == v_x[l])
