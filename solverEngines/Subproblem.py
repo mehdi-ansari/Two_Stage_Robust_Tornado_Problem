@@ -59,13 +59,18 @@ class Subproblem:
                                             for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx))
         
     def fix_solution(self):
-        #sol = [32,5,92,21,56,80,55,8,78,34,22,
-               #54,75,72,53,2,89,43,9,40,27,46]
+        sol = [32,5,92,21,56,80,55,8,78,34,22,54,75,72,53,2,89,43,9,40,27,46]
+        
+        for l in self.location_indx:
+            if l in sol:
+                self.model.addConstr(self.z_var[l] == 1)
+            else:
+                self.model.addConstr(self.z_var[l] == 0)
    
         #sol = [-1,70,-1,85,71,-1,38,21,41,-1,80,62,-1,10,55,36,44,48,8,-1,61,78,34,-1,-1,64,79,1,22,-1,54,82,11,75,-1,19,99,72,47,49,77,-1,98,53,65,63,14,23,93,-1,2,81,45,88,89,25,-1,43,76,42,7,17,37,26,9,60,16,83,13,67,-1,58,4,68,87,40,30,27,73,84,35,46,39,51,52,6,96,74,-1,29,18,24,94,33,12,57,97,69,3,66]
         
         #for s in sol:
             #if s != -1:
                 #self.model.addConstr(self.z_var[s] == 0)
-        self.model.addConstr(self.z_var[17] == 1)
-        self.model.addConstr(self.z_var[66] == 1)
+        #self.model.addConstr(self.z_var[17] == 1)
+        #self.model.addConstr(self.z_var[66] == 1)

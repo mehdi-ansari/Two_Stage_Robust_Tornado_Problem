@@ -1,6 +1,6 @@
 # Solution for model subproblem_model
-# Objective value = 15203
-_eta 15203
+# Objective value = 14623
+_eta 14623
 _z[32] 1
 _z[70] 0
 _z[5] 1

@@ -197,83 +197,109 @@ Subject To
    + 49387 _f[97,R1] + 62067 _f[97,R2] + 111410 _f[97,R3] + 41699 _f[69,R1]
    + 52406 _f[69,R2] + 94068 _f[69,R3] + 11993 _f[3,R1] + 15072 _f[3,R2]
    + 27055 _f[3,R3] + 36687 _f[66,R1] + 46107 _f[66,R2] + 82761 _f[66,R3]
-   <= 1.5e+07
- R101: _f[62,R2] = 1
- R102: _f[95,R1] = 1
- R103: _f[41,R3] = 1
- R104: _f[87,R3] = 1
- R105: _f[24,R3] = 1
- R106: _f[6,R2] = 1
- R107: _f[85,R3] = 1
- R108: _f[52,R1] = 1
- R109: _f[66,R2] = 1
- R110: _f[39,R1] = 1
- R111: _f[15,R3] = 1
- R112: _f[55,R1] = 1
- R113: _f[36,R3] = 1
- R114: _f[12,R2] = 1
- R115: _f[26,R3] = 1
- R116: _f[14,R3] = 1
- R117: _f[47,R1] = 1
- R118: _f[2,R2] = 1
- R119: _f[89,R2] = 1
- R120: _f[84,R1] = 1
- R121: _f[61,R1] = 1
- R122: _f[73,R1] = 1
- R123: _f[46,R2] = 1
- R124: _f[11,R3] = 1
- R125: _f[34,R2] = 1
- R126: _f[22,R1] = 1
- R127: _f[13,R3] = 1
- R128: _f[93,R2] = 1
- R129: _f[16,R2] = 1
- R130: _f[37,R1] = 1
- R131: _f[78,R2] = 1
- R132: _f[90,R1] = 1
- R133: _f[60,R2] = 1
- R134: _f[99,R2] = 1
- R135: _f[74,R3] = 1
- R136: _f[67,R3] = 1
- R137: _f[43,R2] = 1
- R138: _f[9,R2] = 1
- R139: _f[51,R1] = 1
- R140: _f[57,R3] = 1
- R141: _f[30,R2] = 1
- R142: _f[64,R3] = 1
- R143: _f[20,R1] = 1
- R144: _f[71,R1] = 1
- R145: _f[7,R2] = 1
- R146: _f[100,R1] = 1
- R147: _f[58,R3] = 1
- R148: _f[83,R3] = 1
- R149: _f[48,R3] = 1
- R150: _f[82,R2] = 1
- R151: _f[18,R2] = 1
- R152: _f[17,R2] = 1
- R153: _f[5,R2] = 1
- R154: _f[44,R2] = 1
- R155: _f[25,R3] = 1
- R156: _f[27,R2] = 1
- R157: _f[72,R1] = 1
- R158: _f[10,R2] = 1
- R159: _f[8,R2] = 1
- R160: _f[50,R1] = 1
- R161: _f[88,R3] = 1
- R162: _f[35,R1] = 1
- R163: _f[91,R2] = 1
- R164: _f[42,R1] = 1
- R165: _f[49,R1] = 1
- R166: _f[1,R2] = 1
- R167: _f[33,R3] = 1
- R168: _f[79,R2] = 1
- R169: _f[92,R3] = 1
- R170: _f[75,R2] = 1
- R171: _f[3,R1] = 1
- R172: _f[29,R3] = 1
- R173: _f[86,R2] = 1
- R174: _f[63,R2] = 1
- R175: _Theta >= 0
- R176: 184945 _f[32,R1] + 232438 _f[32,R2] + 417219 _f[32,R3]
+   <= 3e+07
+ R101: _f[16,R1] = 1
+ R102: _f[84,R2] = 1
+ R103: _f[30,R3] = 1
+ R104: _f[90,R3] = 1
+ R105: _f[72,R1] = 1
+ R106: _f[88,R1] = 1
+ R107: _f[18,R3] = 1
+ R108: _f[38,R3] = 1
+ R109: _f[34,R3] = 1
+ R110: _f[14,R3] = 1
+ R111: _f[31,R1] = 1
+ R112: _f[44,R3] = 1
+ R113: _f[61,R1] = 1
+ R114: _f[64,R2] = 1
+ R115: _f[11,R3] = 1
+ R116: _f[49,R2] = 1
+ R117: _f[28,R2] = 1
+ R118: _f[8,R3] = 1
+ R119: _f[91,R3] = 1
+ R120: _f[27,R2] = 1
+ R121: _f[65,R3] = 1
+ R122: _f[100,R3] = 1
+ R123: _f[97,R3] = 1
+ R124: _f[82,R3] = 1
+ R125: _f[56,R2] = 1
+ R126: _f[98,R3] = 1
+ R127: _f[70,R3] = 1
+ R128: _f[60,R2] = 1
+ R129: _f[19,R3] = 1
+ R130: _f[48,R2] = 1
+ R131: _f[10,R1] = 1
+ R132: _f[62,R2] = 1
+ R133: _f[74,R1] = 1
+ R134: _f[24,R3] = 1
+ R135: _f[4,R1] = 1
+ R136: _f[7,R1] = 1
+ R137: _f[35,R3] = 1
+ R138: _f[2,R1] = 1
+ R139: _f[81,R3] = 1
+ R140: _f[20,R1] = 1
+ R141: _f[76,R2] = 1
+ R142: _f[42,R2] = 1
+ R143: _f[68,R3] = 1
+ R144: _f[37,R3] = 1
+ R145: _f[73,R1] = 1
+ R146: _f[43,R2] = 1
+ R147: _f[26,R1] = 1
+ R148: _f[46,R2] = 1
+ R149: _f[6,R3] = 1
+ R150: _f[32,R3] = 1
+ R151: _f[96,R2] = 1
+ R152: _f[63,R2] = 1
+ R153: _f[52,R1] = 1
+ R154: _f[41,R1] = 1
+ R155: _f[39,R2] = 1
+ R156: _f[83,R2] = 1
+ R157: _f[22,R1] = 1
+ R158: _f[47,R1] = 1
+ R159: _f[99,R3] = 1
+ R160: _f[80,R1] = 1
+ R161: _f[79,R3] = 1
+ R162: _f[12,R3] = 1
+ R163: _f[13,R2] = 1
+ R164: _f[23,R2] = 1
+ R165: _f[21,R1] = 1
+ R166: _f[94,R3] = 1
+ R167: _f[87,R1] = 1
+ R168: _f[3,R2] = 1
+ R169: _f[1,R3] = 1
+ R170: _f[45,R1] = 1
+ R171: _f[92,R1] = 1
+ R172: _f[17,R2] = 1
+ R173: _f[25,R1] = 1
+ R174: _f[78,R2] = 1
+ R175: _f[93,R1] = 1
+ R176: _f[57,R3] = 1
+ R177: _f[67,R1] = 1
+ R178: _f[89,R2] = 1
+ R179: _f[33,R3] = 1
+ R180: _f[58,R1] = 1
+ R181: _f[75,R2] = 1
+ R182: _f[86,R1] = 1
+ R183: _f[69,R2] = 1
+ R184: _f[71,R3] = 1
+ R185: _f[50,R2] = 1
+ R186: _f[55,R1] = 1
+ R187: _f[95,R2] = 1
+ R188: _f[9,R2] = 1
+ R189: _f[15,R1] = 1
+ R190: _f[53,R2] = 1
+ R191: _f[40,R2] = 1
+ R192: _f[36,R1] = 1
+ R193: _f[51,R3] = 1
+ R194: _f[66,R3] = 1
+ R195: _f[29,R2] = 1
+ R196: _f[77,R1] = 1
+ R197: _f[85,R2] = 1
+ R198: _f[5,R3] = 1
+ R199: _f[59,R2] = 1
+ R200: _f[54,R2] = 1
+ R201: _Theta >= 0
+ R202: 184945 _f[32,R1] + 232438 _f[32,R2] + 417219 _f[32,R3]
    + 77012 _f[70,R1] + 96789 _f[70,R2] + 173733 _f[70,R3] + 42150 _f[5,R1]
    + 52975 _f[5,R2] + 95089 _f[5,R3] + 83838 _f[85,R1] + 105366 _f[85,R2]
    + 189129 _f[85,R3] + 19605 _f[71,R1] + 24639 _f[71,R2] + 44226 _f[71,R3]
@@ -657,508 +683,508 @@ Subject To
    + 1.8384607e+07 _r0[3,R1,Recover] + 1.3190225e+07 _r0[3,R2,Recover]
    + 8.030579e+06 _r0[3,R3,Recover] + 396329 _r0[66,Do_nothing,Recover]
    + 396210 _r0[66,R1,Recover] + 284265 _r0[66,R2,Recover]
-   + 173069 _r0[66,R3,Recover] <= 1.5e+07
- R177: - _f[32,Do_nothing] + _r0[32,Do_nothing,Do_nothing]
+   + 173069 _r0[66,R3,Recover] <= 3e+07
+ R203: - _f[32,Do_nothing] + _r0[32,Do_nothing,Do_nothing]
    + _r0[32,Do_nothing,Recover] = 0
- R178: - _f[32,R1] + _r0[32,R1,Do_nothing] + _r0[32,R1,Recover] = 0
- R179: - _f[32,R2] + _r0[32,R2,Do_nothing] + _r0[32,R2,Recover] = 0
- R180: - _f[32,R3] + _r0[32,R3,Do_nothing] + _r0[32,R3,Recover] = 0
- R181: - _f[70,Do_nothing] + _r0[70,Do_nothing,Do_nothing]
+ R204: - _f[32,R1] + _r0[32,R1,Do_nothing] + _r0[32,R1,Recover] = 0
+ R205: - _f[32,R2] + _r0[32,R2,Do_nothing] + _r0[32,R2,Recover] = 0
+ R206: - _f[32,R3] + _r0[32,R3,Do_nothing] + _r0[32,R3,Recover] = 0
+ R207: - _f[70,Do_nothing] + _r0[70,Do_nothing,Do_nothing]
    + _r0[70,Do_nothing,Recover] = 0
- R182: - _f[70,R1] + _r0[70,R1,Do_nothing] + _r0[70,R1,Recover] = 0
- R183: - _f[70,R2] + _r0[70,R2,Do_nothing] + _r0[70,R2,Recover] = 0
- R184: - _f[70,R3] + _r0[70,R3,Do_nothing] + _r0[70,R3,Recover] = 0
- R185: - _f[5,Do_nothing] + _r0[5,Do_nothing,Do_nothing]
+ R208: - _f[70,R1] + _r0[70,R1,Do_nothing] + _r0[70,R1,Recover] = 0
+ R209: - _f[70,R2] + _r0[70,R2,Do_nothing] + _r0[70,R2,Recover] = 0
+ R210: - _f[70,R3] + _r0[70,R3,Do_nothing] + _r0[70,R3,Recover] = 0
+ R211: - _f[5,Do_nothing] + _r0[5,Do_nothing,Do_nothing]
    + _r0[5,Do_nothing,Recover] = 0
- R186: - _f[5,R1] + _r0[5,R1,Do_nothing] + _r0[5,R1,Recover] = 0
- R187: - _f[5,R2] + _r0[5,R2,Do_nothing] + _r0[5,R2,Recover] = 0
- R188: - _f[5,R3] + _r0[5,R3,Do_nothing] + _r0[5,R3,Recover] = 0
- R189: - _f[85,Do_nothing] + _r0[85,Do_nothing,Do_nothing]
+ R212: - _f[5,R1] + _r0[5,R1,Do_nothing] + _r0[5,R1,Recover] = 0
+ R213: - _f[5,R2] + _r0[5,R2,Do_nothing] + _r0[5,R2,Recover] = 0
+ R214: - _f[5,R3] + _r0[5,R3,Do_nothing] + _r0[5,R3,Recover] = 0
+ R215: - _f[85,Do_nothing] + _r0[85,Do_nothing,Do_nothing]
    + _r0[85,Do_nothing,Recover] = 0
- R190: - _f[85,R1] + _r0[85,R1,Do_nothing] + _r0[85,R1,Recover] = 0
- R191: - _f[85,R2] + _r0[85,R2,Do_nothing] + _r0[85,R2,Recover] = 0
- R192: - _f[85,R3] + _r0[85,R3,Do_nothing] + _r0[85,R3,Recover] = 0
- R193: - _f[71,Do_nothing] + _r0[71,Do_nothing,Do_nothing]
+ R216: - _f[85,R1] + _r0[85,R1,Do_nothing] + _r0[85,R1,Recover] = 0
+ R217: - _f[85,R2] + _r0[85,R2,Do_nothing] + _r0[85,R2,Recover] = 0
+ R218: - _f[85,R3] + _r0[85,R3,Do_nothing] + _r0[85,R3,Recover] = 0
+ R219: - _f[71,Do_nothing] + _r0[71,Do_nothing,Do_nothing]
    + _r0[71,Do_nothing,Recover] = 0
- R194: - _f[71,R1] + _r0[71,R1,Do_nothing] + _r0[71,R1,Recover] = 0
- R195: - _f[71,R2] + _r0[71,R2,Do_nothing] + _r0[71,R2,Recover] = 0
- R196: - _f[71,R3] + _r0[71,R3,Do_nothing] + _r0[71,R3,Recover] = 0
- R197: - _f[92,Do_nothing] + _r0[92,Do_nothing,Do_nothing]
+ R220: - _f[71,R1] + _r0[71,R1,Do_nothing] + _r0[71,R1,Recover] = 0
+ R221: - _f[71,R2] + _r0[71,R2,Do_nothing] + _r0[71,R2,Recover] = 0
+ R222: - _f[71,R3] + _r0[71,R3,Do_nothing] + _r0[71,R3,Recover] = 0
+ R223: - _f[92,Do_nothing] + _r0[92,Do_nothing,Do_nothing]
    + _r0[92,Do_nothing,Recover] = 0
- R198: - _f[92,R1] + _r0[92,R1,Do_nothing] + _r0[92,R1,Recover] = 0
- R199: - _f[92,R2] + _r0[92,R2,Do_nothing] + _r0[92,R2,Recover] = 0
- R200: - _f[92,R3] + _r0[92,R3,Do_nothing] + _r0[92,R3,Recover] = 0
- R201: - _f[38,Do_nothing] + _r0[38,Do_nothing,Do_nothing]
+ R224: - _f[92,R1] + _r0[92,R1,Do_nothing] + _r0[92,R1,Recover] = 0
+ R225: - _f[92,R2] + _r0[92,R2,Do_nothing] + _r0[92,R2,Recover] = 0
+ R226: - _f[92,R3] + _r0[92,R3,Do_nothing] + _r0[92,R3,Recover] = 0
+ R227: - _f[38,Do_nothing] + _r0[38,Do_nothing,Do_nothing]
    + _r0[38,Do_nothing,Recover] = 0
- R202: - _f[38,R1] + _r0[38,R1,Do_nothing] + _r0[38,R1,Recover] = 0
- R203: - _f[38,R2] + _r0[38,R2,Do_nothing] + _r0[38,R2,Recover] = 0
- R204: - _f[38,R3] + _r0[38,R3,Do_nothing] + _r0[38,R3,Recover] = 0
- R205: - _f[21,Do_nothing] + _r0[21,Do_nothing,Do_nothing]
+ R228: - _f[38,R1] + _r0[38,R1,Do_nothing] + _r0[38,R1,Recover] = 0
+ R229: - _f[38,R2] + _r0[38,R2,Do_nothing] + _r0[38,R2,Recover] = 0
+ R230: - _f[38,R3] + _r0[38,R3,Do_nothing] + _r0[38,R3,Recover] = 0
+ R231: - _f[21,Do_nothing] + _r0[21,Do_nothing,Do_nothing]
    + _r0[21,Do_nothing,Recover] = 0
- R206: - _f[21,R1] + _r0[21,R1,Do_nothing] + _r0[21,R1,Recover] = 0
- R207: - _f[21,R2] + _r0[21,R2,Do_nothing] + _r0[21,R2,Recover] = 0
- R208: - _f[21,R3] + _r0[21,R3,Do_nothing] + _r0[21,R3,Recover] = 0
- R209: - _f[41,Do_nothing] + _r0[41,Do_nothing,Do_nothing]
+ R232: - _f[21,R1] + _r0[21,R1,Do_nothing] + _r0[21,R1,Recover] = 0
+ R233: - _f[21,R2] + _r0[21,R2,Do_nothing] + _r0[21,R2,Recover] = 0
+ R234: - _f[21,R3] + _r0[21,R3,Do_nothing] + _r0[21,R3,Recover] = 0
+ R235: - _f[41,Do_nothing] + _r0[41,Do_nothing,Do_nothing]
    + _r0[41,Do_nothing,Recover] = 0
- R210: - _f[41,R1] + _r0[41,R1,Do_nothing] + _r0[41,R1,Recover] = 0
- R211: - _f[41,R2] + _r0[41,R2,Do_nothing] + _r0[41,R2,Recover] = 0
- R212: - _f[41,R3] + _r0[41,R3,Do_nothing] + _r0[41,R3,Recover] = 0
- R213: - _f[56,Do_nothing] + _r0[56,Do_nothing,Do_nothing]
+ R236: - _f[41,R1] + _r0[41,R1,Do_nothing] + _r0[41,R1,Recover] = 0
+ R237: - _f[41,R2] + _r0[41,R2,Do_nothing] + _r0[41,R2,Recover] = 0
+ R238: - _f[41,R3] + _r0[41,R3,Do_nothing] + _r0[41,R3,Recover] = 0
+ R239: - _f[56,Do_nothing] + _r0[56,Do_nothing,Do_nothing]
    + _r0[56,Do_nothing,Recover] = 0
- R214: - _f[56,R1] + _r0[56,R1,Do_nothing] + _r0[56,R1,Recover] = 0
- R215: - _f[56,R2] + _r0[56,R2,Do_nothing] + _r0[56,R2,Recover] = 0
- R216: - _f[56,R3] + _r0[56,R3,Do_nothing] + _r0[56,R3,Recover] = 0
- R217: - _f[80,Do_nothing] + _r0[80,Do_nothing,Do_nothing]
+ R240: - _f[56,R1] + _r0[56,R1,Do_nothing] + _r0[56,R1,Recover] = 0
+ R241: - _f[56,R2] + _r0[56,R2,Do_nothing] + _r0[56,R2,Recover] = 0
+ R242: - _f[56,R3] + _r0[56,R3,Do_nothing] + _r0[56,R3,Recover] = 0
+ R243: - _f[80,Do_nothing] + _r0[80,Do_nothing,Do_nothing]
    + _r0[80,Do_nothing,Recover] = 0
- R218: - _f[80,R1] + _r0[80,R1,Do_nothing] + _r0[80,R1,Recover] = 0
- R219: - _f[80,R2] + _r0[80,R2,Do_nothing] + _r0[80,R2,Recover] = 0
- R220: - _f[80,R3] + _r0[80,R3,Do_nothing] + _r0[80,R3,Recover] = 0
- R221: - _f[62,Do_nothing] + _r0[62,Do_nothing,Do_nothing]
+ R244: - _f[80,R1] + _r0[80,R1,Do_nothing] + _r0[80,R1,Recover] = 0
+ R245: - _f[80,R2] + _r0[80,R2,Do_nothing] + _r0[80,R2,Recover] = 0
+ R246: - _f[80,R3] + _r0[80,R3,Do_nothing] + _r0[80,R3,Recover] = 0
+ R247: - _f[62,Do_nothing] + _r0[62,Do_nothing,Do_nothing]
    + _r0[62,Do_nothing,Recover] = 0
- R222: - _f[62,R1] + _r0[62,R1,Do_nothing] + _r0[62,R1,Recover] = 0
- R223: - _f[62,R2] + _r0[62,R2,Do_nothing] + _r0[62,R2,Recover] = 0
- R224: - _f[62,R3] + _r0[62,R3,Do_nothing] + _r0[62,R3,Recover] = 0
- R225: - _f[20,Do_nothing] + _r0[20,Do_nothing,Do_nothing]
+ R248: - _f[62,R1] + _r0[62,R1,Do_nothing] + _r0[62,R1,Recover] = 0
+ R249: - _f[62,R2] + _r0[62,R2,Do_nothing] + _r0[62,R2,Recover] = 0
+ R250: - _f[62,R3] + _r0[62,R3,Do_nothing] + _r0[62,R3,Recover] = 0
+ R251: - _f[20,Do_nothing] + _r0[20,Do_nothing,Do_nothing]
    + _r0[20,Do_nothing,Recover] = 0
- R226: - _f[20,R1] + _r0[20,R1,Do_nothing] + _r0[20,R1,Recover] = 0
- R227: - _f[20,R2] + _r0[20,R2,Do_nothing] + _r0[20,R2,Recover] = 0
- R228: - _f[20,R3] + _r0[20,R3,Do_nothing] + _r0[20,R3,Recover] = 0
- R229: - _f[10,Do_nothing] + _r0[10,Do_nothing,Do_nothing]
+ R252: - _f[20,R1] + _r0[20,R1,Do_nothing] + _r0[20,R1,Recover] = 0
+ R253: - _f[20,R2] + _r0[20,R2,Do_nothing] + _r0[20,R2,Recover] = 0
+ R254: - _f[20,R3] + _r0[20,R3,Do_nothing] + _r0[20,R3,Recover] = 0
+ R255: - _f[10,Do_nothing] + _r0[10,Do_nothing,Do_nothing]
    + _r0[10,Do_nothing,Recover] = 0
- R230: - _f[10,R1] + _r0[10,R1,Do_nothing] + _r0[10,R1,Recover] = 0
- R231: - _f[10,R2] + _r0[10,R2,Do_nothing] + _r0[10,R2,Recover] = 0
- R232: - _f[10,R3] + _r0[10,R3,Do_nothing] + _r0[10,R3,Recover] = 0
- R233: - _f[55,Do_nothing] + _r0[55,Do_nothing,Do_nothing]
+ R256: - _f[10,R1] + _r0[10,R1,Do_nothing] + _r0[10,R1,Recover] = 0
+ R257: - _f[10,R2] + _r0[10,R2,Do_nothing] + _r0[10,R2,Recover] = 0
+ R258: - _f[10,R3] + _r0[10,R3,Do_nothing] + _r0[10,R3,Recover] = 0
+ R259: - _f[55,Do_nothing] + _r0[55,Do_nothing,Do_nothing]
    + _r0[55,Do_nothing,Recover] = 0
- R234: - _f[55,R1] + _r0[55,R1,Do_nothing] + _r0[55,R1,Recover] = 0
- R235: - _f[55,R2] + _r0[55,R2,Do_nothing] + _r0[55,R2,Recover] = 0
- R236: - _f[55,R3] + _r0[55,R3,Do_nothing] + _r0[55,R3,Recover] = 0
- R237: - _f[36,Do_nothing] + _r0[36,Do_nothing,Do_nothing]
+ R260: - _f[55,R1] + _r0[55,R1,Do_nothing] + _r0[55,R1,Recover] = 0
+ R261: - _f[55,R2] + _r0[55,R2,Do_nothing] + _r0[55,R2,Recover] = 0
+ R262: - _f[55,R3] + _r0[55,R3,Do_nothing] + _r0[55,R3,Recover] = 0
+ R263: - _f[36,Do_nothing] + _r0[36,Do_nothing,Do_nothing]
    + _r0[36,Do_nothing,Recover] = 0
- R238: - _f[36,R1] + _r0[36,R1,Do_nothing] + _r0[36,R1,Recover] = 0
- R239: - _f[36,R2] + _r0[36,R2,Do_nothing] + _r0[36,R2,Recover] = 0
- R240: - _f[36,R3] + _r0[36,R3,Do_nothing] + _r0[36,R3,Recover] = 0
- R241: - _f[44,Do_nothing] + _r0[44,Do_nothing,Do_nothing]
+ R264: - _f[36,R1] + _r0[36,R1,Do_nothing] + _r0[36,R1,Recover] = 0
+ R265: - _f[36,R2] + _r0[36,R2,Do_nothing] + _r0[36,R2,Recover] = 0
+ R266: - _f[36,R3] + _r0[36,R3,Do_nothing] + _r0[36,R3,Recover] = 0
+ R267: - _f[44,Do_nothing] + _r0[44,Do_nothing,Do_nothing]
    + _r0[44,Do_nothing,Recover] = 0
- R242: - _f[44,R1] + _r0[44,R1,Do_nothing] + _r0[44,R1,Recover] = 0
- R243: - _f[44,R2] + _r0[44,R2,Do_nothing] + _r0[44,R2,Recover] = 0
- R244: - _f[44,R3] + _r0[44,R3,Do_nothing] + _r0[44,R3,Recover] = 0
- R245: - _f[48,Do_nothing] + _r0[48,Do_nothing,Do_nothing]
+ R268: - _f[44,R1] + _r0[44,R1,Do_nothing] + _r0[44,R1,Recover] = 0
+ R269: - _f[44,R2] + _r0[44,R2,Do_nothing] + _r0[44,R2,Recover] = 0
+ R270: - _f[44,R3] + _r0[44,R3,Do_nothing] + _r0[44,R3,Recover] = 0
+ R271: - _f[48,Do_nothing] + _r0[48,Do_nothing,Do_nothing]
    + _r0[48,Do_nothing,Recover] = 0
- R246: - _f[48,R1] + _r0[48,R1,Do_nothing] + _r0[48,R1,Recover] = 0
- R247: - _f[48,R2] + _r0[48,R2,Do_nothing] + _r0[48,R2,Recover] = 0
- R248: - _f[48,R3] + _r0[48,R3,Do_nothing] + _r0[48,R3,Recover] = 0
- R249: - _f[8,Do_nothing] + _r0[8,Do_nothing,Do_nothing]
+ R272: - _f[48,R1] + _r0[48,R1,Do_nothing] + _r0[48,R1,Recover] = 0
+ R273: - _f[48,R2] + _r0[48,R2,Do_nothing] + _r0[48,R2,Recover] = 0
+ R274: - _f[48,R3] + _r0[48,R3,Do_nothing] + _r0[48,R3,Recover] = 0
+ R275: - _f[8,Do_nothing] + _r0[8,Do_nothing,Do_nothing]
    + _r0[8,Do_nothing,Recover] = 0
- R250: - _f[8,R1] + _r0[8,R1,Do_nothing] + _r0[8,R1,Recover] = 0
- R251: - _f[8,R2] + _r0[8,R2,Do_nothing] + _r0[8,R2,Recover] = 0
- R252: - _f[8,R3] + _r0[8,R3,Do_nothing] + _r0[8,R3,Recover] = 0
- R253: - _f[15,Do_nothing] + _r0[15,Do_nothing,Do_nothing]
+ R276: - _f[8,R1] + _r0[8,R1,Do_nothing] + _r0[8,R1,Recover] = 0
+ R277: - _f[8,R2] + _r0[8,R2,Do_nothing] + _r0[8,R2,Recover] = 0
+ R278: - _f[8,R3] + _r0[8,R3,Do_nothing] + _r0[8,R3,Recover] = 0
+ R279: - _f[15,Do_nothing] + _r0[15,Do_nothing,Do_nothing]
    + _r0[15,Do_nothing,Recover] = 0
- R254: - _f[15,R1] + _r0[15,R1,Do_nothing] + _r0[15,R1,Recover] = 0
- R255: - _f[15,R2] + _r0[15,R2,Do_nothing] + _r0[15,R2,Recover] = 0
- R256: - _f[15,R3] + _r0[15,R3,Do_nothing] + _r0[15,R3,Recover] = 0
- R257: - _f[61,Do_nothing] + _r0[61,Do_nothing,Do_nothing]
+ R280: - _f[15,R1] + _r0[15,R1,Do_nothing] + _r0[15,R1,Recover] = 0
+ R281: - _f[15,R2] + _r0[15,R2,Do_nothing] + _r0[15,R2,Recover] = 0
+ R282: - _f[15,R3] + _r0[15,R3,Do_nothing] + _r0[15,R3,Recover] = 0
+ R283: - _f[61,Do_nothing] + _r0[61,Do_nothing,Do_nothing]
    + _r0[61,Do_nothing,Recover] = 0
- R258: - _f[61,R1] + _r0[61,R1,Do_nothing] + _r0[61,R1,Recover] = 0
- R259: - _f[61,R2] + _r0[61,R2,Do_nothing] + _r0[61,R2,Recover] = 0
- R260: - _f[61,R3] + _r0[61,R3,Do_nothing] + _r0[61,R3,Recover] = 0
- R261: - _f[78,Do_nothing] + _r0[78,Do_nothing,Do_nothing]
+ R284: - _f[61,R1] + _r0[61,R1,Do_nothing] + _r0[61,R1,Recover] = 0
+ R285: - _f[61,R2] + _r0[61,R2,Do_nothing] + _r0[61,R2,Recover] = 0
+ R286: - _f[61,R3] + _r0[61,R3,Do_nothing] + _r0[61,R3,Recover] = 0
+ R287: - _f[78,Do_nothing] + _r0[78,Do_nothing,Do_nothing]
    + _r0[78,Do_nothing,Recover] = 0
- R262: - _f[78,R1] + _r0[78,R1,Do_nothing] + _r0[78,R1,Recover] = 0
- R263: - _f[78,R2] + _r0[78,R2,Do_nothing] + _r0[78,R2,Recover] = 0
- R264: - _f[78,R3] + _r0[78,R3,Do_nothing] + _r0[78,R3,Recover] = 0
- R265: - _f[34,Do_nothing] + _r0[34,Do_nothing,Do_nothing]
+ R288: - _f[78,R1] + _r0[78,R1,Do_nothing] + _r0[78,R1,Recover] = 0
+ R289: - _f[78,R2] + _r0[78,R2,Do_nothing] + _r0[78,R2,Recover] = 0
+ R290: - _f[78,R3] + _r0[78,R3,Do_nothing] + _r0[78,R3,Recover] = 0
+ R291: - _f[34,Do_nothing] + _r0[34,Do_nothing,Do_nothing]
    + _r0[34,Do_nothing,Recover] = 0
- R266: - _f[34,R1] + _r0[34,R1,Do_nothing] + _r0[34,R1,Recover] = 0
- R267: - _f[34,R2] + _r0[34,R2,Do_nothing] + _r0[34,R2,Recover] = 0
- R268: - _f[34,R3] + _r0[34,R3,Do_nothing] + _r0[34,R3,Recover] = 0
- R269: - _f[100,Do_nothing] + _r0[100,Do_nothing,Do_nothing]
+ R292: - _f[34,R1] + _r0[34,R1,Do_nothing] + _r0[34,R1,Recover] = 0
+ R293: - _f[34,R2] + _r0[34,R2,Do_nothing] + _r0[34,R2,Recover] = 0
+ R294: - _f[34,R3] + _r0[34,R3,Do_nothing] + _r0[34,R3,Recover] = 0
+ R295: - _f[100,Do_nothing] + _r0[100,Do_nothing,Do_nothing]
    + _r0[100,Do_nothing,Recover] = 0
- R270: - _f[100,R1] + _r0[100,R1,Do_nothing] + _r0[100,R1,Recover] = 0
- R271: - _f[100,R2] + _r0[100,R2,Do_nothing] + _r0[100,R2,Recover] = 0
- R272: - _f[100,R3] + _r0[100,R3,Do_nothing] + _r0[100,R3,Recover] = 0
- R273: - _f[90,Do_nothing] + _r0[90,Do_nothing,Do_nothing]
+ R296: - _f[100,R1] + _r0[100,R1,Do_nothing] + _r0[100,R1,Recover] = 0
+ R297: - _f[100,R2] + _r0[100,R2,Do_nothing] + _r0[100,R2,Recover] = 0
+ R298: - _f[100,R3] + _r0[100,R3,Do_nothing] + _r0[100,R3,Recover] = 0
+ R299: - _f[90,Do_nothing] + _r0[90,Do_nothing,Do_nothing]
    + _r0[90,Do_nothing,Recover] = 0
- R274: - _f[90,R1] + _r0[90,R1,Do_nothing] + _r0[90,R1,Recover] = 0
- R275: - _f[90,R2] + _r0[90,R2,Do_nothing] + _r0[90,R2,Recover] = 0
- R276: - _f[90,R3] + _r0[90,R3,Do_nothing] + _r0[90,R3,Recover] = 0
- R277: - _f[64,Do_nothing] + _r0[64,Do_nothing,Do_nothing]
+ R300: - _f[90,R1] + _r0[90,R1,Do_nothing] + _r0[90,R1,Recover] = 0
+ R301: - _f[90,R2] + _r0[90,R2,Do_nothing] + _r0[90,R2,Recover] = 0
+ R302: - _f[90,R3] + _r0[90,R3,Do_nothing] + _r0[90,R3,Recover] = 0
+ R303: - _f[64,Do_nothing] + _r0[64,Do_nothing,Do_nothing]
    + _r0[64,Do_nothing,Recover] = 0
- R278: - _f[64,R1] + _r0[64,R1,Do_nothing] + _r0[64,R1,Recover] = 0
- R279: - _f[64,R2] + _r0[64,R2,Do_nothing] + _r0[64,R2,Recover] = 0
- R280: - _f[64,R3] + _r0[64,R3,Do_nothing] + _r0[64,R3,Recover] = 0
- R281: - _f[79,Do_nothing] + _r0[79,Do_nothing,Do_nothing]
+ R304: - _f[64,R1] + _r0[64,R1,Do_nothing] + _r0[64,R1,Recover] = 0
+ R305: - _f[64,R2] + _r0[64,R2,Do_nothing] + _r0[64,R2,Recover] = 0
+ R306: - _f[64,R3] + _r0[64,R3,Do_nothing] + _r0[64,R3,Recover] = 0
+ R307: - _f[79,Do_nothing] + _r0[79,Do_nothing,Do_nothing]
    + _r0[79,Do_nothing,Recover] = 0
- R282: - _f[79,R1] + _r0[79,R1,Do_nothing] + _r0[79,R1,Recover] = 0
- R283: - _f[79,R2] + _r0[79,R2,Do_nothing] + _r0[79,R2,Recover] = 0
- R284: - _f[79,R3] + _r0[79,R3,Do_nothing] + _r0[79,R3,Recover] = 0
- R285: - _f[1,Do_nothing] + _r0[1,Do_nothing,Do_nothing]
+ R308: - _f[79,R1] + _r0[79,R1,Do_nothing] + _r0[79,R1,Recover] = 0
+ R309: - _f[79,R2] + _r0[79,R2,Do_nothing] + _r0[79,R2,Recover] = 0
+ R310: - _f[79,R3] + _r0[79,R3,Do_nothing] + _r0[79,R3,Recover] = 0
+ R311: - _f[1,Do_nothing] + _r0[1,Do_nothing,Do_nothing]
    + _r0[1,Do_nothing,Recover] = 0
- R286: - _f[1,R1] + _r0[1,R1,Do_nothing] + _r0[1,R1,Recover] = 0
- R287: - _f[1,R2] + _r0[1,R2,Do_nothing] + _r0[1,R2,Recover] = 0
- R288: - _f[1,R3] + _r0[1,R3,Do_nothing] + _r0[1,R3,Recover] = 0
- R289: - _f[22,Do_nothing] + _r0[22,Do_nothing,Do_nothing]
+ R312: - _f[1,R1] + _r0[1,R1,Do_nothing] + _r0[1,R1,Recover] = 0
+ R313: - _f[1,R2] + _r0[1,R2,Do_nothing] + _r0[1,R2,Recover] = 0
+ R314: - _f[1,R3] + _r0[1,R3,Do_nothing] + _r0[1,R3,Recover] = 0
+ R315: - _f[22,Do_nothing] + _r0[22,Do_nothing,Do_nothing]
    + _r0[22,Do_nothing,Recover] = 0
- R290: - _f[22,R1] + _r0[22,R1,Do_nothing] + _r0[22,R1,Recover] = 0
- R291: - _f[22,R2] + _r0[22,R2,Do_nothing] + _r0[22,R2,Recover] = 0
- R292: - _f[22,R3] + _r0[22,R3,Do_nothing] + _r0[22,R3,Recover] = 0
- R293: - _f[31,Do_nothing] + _r0[31,Do_nothing,Do_nothing]
+ R316: - _f[22,R1] + _r0[22,R1,Do_nothing] + _r0[22,R1,Recover] = 0
+ R317: - _f[22,R2] + _r0[22,R2,Do_nothing] + _r0[22,R2,Recover] = 0
+ R318: - _f[22,R3] + _r0[22,R3,Do_nothing] + _r0[22,R3,Recover] = 0
+ R319: - _f[31,Do_nothing] + _r0[31,Do_nothing,Do_nothing]
    + _r0[31,Do_nothing,Recover] = 0
- R294: - _f[31,R1] + _r0[31,R1,Do_nothing] + _r0[31,R1,Recover] = 0
- R295: - _f[31,R2] + _r0[31,R2,Do_nothing] + _r0[31,R2,Recover] = 0
- R296: - _f[31,R3] + _r0[31,R3,Do_nothing] + _r0[31,R3,Recover] = 0
- R297: - _f[54,Do_nothing] + _r0[54,Do_nothing,Do_nothing]
+ R320: - _f[31,R1] + _r0[31,R1,Do_nothing] + _r0[31,R1,Recover] = 0
+ R321: - _f[31,R2] + _r0[31,R2,Do_nothing] + _r0[31,R2,Recover] = 0
+ R322: - _f[31,R3] + _r0[31,R3,Do_nothing] + _r0[31,R3,Recover] = 0
+ R323: - _f[54,Do_nothing] + _r0[54,Do_nothing,Do_nothing]
    + _r0[54,Do_nothing,Recover] = 0
- R298: - _f[54,R1] + _r0[54,R1,Do_nothing] + _r0[54,R1,Recover] = 0
- R299: - _f[54,R2] + _r0[54,R2,Do_nothing] + _r0[54,R2,Recover] = 0
- R300: - _f[54,R3] + _r0[54,R3,Do_nothing] + _r0[54,R3,Recover] = 0
- R301: - _f[82,Do_nothing] + _r0[82,Do_nothing,Do_nothing]
+ R324: - _f[54,R1] + _r0[54,R1,Do_nothing] + _r0[54,R1,Recover] = 0
+ R325: - _f[54,R2] + _r0[54,R2,Do_nothing] + _r0[54,R2,Recover] = 0
+ R326: - _f[54,R3] + _r0[54,R3,Do_nothing] + _r0[54,R3,Recover] = 0
+ R327: - _f[82,Do_nothing] + _r0[82,Do_nothing,Do_nothing]
    + _r0[82,Do_nothing,Recover] = 0
- R302: - _f[82,R1] + _r0[82,R1,Do_nothing] + _r0[82,R1,Recover] = 0
- R303: - _f[82,R2] + _r0[82,R2,Do_nothing] + _r0[82,R2,Recover] = 0
- R304: - _f[82,R3] + _r0[82,R3,Do_nothing] + _r0[82,R3,Recover] = 0
- R305: - _f[11,Do_nothing] + _r0[11,Do_nothing,Do_nothing]
+ R328: - _f[82,R1] + _r0[82,R1,Do_nothing] + _r0[82,R1,Recover] = 0
+ R329: - _f[82,R2] + _r0[82,R2,Do_nothing] + _r0[82,R2,Recover] = 0
+ R330: - _f[82,R3] + _r0[82,R3,Do_nothing] + _r0[82,R3,Recover] = 0
+ R331: - _f[11,Do_nothing] + _r0[11,Do_nothing,Do_nothing]
    + _r0[11,Do_nothing,Recover] = 0
- R306: - _f[11,R1] + _r0[11,R1,Do_nothing] + _r0[11,R1,Recover] = 0
- R307: - _f[11,R2] + _r0[11,R2,Do_nothing] + _r0[11,R2,Recover] = 0
- R308: - _f[11,R3] + _r0[11,R3,Do_nothing] + _r0[11,R3,Recover] = 0
- R309: - _f[75,Do_nothing] + _r0[75,Do_nothing,Do_nothing]
+ R332: - _f[11,R1] + _r0[11,R1,Do_nothing] + _r0[11,R1,Recover] = 0
+ R333: - _f[11,R2] + _r0[11,R2,Do_nothing] + _r0[11,R2,Recover] = 0
+ R334: - _f[11,R3] + _r0[11,R3,Do_nothing] + _r0[11,R3,Recover] = 0
+ R335: - _f[75,Do_nothing] + _r0[75,Do_nothing,Do_nothing]
    + _r0[75,Do_nothing,Recover] = 0
- R310: - _f[75,R1] + _r0[75,R1,Do_nothing] + _r0[75,R1,Recover] = 0
- R311: - _f[75,R2] + _r0[75,R2,Do_nothing] + _r0[75,R2,Recover] = 0
- R312: - _f[75,R3] + _r0[75,R3,Do_nothing] + _r0[75,R3,Recover] = 0
- R313: - _f[50,Do_nothing] + _r0[50,Do_nothing,Do_nothing]
+ R336: - _f[75,R1] + _r0[75,R1,Do_nothing] + _r0[75,R1,Recover] = 0
+ R337: - _f[75,R2] + _r0[75,R2,Do_nothing] + _r0[75,R2,Recover] = 0
+ R338: - _f[75,R3] + _r0[75,R3,Do_nothing] + _r0[75,R3,Recover] = 0
+ R339: - _f[50,Do_nothing] + _r0[50,Do_nothing,Do_nothing]
    + _r0[50,Do_nothing,Recover] = 0
- R314: - _f[50,R1] + _r0[50,R1,Do_nothing] + _r0[50,R1,Recover] = 0
- R315: - _f[50,R2] + _r0[50,R2,Do_nothing] + _r0[50,R2,Recover] = 0
- R316: - _f[50,R3] + _r0[50,R3,Do_nothing] + _r0[50,R3,Recover] = 0
- R317: - _f[19,Do_nothing] + _r0[19,Do_nothing,Do_nothing]
+ R340: - _f[50,R1] + _r0[50,R1,Do_nothing] + _r0[50,R1,Recover] = 0
+ R341: - _f[50,R2] + _r0[50,R2,Do_nothing] + _r0[50,R2,Recover] = 0
+ R342: - _f[50,R3] + _r0[50,R3,Do_nothing] + _r0[50,R3,Recover] = 0
+ R343: - _f[19,Do_nothing] + _r0[19,Do_nothing,Do_nothing]
    + _r0[19,Do_nothing,Recover] = 0
- R318: - _f[19,R1] + _r0[19,R1,Do_nothing] + _r0[19,R1,Recover] = 0
- R319: - _f[19,R2] + _r0[19,R2,Do_nothing] + _r0[19,R2,Recover] = 0
- R320: - _f[19,R3] + _r0[19,R3,Do_nothing] + _r0[19,R3,Recover] = 0
- R321: - _f[99,Do_nothing] + _r0[99,Do_nothing,Do_nothing]
+ R344: - _f[19,R1] + _r0[19,R1,Do_nothing] + _r0[19,R1,Recover] = 0
+ R345: - _f[19,R2] + _r0[19,R2,Do_nothing] + _r0[19,R2,Recover] = 0
+ R346: - _f[19,R3] + _r0[19,R3,Do_nothing] + _r0[19,R3,Recover] = 0
+ R347: - _f[99,Do_nothing] + _r0[99,Do_nothing,Do_nothing]
    + _r0[99,Do_nothing,Recover] = 0
- R322: - _f[99,R1] + _r0[99,R1,Do_nothing] + _r0[99,R1,Recover] = 0
- R323: - _f[99,R2] + _r0[99,R2,Do_nothing] + _r0[99,R2,Recover] = 0
- R324: - _f[99,R3] + _r0[99,R3,Do_nothing] + _r0[99,R3,Recover] = 0
- R325: - _f[72,Do_nothing] + _r0[72,Do_nothing,Do_nothing]
+ R348: - _f[99,R1] + _r0[99,R1,Do_nothing] + _r0[99,R1,Recover] = 0
+ R349: - _f[99,R2] + _r0[99,R2,Do_nothing] + _r0[99,R2,Recover] = 0
+ R350: - _f[99,R3] + _r0[99,R3,Do_nothing] + _r0[99,R3,Recover] = 0
+ R351: - _f[72,Do_nothing] + _r0[72,Do_nothing,Do_nothing]
    + _r0[72,Do_nothing,Recover] = 0
- R326: - _f[72,R1] + _r0[72,R1,Do_nothing] + _r0[72,R1,Recover] = 0
- R327: - _f[72,R2] + _r0[72,R2,Do_nothing] + _r0[72,R2,Recover] = 0
- R328: - _f[72,R3] + _r0[72,R3,Do_nothing] + _r0[72,R3,Recover] = 0
- R329: - _f[47,Do_nothing] + _r0[47,Do_nothing,Do_nothing]
+ R352: - _f[72,R1] + _r0[72,R1,Do_nothing] + _r0[72,R1,Recover] = 0
+ R353: - _f[72,R2] + _r0[72,R2,Do_nothing] + _r0[72,R2,Recover] = 0
+ R354: - _f[72,R3] + _r0[72,R3,Do_nothing] + _r0[72,R3,Recover] = 0
+ R355: - _f[47,Do_nothing] + _r0[47,Do_nothing,Do_nothing]
    + _r0[47,Do_nothing,Recover] = 0
- R330: - _f[47,R1] + _r0[47,R1,Do_nothing] + _r0[47,R1,Recover] = 0
- R331: - _f[47,R2] + _r0[47,R2,Do_nothing] + _r0[47,R2,Recover] = 0
- R332: - _f[47,R3] + _r0[47,R3,Do_nothing] + _r0[47,R3,Recover] = 0
- R333: - _f[49,Do_nothing] + _r0[49,Do_nothing,Do_nothing]
+ R356: - _f[47,R1] + _r0[47,R1,Do_nothing] + _r0[47,R1,Recover] = 0
+ R357: - _f[47,R2] + _r0[47,R2,Do_nothing] + _r0[47,R2,Recover] = 0
+ R358: - _f[47,R3] + _r0[47,R3,Do_nothing] + _r0[47,R3,Recover] = 0
+ R359: - _f[49,Do_nothing] + _r0[49,Do_nothing,Do_nothing]
    + _r0[49,Do_nothing,Recover] = 0
- R334: - _f[49,R1] + _r0[49,R1,Do_nothing] + _r0[49,R1,Recover] = 0
- R335: - _f[49,R2] + _r0[49,R2,Do_nothing] + _r0[49,R2,Recover] = 0
- R336: - _f[49,R3] + _r0[49,R3,Do_nothing] + _r0[49,R3,Recover] = 0
- R337: - _f[77,Do_nothing] + _r0[77,Do_nothing,Do_nothing]
+ R360: - _f[49,R1] + _r0[49,R1,Do_nothing] + _r0[49,R1,Recover] = 0
+ R361: - _f[49,R2] + _r0[49,R2,Do_nothing] + _r0[49,R2,Recover] = 0
+ R362: - _f[49,R3] + _r0[49,R3,Do_nothing] + _r0[49,R3,Recover] = 0
+ R363: - _f[77,Do_nothing] + _r0[77,Do_nothing,Do_nothing]
    + _r0[77,Do_nothing,Recover] = 0
- R338: - _f[77,R1] + _r0[77,R1,Do_nothing] + _r0[77,R1,Recover] = 0
- R339: - _f[77,R2] + _r0[77,R2,Do_nothing] + _r0[77,R2,Recover] = 0
- R340: - _f[77,R3] + _r0[77,R3,Do_nothing] + _r0[77,R3,Recover] = 0
- R341: - _f[95,Do_nothing] + _r0[95,Do_nothing,Do_nothing]
+ R364: - _f[77,R1] + _r0[77,R1,Do_nothing] + _r0[77,R1,Recover] = 0
+ R365: - _f[77,R2] + _r0[77,R2,Do_nothing] + _r0[77,R2,Recover] = 0
+ R366: - _f[77,R3] + _r0[77,R3,Do_nothing] + _r0[77,R3,Recover] = 0
+ R367: - _f[95,Do_nothing] + _r0[95,Do_nothing,Do_nothing]
    + _r0[95,Do_nothing,Recover] = 0
- R342: - _f[95,R1] + _r0[95,R1,Do_nothing] + _r0[95,R1,Recover] = 0
- R343: - _f[95,R2] + _r0[95,R2,Do_nothing] + _r0[95,R2,Recover] = 0
- R344: - _f[95,R3] + _r0[95,R3,Do_nothing] + _r0[95,R3,Recover] = 0
- R345: - _f[98,Do_nothing] + _r0[98,Do_nothing,Do_nothing]
+ R368: - _f[95,R1] + _r0[95,R1,Do_nothing] + _r0[95,R1,Recover] = 0
+ R369: - _f[95,R2] + _r0[95,R2,Do_nothing] + _r0[95,R2,Recover] = 0
+ R370: - _f[95,R3] + _r0[95,R3,Do_nothing] + _r0[95,R3,Recover] = 0
+ R371: - _f[98,Do_nothing] + _r0[98,Do_nothing,Do_nothing]
    + _r0[98,Do_nothing,Recover] = 0
- R346: - _f[98,R1] + _r0[98,R1,Do_nothing] + _r0[98,R1,Recover] = 0
- R347: - _f[98,R2] + _r0[98,R2,Do_nothing] + _r0[98,R2,Recover] = 0
- R348: - _f[98,R3] + _r0[98,R3,Do_nothing] + _r0[98,R3,Recover] = 0
- R349: - _f[53,Do_nothing] + _r0[53,Do_nothing,Do_nothing]
+ R372: - _f[98,R1] + _r0[98,R1,Do_nothing] + _r0[98,R1,Recover] = 0
+ R373: - _f[98,R2] + _r0[98,R2,Do_nothing] + _r0[98,R2,Recover] = 0
+ R374: - _f[98,R3] + _r0[98,R3,Do_nothing] + _r0[98,R3,Recover] = 0
+ R375: - _f[53,Do_nothing] + _r0[53,Do_nothing,Do_nothing]
    + _r0[53,Do_nothing,Recover] = 0
- R350: - _f[53,R1] + _r0[53,R1,Do_nothing] + _r0[53,R1,Recover] = 0
- R351: - _f[53,R2] + _r0[53,R2,Do_nothing] + _r0[53,R2,Recover] = 0
- R352: - _f[53,R3] + _r0[53,R3,Do_nothing] + _r0[53,R3,Recover] = 0
- R353: - _f[65,Do_nothing] + _r0[65,Do_nothing,Do_nothing]
+ R376: - _f[53,R1] + _r0[53,R1,Do_nothing] + _r0[53,R1,Recover] = 0
+ R377: - _f[53,R2] + _r0[53,R2,Do_nothing] + _r0[53,R2,Recover] = 0
+ R378: - _f[53,R3] + _r0[53,R3,Do_nothing] + _r0[53,R3,Recover] = 0
+ R379: - _f[65,Do_nothing] + _r0[65,Do_nothing,Do_nothing]
    + _r0[65,Do_nothing,Recover] = 0
- R354: - _f[65,R1] + _r0[65,R1,Do_nothing] + _r0[65,R1,Recover] = 0
- R355: - _f[65,R2] + _r0[65,R2,Do_nothing] + _r0[65,R2,Recover] = 0
- R356: - _f[65,R3] + _r0[65,R3,Do_nothing] + _r0[65,R3,Recover] = 0
- R357: - _f[63,Do_nothing] + _r0[63,Do_nothing,Do_nothing]
+ R380: - _f[65,R1] + _r0[65,R1,Do_nothing] + _r0[65,R1,Recover] = 0
+ R381: - _f[65,R2] + _r0[65,R2,Do_nothing] + _r0[65,R2,Recover] = 0
+ R382: - _f[65,R3] + _r0[65,R3,Do_nothing] + _r0[65,R3,Recover] = 0
+ R383: - _f[63,Do_nothing] + _r0[63,Do_nothing,Do_nothing]
    + _r0[63,Do_nothing,Recover] = 0
- R358: - _f[63,R1] + _r0[63,R1,Do_nothing] + _r0[63,R1,Recover] = 0
- R359: - _f[63,R2] + _r0[63,R2,Do_nothing] + _r0[63,R2,Recover] = 0
- R360: - _f[63,R3] + _r0[63,R3,Do_nothing] + _r0[63,R3,Recover] = 0
- R361: - _f[14,Do_nothing] + _r0[14,Do_nothing,Do_nothing]
+ R384: - _f[63,R1] + _r0[63,R1,Do_nothing] + _r0[63,R1,Recover] = 0
+ R385: - _f[63,R2] + _r0[63,R2,Do_nothing] + _r0[63,R2,Recover] = 0
+ R386: - _f[63,R3] + _r0[63,R3,Do_nothing] + _r0[63,R3,Recover] = 0
+ R387: - _f[14,Do_nothing] + _r0[14,Do_nothing,Do_nothing]
    + _r0[14,Do_nothing,Recover] = 0
- R362: - _f[14,R1] + _r0[14,R1,Do_nothing] + _r0[14,R1,Recover] = 0
- R363: - _f[14,R2] + _r0[14,R2,Do_nothing] + _r0[14,R2,Recover] = 0
- R364: - _f[14,R3] + _r0[14,R3,Do_nothing] + _r0[14,R3,Recover] = 0
- R365: - _f[23,Do_nothing] + _r0[23,Do_nothing,Do_nothing]
+ R388: - _f[14,R1] + _r0[14,R1,Do_nothing] + _r0[14,R1,Recover] = 0
+ R389: - _f[14,R2] + _r0[14,R2,Do_nothing] + _r0[14,R2,Recover] = 0
+ R390: - _f[14,R3] + _r0[14,R3,Do_nothing] + _r0[14,R3,Recover] = 0
+ R391: - _f[23,Do_nothing] + _r0[23,Do_nothing,Do_nothing]
    + _r0[23,Do_nothing,Recover] = 0
- R366: - _f[23,R1] + _r0[23,R1,Do_nothing] + _r0[23,R1,Recover] = 0
- R367: - _f[23,R2] + _r0[23,R2,Do_nothing] + _r0[23,R2,Recover] = 0
- R368: - _f[23,R3] + _r0[23,R3,Do_nothing] + _r0[23,R3,Recover] = 0
- R369: - _f[93,Do_nothing] + _r0[93,Do_nothing,Do_nothing]
+ R392: - _f[23,R1] + _r0[23,R1,Do_nothing] + _r0[23,R1,Recover] = 0
+ R393: - _f[23,R2] + _r0[23,R2,Do_nothing] + _r0[23,R2,Recover] = 0
+ R394: - _f[23,R3] + _r0[23,R3,Do_nothing] + _r0[23,R3,Recover] = 0
+ R395: - _f[93,Do_nothing] + _r0[93,Do_nothing,Do_nothing]
    + _r0[93,Do_nothing,Recover] = 0
- R370: - _f[93,R1] + _r0[93,R1,Do_nothing] + _r0[93,R1,Recover] = 0
- R371: - _f[93,R2] + _r0[93,R2,Do_nothing] + _r0[93,R2,Recover] = 0
- R372: - _f[93,R3] + _r0[93,R3,Do_nothing] + _r0[93,R3,Recover] = 0
- R373: - _f[28,Do_nothing] + _r0[28,Do_nothing,Do_nothing]
+ R396: - _f[93,R1] + _r0[93,R1,Do_nothing] + _r0[93,R1,Recover] = 0
+ R397: - _f[93,R2] + _r0[93,R2,Do_nothing] + _r0[93,R2,Recover] = 0
+ R398: - _f[93,R3] + _r0[93,R3,Do_nothing] + _r0[93,R3,Recover] = 0
+ R399: - _f[28,Do_nothing] + _r0[28,Do_nothing,Do_nothing]
    + _r0[28,Do_nothing,Recover] = 0
- R374: - _f[28,R1] + _r0[28,R1,Do_nothing] + _r0[28,R1,Recover] = 0
- R375: - _f[28,R2] + _r0[28,R2,Do_nothing] + _r0[28,R2,Recover] = 0
- R376: - _f[28,R3] + _r0[28,R3,Do_nothing] + _r0[28,R3,Recover] = 0
- R377: - _f[2,Do_nothing] + _r0[2,Do_nothing,Do_nothing]
+ R400: - _f[28,R1] + _r0[28,R1,Do_nothing] + _r0[28,R1,Recover] = 0
+ R401: - _f[28,R2] + _r0[28,R2,Do_nothing] + _r0[28,R2,Recover] = 0
+ R402: - _f[28,R3] + _r0[28,R3,Do_nothing] + _r0[28,R3,Recover] = 0
+ R403: - _f[2,Do_nothing] + _r0[2,Do_nothing,Do_nothing]
    + _r0[2,Do_nothing,Recover] = 0
- R378: - _f[2,R1] + _r0[2,R1,Do_nothing] + _r0[2,R1,Recover] = 0
- R379: - _f[2,R2] + _r0[2,R2,Do_nothing] + _r0[2,R2,Recover] = 0
- R380: - _f[2,R3] + _r0[2,R3,Do_nothing] + _r0[2,R3,Recover] = 0
- R381: - _f[81,Do_nothing] + _r0[81,Do_nothing,Do_nothing]
+ R404: - _f[2,R1] + _r0[2,R1,Do_nothing] + _r0[2,R1,Recover] = 0
+ R405: - _f[2,R2] + _r0[2,R2,Do_nothing] + _r0[2,R2,Recover] = 0
+ R406: - _f[2,R3] + _r0[2,R3,Do_nothing] + _r0[2,R3,Recover] = 0
+ R407: - _f[81,Do_nothing] + _r0[81,Do_nothing,Do_nothing]
    + _r0[81,Do_nothing,Recover] = 0
- R382: - _f[81,R1] + _r0[81,R1,Do_nothing] + _r0[81,R1,Recover] = 0
- R383: - _f[81,R2] + _r0[81,R2,Do_nothing] + _r0[81,R2,Recover] = 0
- R384: - _f[81,R3] + _r0[81,R3,Do_nothing] + _r0[81,R3,Recover] = 0
- R385: - _f[45,Do_nothing] + _r0[45,Do_nothing,Do_nothing]
+ R408: - _f[81,R1] + _r0[81,R1,Do_nothing] + _r0[81,R1,Recover] = 0
+ R409: - _f[81,R2] + _r0[81,R2,Do_nothing] + _r0[81,R2,Recover] = 0
+ R410: - _f[81,R3] + _r0[81,R3,Do_nothing] + _r0[81,R3,Recover] = 0
+ R411: - _f[45,Do_nothing] + _r0[45,Do_nothing,Do_nothing]
    + _r0[45,Do_nothing,Recover] = 0
- R386: - _f[45,R1] + _r0[45,R1,Do_nothing] + _r0[45,R1,Recover] = 0
- R387: - _f[45,R2] + _r0[45,R2,Do_nothing] + _r0[45,R2,Recover] = 0
- R388: - _f[45,R3] + _r0[45,R3,Do_nothing] + _r0[45,R3,Recover] = 0
- R389: - _f[88,Do_nothing] + _r0[88,Do_nothing,Do_nothing]
+ R412: - _f[45,R1] + _r0[45,R1,Do_nothing] + _r0[45,R1,Recover] = 0
+ R413: - _f[45,R2] + _r0[45,R2,Do_nothing] + _r0[45,R2,Recover] = 0
+ R414: - _f[45,R3] + _r0[45,R3,Do_nothing] + _r0[45,R3,Recover] = 0
+ R415: - _f[88,Do_nothing] + _r0[88,Do_nothing,Do_nothing]
    + _r0[88,Do_nothing,Recover] = 0
- R390: - _f[88,R1] + _r0[88,R1,Do_nothing] + _r0[88,R1,Recover] = 0
- R391: - _f[88,R2] + _r0[88,R2,Do_nothing] + _r0[88,R2,Recover] = 0
- R392: - _f[88,R3] + _r0[88,R3,Do_nothing] + _r0[88,R3,Recover] = 0
- R393: - _f[89,Do_nothing] + _r0[89,Do_nothing,Do_nothing]
+ R416: - _f[88,R1] + _r0[88,R1,Do_nothing] + _r0[88,R1,Recover] = 0
+ R417: - _f[88,R2] + _r0[88,R2,Do_nothing] + _r0[88,R2,Recover] = 0
+ R418: - _f[88,R3] + _r0[88,R3,Do_nothing] + _r0[88,R3,Recover] = 0
+ R419: - _f[89,Do_nothing] + _r0[89,Do_nothing,Do_nothing]
    + _r0[89,Do_nothing,Recover] = 0
- R394: - _f[89,R1] + _r0[89,R1,Do_nothing] + _r0[89,R1,Recover] = 0
- R395: - _f[89,R2] + _r0[89,R2,Do_nothing] + _r0[89,R2,Recover] = 0
- R396: - _f[89,R3] + _r0[89,R3,Do_nothing] + _r0[89,R3,Recover] = 0
- R397: - _f[25,Do_nothing] + _r0[25,Do_nothing,Do_nothing]
+ R420: - _f[89,R1] + _r0[89,R1,Do_nothing] + _r0[89,R1,Recover] = 0
+ R421: - _f[89,R2] + _r0[89,R2,Do_nothing] + _r0[89,R2,Recover] = 0
+ R422: - _f[89,R3] + _r0[89,R3,Do_nothing] + _r0[89,R3,Recover] = 0
+ R423: - _f[25,Do_nothing] + _r0[25,Do_nothing,Do_nothing]
    + _r0[25,Do_nothing,Recover] = 0
- R398: - _f[25,R1] + _r0[25,R1,Do_nothing] + _r0[25,R1,Recover] = 0
- R399: - _f[25,R2] + _r0[25,R2,Do_nothing] + _r0[25,R2,Recover] = 0
- R400: - _f[25,R3] + _r0[25,R3,Do_nothing] + _r0[25,R3,Recover] = 0
- R401: - _f[91,Do_nothing] + _r0[91,Do_nothing,Do_nothing]
+ R424: - _f[25,R1] + _r0[25,R1,Do_nothing] + _r0[25,R1,Recover] = 0
+ R425: - _f[25,R2] + _r0[25,R2,Do_nothing] + _r0[25,R2,Recover] = 0
+ R426: - _f[25,R3] + _r0[25,R3,Do_nothing] + _r0[25,R3,Recover] = 0
+ R427: - _f[91,Do_nothing] + _r0[91,Do_nothing,Do_nothing]
    + _r0[91,Do_nothing,Recover] = 0
- R402: - _f[91,R1] + _r0[91,R1,Do_nothing] + _r0[91,R1,Recover] = 0
- R403: - _f[91,R2] + _r0[91,R2,Do_nothing] + _r0[91,R2,Recover] = 0
- R404: - _f[91,R3] + _r0[91,R3,Do_nothing] + _r0[91,R3,Recover] = 0
- R405: - _f[43,Do_nothing] + _r0[43,Do_nothing,Do_nothing]
+ R428: - _f[91,R1] + _r0[91,R1,Do_nothing] + _r0[91,R1,Recover] = 0
+ R429: - _f[91,R2] + _r0[91,R2,Do_nothing] + _r0[91,R2,Recover] = 0
+ R430: - _f[91,R3] + _r0[91,R3,Do_nothing] + _r0[91,R3,Recover] = 0
+ R431: - _f[43,Do_nothing] + _r0[43,Do_nothing,Do_nothing]
    + _r0[43,Do_nothing,Recover] = 0
- R406: - _f[43,R1] + _r0[43,R1,Do_nothing] + _r0[43,R1,Recover] = 0
- R407: - _f[43,R2] + _r0[43,R2,Do_nothing] + _r0[43,R2,Recover] = 0
- R408: - _f[43,R3] + _r0[43,R3,Do_nothing] + _r0[43,R3,Recover] = 0
- R409: - _f[76,Do_nothing] + _r0[76,Do_nothing,Do_nothing]
+ R432: - _f[43,R1] + _r0[43,R1,Do_nothing] + _r0[43,R1,Recover] = 0
+ R433: - _f[43,R2] + _r0[43,R2,Do_nothing] + _r0[43,R2,Recover] = 0
+ R434: - _f[43,R3] + _r0[43,R3,Do_nothing] + _r0[43,R3,Recover] = 0
+ R435: - _f[76,Do_nothing] + _r0[76,Do_nothing,Do_nothing]
    + _r0[76,Do_nothing,Recover] = 0
- R410: - _f[76,R1] + _r0[76,R1,Do_nothing] + _r0[76,R1,Recover] = 0
- R411: - _f[76,R2] + _r0[76,R2,Do_nothing] + _r0[76,R2,Recover] = 0
- R412: - _f[76,R3] + _r0[76,R3,Do_nothing] + _r0[76,R3,Recover] = 0
- R413: - _f[42,Do_nothing] + _r0[42,Do_nothing,Do_nothing]
+ R436: - _f[76,R1] + _r0[76,R1,Do_nothing] + _r0[76,R1,Recover] = 0
+ R437: - _f[76,R2] + _r0[76,R2,Do_nothing] + _r0[76,R2,Recover] = 0
+ R438: - _f[76,R3] + _r0[76,R3,Do_nothing] + _r0[76,R3,Recover] = 0
+ R439: - _f[42,Do_nothing] + _r0[42,Do_nothing,Do_nothing]
    + _r0[42,Do_nothing,Recover] = 0
- R414: - _f[42,R1] + _r0[42,R1,Do_nothing] + _r0[42,R1,Recover] = 0
- R415: - _f[42,R2] + _r0[42,R2,Do_nothing] + _r0[42,R2,Recover] = 0
- R416: - _f[42,R3] + _r0[42,R3,Do_nothing] + _r0[42,R3,Recover] = 0
- R417: - _f[7,Do_nothing] + _r0[7,Do_nothing,Do_nothing]
+ R440: - _f[42,R1] + _r0[42,R1,Do_nothing] + _r0[42,R1,Recover] = 0
+ R441: - _f[42,R2] + _r0[42,R2,Do_nothing] + _r0[42,R2,Recover] = 0
+ R442: - _f[42,R3] + _r0[42,R3,Do_nothing] + _r0[42,R3,Recover] = 0
+ R443: - _f[7,Do_nothing] + _r0[7,Do_nothing,Do_nothing]
    + _r0[7,Do_nothing,Recover] = 0
- R418: - _f[7,R1] + _r0[7,R1,Do_nothing] + _r0[7,R1,Recover] = 0
- R419: - _f[7,R2] + _r0[7,R2,Do_nothing] + _r0[7,R2,Recover] = 0
- R420: - _f[7,R3] + _r0[7,R3,Do_nothing] + _r0[7,R3,Recover] = 0
- R421: - _f[17,Do_nothing] + _r0[17,Do_nothing,Do_nothing]
+ R444: - _f[7,R1] + _r0[7,R1,Do_nothing] + _r0[7,R1,Recover] = 0
+ R445: - _f[7,R2] + _r0[7,R2,Do_nothing] + _r0[7,R2,Recover] = 0
+ R446: - _f[7,R3] + _r0[7,R3,Do_nothing] + _r0[7,R3,Recover] = 0
+ R447: - _f[17,Do_nothing] + _r0[17,Do_nothing,Do_nothing]
    + _r0[17,Do_nothing,Recover] = 0
- R422: - _f[17,R1] + _r0[17,R1,Do_nothing] + _r0[17,R1,Recover] = 0
- R423: - _f[17,R2] + _r0[17,R2,Do_nothing] + _r0[17,R2,Recover] = 0
- R424: - _f[17,R3] + _r0[17,R3,Do_nothing] + _r0[17,R3,Recover] = 0
- R425: - _f[37,Do_nothing] + _r0[37,Do_nothing,Do_nothing]
+ R448: - _f[17,R1] + _r0[17,R1,Do_nothing] + _r0[17,R1,Recover] = 0
+ R449: - _f[17,R2] + _r0[17,R2,Do_nothing] + _r0[17,R2,Recover] = 0
+ R450: - _f[17,R3] + _r0[17,R3,Do_nothing] + _r0[17,R3,Recover] = 0
+ R451: - _f[37,Do_nothing] + _r0[37,Do_nothing,Do_nothing]
    + _r0[37,Do_nothing,Recover] = 0
- R426: - _f[37,R1] + _r0[37,R1,Do_nothing] + _r0[37,R1,Recover] = 0
- R427: - _f[37,R2] + _r0[37,R2,Do_nothing] + _r0[37,R2,Recover] = 0
- R428: - _f[37,R3] + _r0[37,R3,Do_nothing] + _r0[37,R3,Recover] = 0
- R429: - _f[26,Do_nothing] + _r0[26,Do_nothing,Do_nothing]
+ R452: - _f[37,R1] + _r0[37,R1,Do_nothing] + _r0[37,R1,Recover] = 0
+ R453: - _f[37,R2] + _r0[37,R2,Do_nothing] + _r0[37,R2,Recover] = 0
+ R454: - _f[37,R3] + _r0[37,R3,Do_nothing] + _r0[37,R3,Recover] = 0
+ R455: - _f[26,Do_nothing] + _r0[26,Do_nothing,Do_nothing]
    + _r0[26,Do_nothing,Recover] = 0
- R430: - _f[26,R1] + _r0[26,R1,Do_nothing] + _r0[26,R1,Recover] = 0
- R431: - _f[26,R2] + _r0[26,R2,Do_nothing] + _r0[26,R2,Recover] = 0
- R432: - _f[26,R3] + _r0[26,R3,Do_nothing] + _r0[26,R3,Recover] = 0
- R433: - _f[9,Do_nothing] + _r0[9,Do_nothing,Do_nothing]
+ R456: - _f[26,R1] + _r0[26,R1,Do_nothing] + _r0[26,R1,Recover] = 0
+ R457: - _f[26,R2] + _r0[26,R2,Do_nothing] + _r0[26,R2,Recover] = 0
+ R458: - _f[26,R3] + _r0[26,R3,Do_nothing] + _r0[26,R3,Recover] = 0
+ R459: - _f[9,Do_nothing] + _r0[9,Do_nothing,Do_nothing]
    + _r0[9,Do_nothing,Recover] = 0
- R434: - _f[9,R1] + _r0[9,R1,Do_nothing] + _r0[9,R1,Recover] = 0
- R435: - _f[9,R2] + _r0[9,R2,Do_nothing] + _r0[9,R2,Recover] = 0
- R436: - _f[9,R3] + _r0[9,R3,Do_nothing] + _r0[9,R3,Recover] = 0
- R437: - _f[60,Do_nothing] + _r0[60,Do_nothing,Do_nothing]
+ R460: - _f[9,R1] + _r0[9,R1,Do_nothing] + _r0[9,R1,Recover] = 0
+ R461: - _f[9,R2] + _r0[9,R2,Do_nothing] + _r0[9,R2,Recover] = 0
+ R462: - _f[9,R3] + _r0[9,R3,Do_nothing] + _r0[9,R3,Recover] = 0
+ R463: - _f[60,Do_nothing] + _r0[60,Do_nothing,Do_nothing]
    + _r0[60,Do_nothing,Recover] = 0
- R438: - _f[60,R1] + _r0[60,R1,Do_nothing] + _r0[60,R1,Recover] = 0
- R439: - _f[60,R2] + _r0[60,R2,Do_nothing] + _r0[60,R2,Recover] = 0
- R440: - _f[60,R3] + _r0[60,R3,Do_nothing] + _r0[60,R3,Recover] = 0
- R441: - _f[16,Do_nothing] + _r0[16,Do_nothing,Do_nothing]
+ R464: - _f[60,R1] + _r0[60,R1,Do_nothing] + _r0[60,R1,Recover] = 0
+ R465: - _f[60,R2] + _r0[60,R2,Do_nothing] + _r0[60,R2,Recover] = 0
+ R466: - _f[60,R3] + _r0[60,R3,Do_nothing] + _r0[60,R3,Recover] = 0
+ R467: - _f[16,Do_nothing] + _r0[16,Do_nothing,Do_nothing]
    + _r0[16,Do_nothing,Recover] = 0
- R442: - _f[16,R1] + _r0[16,R1,Do_nothing] + _r0[16,R1,Recover] = 0
- R443: - _f[16,R2] + _r0[16,R2,Do_nothing] + _r0[16,R2,Recover] = 0
- R444: - _f[16,R3] + _r0[16,R3,Do_nothing] + _r0[16,R3,Recover] = 0
- R445: - _f[83,Do_nothing] + _r0[83,Do_nothing,Do_nothing]
+ R468: - _f[16,R1] + _r0[16,R1,Do_nothing] + _r0[16,R1,Recover] = 0
+ R469: - _f[16,R2] + _r0[16,R2,Do_nothing] + _r0[16,R2,Recover] = 0
+ R470: - _f[16,R3] + _r0[16,R3,Do_nothing] + _r0[16,R3,Recover] = 0
+ R471: - _f[83,Do_nothing] + _r0[83,Do_nothing,Do_nothing]
    + _r0[83,Do_nothing,Recover] = 0
- R446: - _f[83,R1] + _r0[83,R1,Do_nothing] + _r0[83,R1,Recover] = 0
- R447: - _f[83,R2] + _r0[83,R2,Do_nothing] + _r0[83,R2,Recover] = 0
- R448: - _f[83,R3] + _r0[83,R3,Do_nothing] + _r0[83,R3,Recover] = 0
- R449: - _f[13,Do_nothing] + _r0[13,Do_nothing,Do_nothing]
+ R472: - _f[83,R1] + _r0[83,R1,Do_nothing] + _r0[83,R1,Recover] = 0
+ R473: - _f[83,R2] + _r0[83,R2,Do_nothing] + _r0[83,R2,Recover] = 0
+ R474: - _f[83,R3] + _r0[83,R3,Do_nothing] + _r0[83,R3,Recover] = 0
+ R475: - _f[13,Do_nothing] + _r0[13,Do_nothing,Do_nothing]
    + _r0[13,Do_nothing,Recover] = 0
- R450: - _f[13,R1] + _r0[13,R1,Do_nothing] + _r0[13,R1,Recover] = 0
- R451: - _f[13,R2] + _r0[13,R2,Do_nothing] + _r0[13,R2,Recover] = 0
- R452: - _f[13,R3] + _r0[13,R3,Do_nothing] + _r0[13,R3,Recover] = 0
- R453: - _f[67,Do_nothing] + _r0[67,Do_nothing,Do_nothing]
+ R476: - _f[13,R1] + _r0[13,R1,Do_nothing] + _r0[13,R1,Recover] = 0
+ R477: - _f[13,R2] + _r0[13,R2,Do_nothing] + _r0[13,R2,Recover] = 0
+ R478: - _f[13,R3] + _r0[13,R3,Do_nothing] + _r0[13,R3,Recover] = 0
+ R479: - _f[67,Do_nothing] + _r0[67,Do_nothing,Do_nothing]
    + _r0[67,Do_nothing,Recover] = 0
- R454: - _f[67,R1] + _r0[67,R1,Do_nothing] + _r0[67,R1,Recover] = 0
- R455: - _f[67,R2] + _r0[67,R2,Do_nothing] + _r0[67,R2,Recover] = 0
- R456: - _f[67,R3] + _r0[67,R3,Do_nothing] + _r0[67,R3,Recover] = 0
- R457: - _f[59,Do_nothing] + _r0[59,Do_nothing,Do_nothing]
+ R480: - _f[67,R1] + _r0[67,R1,Do_nothing] + _r0[67,R1,Recover] = 0
+ R481: - _f[67,R2] + _r0[67,R2,Do_nothing] + _r0[67,R2,Recover] = 0
+ R482: - _f[67,R3] + _r0[67,R3,Do_nothing] + _r0[67,R3,Recover] = 0
+ R483: - _f[59,Do_nothing] + _r0[59,Do_nothing,Do_nothing]
    + _r0[59,Do_nothing,Recover] = 0
- R458: - _f[59,R1] + _r0[59,R1,Do_nothing] + _r0[59,R1,Recover] = 0
- R459: - _f[59,R2] + _r0[59,R2,Do_nothing] + _r0[59,R2,Recover] = 0
- R460: - _f[59,R3] + _r0[59,R3,Do_nothing] + _r0[59,R3,Recover] = 0
- R461: - _f[58,Do_nothing] + _r0[58,Do_nothing,Do_nothing]
+ R484: - _f[59,R1] + _r0[59,R1,Do_nothing] + _r0[59,R1,Recover] = 0
+ R485: - _f[59,R2] + _r0[59,R2,Do_nothing] + _r0[59,R2,Recover] = 0
+ R486: - _f[59,R3] + _r0[59,R3,Do_nothing] + _r0[59,R3,Recover] = 0
+ R487: - _f[58,Do_nothing] + _r0[58,Do_nothing,Do_nothing]
    + _r0[58,Do_nothing,Recover] = 0
- R462: - _f[58,R1] + _r0[58,R1,Do_nothing] + _r0[58,R1,Recover] = 0
- R463: - _f[58,R2] + _r0[58,R2,Do_nothing] + _r0[58,R2,Recover] = 0
- R464: - _f[58,R3] + _r0[58,R3,Do_nothing] + _r0[58,R3,Recover] = 0
- R465: - _f[4,Do_nothing] + _r0[4,Do_nothing,Do_nothing]
+ R488: - _f[58,R1] + _r0[58,R1,Do_nothing] + _r0[58,R1,Recover] = 0
+ R489: - _f[58,R2] + _r0[58,R2,Do_nothing] + _r0[58,R2,Recover] = 0
+ R490: - _f[58,R3] + _r0[58,R3,Do_nothing] + _r0[58,R3,Recover] = 0
+ R491: - _f[4,Do_nothing] + _r0[4,Do_nothing,Do_nothing]
    + _r0[4,Do_nothing,Recover] = 0
- R466: - _f[4,R1] + _r0[4,R1,Do_nothing] + _r0[4,R1,Recover] = 0
- R467: - _f[4,R2] + _r0[4,R2,Do_nothing] + _r0[4,R2,Recover] = 0
- R468: - _f[4,R3] + _r0[4,R3,Do_nothing] + _r0[4,R3,Recover] = 0
- R469: - _f[68,Do_nothing] + _r0[68,Do_nothing,Do_nothing]
+ R492: - _f[4,R1] + _r0[4,R1,Do_nothing] + _r0[4,R1,Recover] = 0
+ R493: - _f[4,R2] + _r0[4,R2,Do_nothing] + _r0[4,R2,Recover] = 0
+ R494: - _f[4,R3] + _r0[4,R3,Do_nothing] + _r0[4,R3,Recover] = 0
+ R495: - _f[68,Do_nothing] + _r0[68,Do_nothing,Do_nothing]
    + _r0[68,Do_nothing,Recover] = 0
- R470: - _f[68,R1] + _r0[68,R1,Do_nothing] + _r0[68,R1,Recover] = 0
- R471: - _f[68,R2] + _r0[68,R2,Do_nothing] + _r0[68,R2,Recover] = 0
- R472: - _f[68,R3] + _r0[68,R3,Do_nothing] + _r0[68,R3,Recover] = 0
- R473: - _f[87,Do_nothing] + _r0[87,Do_nothing,Do_nothing]
+ R496: - _f[68,R1] + _r0[68,R1,Do_nothing] + _r0[68,R1,Recover] = 0
+ R497: - _f[68,R2] + _r0[68,R2,Do_nothing] + _r0[68,R2,Recover] = 0
+ R498: - _f[68,R3] + _r0[68,R3,Do_nothing] + _r0[68,R3,Recover] = 0
+ R499: - _f[87,Do_nothing] + _r0[87,Do_nothing,Do_nothing]
    + _r0[87,Do_nothing,Recover] = 0
- R474: - _f[87,R1] + _r0[87,R1,Do_nothing] + _r0[87,R1,Recover] = 0
- R475: - _f[87,R2] + _r0[87,R2,Do_nothing] + _r0[87,R2,Recover] = 0
- R476: - _f[87,R3] + _r0[87,R3,Do_nothing] + _r0[87,R3,Recover] = 0
- R477: - _f[40,Do_nothing] + _r0[40,Do_nothing,Do_nothing]
+ R500: - _f[87,R1] + _r0[87,R1,Do_nothing] + _r0[87,R1,Recover] = 0
+ R501: - _f[87,R2] + _r0[87,R2,Do_nothing] + _r0[87,R2,Recover] = 0
+ R502: - _f[87,R3] + _r0[87,R3,Do_nothing] + _r0[87,R3,Recover] = 0
+ R503: - _f[40,Do_nothing] + _r0[40,Do_nothing,Do_nothing]
    + _r0[40,Do_nothing,Recover] = 0
- R478: - _f[40,R1] + _r0[40,R1,Do_nothing] + _r0[40,R1,Recover] = 0
- R479: - _f[40,R2] + _r0[40,R2,Do_nothing] + _r0[40,R2,Recover] = 0
- R480: - _f[40,R3] + _r0[40,R3,Do_nothing] + _r0[40,R3,Recover] = 0
- R481: - _f[30,Do_nothing] + _r0[30,Do_nothing,Do_nothing]
+ R504: - _f[40,R1] + _r0[40,R1,Do_nothing] + _r0[40,R1,Recover] = 0
+ R505: - _f[40,R2] + _r0[40,R2,Do_nothing] + _r0[40,R2,Recover] = 0
+ R506: - _f[40,R3] + _r0[40,R3,Do_nothing] + _r0[40,R3,Recover] = 0
+ R507: - _f[30,Do_nothing] + _r0[30,Do_nothing,Do_nothing]
    + _r0[30,Do_nothing,Recover] = 0
- R482: - _f[30,R1] + _r0[30,R1,Do_nothing] + _r0[30,R1,Recover] = 0
- R483: - _f[30,R2] + _r0[30,R2,Do_nothing] + _r0[30,R2,Recover] = 0
- R484: - _f[30,R3] + _r0[30,R3,Do_nothing] + _r0[30,R3,Recover] = 0
- R485: - _f[27,Do_nothing] + _r0[27,Do_nothing,Do_nothing]
+ R508: - _f[30,R1] + _r0[30,R1,Do_nothing] + _r0[30,R1,Recover] = 0
+ R509: - _f[30,R2] + _r0[30,R2,Do_nothing] + _r0[30,R2,Recover] = 0
+ R510: - _f[30,R3] + _r0[30,R3,Do_nothing] + _r0[30,R3,Recover] = 0
+ R511: - _f[27,Do_nothing] + _r0[27,Do_nothing,Do_nothing]
    + _r0[27,Do_nothing,Recover] = 0
- R486: - _f[27,R1] + _r0[27,R1,Do_nothing] + _r0[27,R1,Recover] = 0
- R487: - _f[27,R2] + _r0[27,R2,Do_nothing] + _r0[27,R2,Recover] = 0
- R488: - _f[27,R3] + _r0[27,R3,Do_nothing] + _r0[27,R3,Recover] = 0
- R489: - _f[73,Do_nothing] + _r0[73,Do_nothing,Do_nothing]
+ R512: - _f[27,R1] + _r0[27,R1,Do_nothing] + _r0[27,R1,Recover] = 0
+ R513: - _f[27,R2] + _r0[27,R2,Do_nothing] + _r0[27,R2,Recover] = 0
+ R514: - _f[27,R3] + _r0[27,R3,Do_nothing] + _r0[27,R3,Recover] = 0
+ R515: - _f[73,Do_nothing] + _r0[73,Do_nothing,Do_nothing]
    + _r0[73,Do_nothing,Recover] = 0
- R490: - _f[73,R1] + _r0[73,R1,Do_nothing] + _r0[73,R1,Recover] = 0
- R491: - _f[73,R2] + _r0[73,R2,Do_nothing] + _r0[73,R2,Recover] = 0
- R492: - _f[73,R3] + _r0[73,R3,Do_nothing] + _r0[73,R3,Recover] = 0
- R493: - _f[84,Do_nothing] + _r0[84,Do_nothing,Do_nothing]
+ R516: - _f[73,R1] + _r0[73,R1,Do_nothing] + _r0[73,R1,Recover] = 0
+ R517: - _f[73,R2] + _r0[73,R2,Do_nothing] + _r0[73,R2,Recover] = 0
+ R518: - _f[73,R3] + _r0[73,R3,Do_nothing] + _r0[73,R3,Recover] = 0
+ R519: - _f[84,Do_nothing] + _r0[84,Do_nothing,Do_nothing]
    + _r0[84,Do_nothing,Recover] = 0
- R494: - _f[84,R1] + _r0[84,R1,Do_nothing] + _r0[84,R1,Recover] = 0
- R495: - _f[84,R2] + _r0[84,R2,Do_nothing] + _r0[84,R2,Recover] = 0
- R496: - _f[84,R3] + _r0[84,R3,Do_nothing] + _r0[84,R3,Recover] = 0
- R497: - _f[35,Do_nothing] + _r0[35,Do_nothing,Do_nothing]
+ R520: - _f[84,R1] + _r0[84,R1,Do_nothing] + _r0[84,R1,Recover] = 0
+ R521: - _f[84,R2] + _r0[84,R2,Do_nothing] + _r0[84,R2,Recover] = 0
+ R522: - _f[84,R3] + _r0[84,R3,Do_nothing] + _r0[84,R3,Recover] = 0
+ R523: - _f[35,Do_nothing] + _r0[35,Do_nothing,Do_nothing]
    + _r0[35,Do_nothing,Recover] = 0
- R498: - _f[35,R1] + _r0[35,R1,Do_nothing] + _r0[35,R1,Recover] = 0
- R499: - _f[35,R2] + _r0[35,R2,Do_nothing] + _r0[35,R2,Recover] = 0
- R500: - _f[35,R3] + _r0[35,R3,Do_nothing] + _r0[35,R3,Recover] = 0
- R501: - _f[46,Do_nothing] + _r0[46,Do_nothing,Do_nothing]
+ R524: - _f[35,R1] + _r0[35,R1,Do_nothing] + _r0[35,R1,Recover] = 0
+ R525: - _f[35,R2] + _r0[35,R2,Do_nothing] + _r0[35,R2,Recover] = 0
+ R526: - _f[35,R3] + _r0[35,R3,Do_nothing] + _r0[35,R3,Recover] = 0
+ R527: - _f[46,Do_nothing] + _r0[46,Do_nothing,Do_nothing]
    + _r0[46,Do_nothing,Recover] = 0
- R502: - _f[46,R1] + _r0[46,R1,Do_nothing] + _r0[46,R1,Recover] = 0
- R503: - _f[46,R2] + _r0[46,R2,Do_nothing] + _r0[46,R2,Recover] = 0
- R504: - _f[46,R3] + _r0[46,R3,Do_nothing] + _r0[46,R3,Recover] = 0
- R505: - _f[39,Do_nothing] + _r0[39,Do_nothing,Do_nothing]
+ R528: - _f[46,R1] + _r0[46,R1,Do_nothing] + _r0[46,R1,Recover] = 0
+ R529: - _f[46,R2] + _r0[46,R2,Do_nothing] + _r0[46,R2,Recover] = 0
+ R530: - _f[46,R3] + _r0[46,R3,Do_nothing] + _r0[46,R3,Recover] = 0
+ R531: - _f[39,Do_nothing] + _r0[39,Do_nothing,Do_nothing]
    + _r0[39,Do_nothing,Recover] = 0
- R506: - _f[39,R1] + _r0[39,R1,Do_nothing] + _r0[39,R1,Recover] = 0
- R507: - _f[39,R2] + _r0[39,R2,Do_nothing] + _r0[39,R2,Recover] = 0
- R508: - _f[39,R3] + _r0[39,R3,Do_nothing] + _r0[39,R3,Recover] = 0
- R509: - _f[51,Do_nothing] + _r0[51,Do_nothing,Do_nothing]
+ R532: - _f[39,R1] + _r0[39,R1,Do_nothing] + _r0[39,R1,Recover] = 0
+ R533: - _f[39,R2] + _r0[39,R2,Do_nothing] + _r0[39,R2,Recover] = 0
+ R534: - _f[39,R3] + _r0[39,R3,Do_nothing] + _r0[39,R3,Recover] = 0
+ R535: - _f[51,Do_nothing] + _r0[51,Do_nothing,Do_nothing]
    + _r0[51,Do_nothing,Recover] = 0
- R510: - _f[51,R1] + _r0[51,R1,Do_nothing] + _r0[51,R1,Recover] = 0
- R511: - _f[51,R2] + _r0[51,R2,Do_nothing] + _r0[51,R2,Recover] = 0
- R512: - _f[51,R3] + _r0[51,R3,Do_nothing] + _r0[51,R3,Recover] = 0
- R513: - _f[52,Do_nothing] + _r0[52,Do_nothing,Do_nothing]
+ R536: - _f[51,R1] + _r0[51,R1,Do_nothing] + _r0[51,R1,Recover] = 0
+ R537: - _f[51,R2] + _r0[51,R2,Do_nothing] + _r0[51,R2,Recover] = 0
+ R538: - _f[51,R3] + _r0[51,R3,Do_nothing] + _r0[51,R3,Recover] = 0
+ R539: - _f[52,Do_nothing] + _r0[52,Do_nothing,Do_nothing]
    + _r0[52,Do_nothing,Recover] = 0
- R514: - _f[52,R1] + _r0[52,R1,Do_nothing] + _r0[52,R1,Recover] = 0
- R515: - _f[52,R2] + _r0[52,R2,Do_nothing] + _r0[52,R2,Recover] = 0
- R516: - _f[52,R3] + _r0[52,R3,Do_nothing] + _r0[52,R3,Recover] = 0
- R517: - _f[6,Do_nothing] + _r0[6,Do_nothing,Do_nothing]
+ R540: - _f[52,R1] + _r0[52,R1,Do_nothing] + _r0[52,R1,Recover] = 0
+ R541: - _f[52,R2] + _r0[52,R2,Do_nothing] + _r0[52,R2,Recover] = 0
+ R542: - _f[52,R3] + _r0[52,R3,Do_nothing] + _r0[52,R3,Recover] = 0
+ R543: - _f[6,Do_nothing] + _r0[6,Do_nothing,Do_nothing]
    + _r0[6,Do_nothing,Recover] = 0
- R518: - _f[6,R1] + _r0[6,R1,Do_nothing] + _r0[6,R1,Recover] = 0
- R519: - _f[6,R2] + _r0[6,R2,Do_nothing] + _r0[6,R2,Recover] = 0
- R520: - _f[6,R3] + _r0[6,R3,Do_nothing] + _r0[6,R3,Recover] = 0
- R521: - _f[96,Do_nothing] + _r0[96,Do_nothing,Do_nothing]
+ R544: - _f[6,R1] + _r0[6,R1,Do_nothing] + _r0[6,R1,Recover] = 0
+ R545: - _f[6,R2] + _r0[6,R2,Do_nothing] + _r0[6,R2,Recover] = 0
+ R546: - _f[6,R3] + _r0[6,R3,Do_nothing] + _r0[6,R3,Recover] = 0
+ R547: - _f[96,Do_nothing] + _r0[96,Do_nothing,Do_nothing]
    + _r0[96,Do_nothing,Recover] = 0
- R522: - _f[96,R1] + _r0[96,R1,Do_nothing] + _r0[96,R1,Recover] = 0
- R523: - _f[96,R2] + _r0[96,R2,Do_nothing] + _r0[96,R2,Recover] = 0
- R524: - _f[96,R3] + _r0[96,R3,Do_nothing] + _r0[96,R3,Recover] = 0
- R525: - _f[74,Do_nothing] + _r0[74,Do_nothing,Do_nothing]
+ R548: - _f[96,R1] + _r0[96,R1,Do_nothing] + _r0[96,R1,Recover] = 0
+ R549: - _f[96,R2] + _r0[96,R2,Do_nothing] + _r0[96,R2,Recover] = 0
+ R550: - _f[96,R3] + _r0[96,R3,Do_nothing] + _r0[96,R3,Recover] = 0
+ R551: - _f[74,Do_nothing] + _r0[74,Do_nothing,Do_nothing]
    + _r0[74,Do_nothing,Recover] = 0
- R526: - _f[74,R1] + _r0[74,R1,Do_nothing] + _r0[74,R1,Recover] = 0
- R527: - _f[74,R2] + _r0[74,R2,Do_nothing] + _r0[74,R2,Recover] = 0
- R528: - _f[74,R3] + _r0[74,R3,Do_nothing] + _r0[74,R3,Recover] = 0
- R529: - _f[86,Do_nothing] + _r0[86,Do_nothing,Do_nothing]
+ R552: - _f[74,R1] + _r0[74,R1,Do_nothing] + _r0[74,R1,Recover] = 0
+ R553: - _f[74,R2] + _r0[74,R2,Do_nothing] + _r0[74,R2,Recover] = 0
+ R554: - _f[74,R3] + _r0[74,R3,Do_nothing] + _r0[74,R3,Recover] = 0
+ R555: - _f[86,Do_nothing] + _r0[86,Do_nothing,Do_nothing]
    + _r0[86,Do_nothing,Recover] = 0
- R530: - _f[86,R1] + _r0[86,R1,Do_nothing] + _r0[86,R1,Recover] = 0
- R531: - _f[86,R2] + _r0[86,R2,Do_nothing] + _r0[86,R2,Recover] = 0
- R532: - _f[86,R3] + _r0[86,R3,Do_nothing] + _r0[86,R3,Recover] = 0
- R533: - _f[29,Do_nothing] + _r0[29,Do_nothing,Do_nothing]
+ R556: - _f[86,R1] + _r0[86,R1,Do_nothing] + _r0[86,R1,Recover] = 0
+ R557: - _f[86,R2] + _r0[86,R2,Do_nothing] + _r0[86,R2,Recover] = 0
+ R558: - _f[86,R3] + _r0[86,R3,Do_nothing] + _r0[86,R3,Recover] = 0
+ R559: - _f[29,Do_nothing] + _r0[29,Do_nothing,Do_nothing]
    + _r0[29,Do_nothing,Recover] = 0
- R534: - _f[29,R1] + _r0[29,R1,Do_nothing] + _r0[29,R1,Recover] = 0
- R535: - _f[29,R2] + _r0[29,R2,Do_nothing] + _r0[29,R2,Recover] = 0
- R536: - _f[29,R3] + _r0[29,R3,Do_nothing] + _r0[29,R3,Recover] = 0
- R537: - _f[18,Do_nothing] + _r0[18,Do_nothing,Do_nothing]
+ R560: - _f[29,R1] + _r0[29,R1,Do_nothing] + _r0[29,R1,Recover] = 0
+ R561: - _f[29,R2] + _r0[29,R2,Do_nothing] + _r0[29,R2,Recover] = 0
+ R562: - _f[29,R3] + _r0[29,R3,Do_nothing] + _r0[29,R3,Recover] = 0
+ R563: - _f[18,Do_nothing] + _r0[18,Do_nothing,Do_nothing]
    + _r0[18,Do_nothing,Recover] = 0
- R538: - _f[18,R1] + _r0[18,R1,Do_nothing] + _r0[18,R1,Recover] = 0
- R539: - _f[18,R2] + _r0[18,R2,Do_nothing] + _r0[18,R2,Recover] = 0
- R540: - _f[18,R3] + _r0[18,R3,Do_nothing] + _r0[18,R3,Recover] = 0
- R541: - _f[24,Do_nothing] + _r0[24,Do_nothing,Do_nothing]
+ R564: - _f[18,R1] + _r0[18,R1,Do_nothing] + _r0[18,R1,Recover] = 0
+ R565: - _f[18,R2] + _r0[18,R2,Do_nothing] + _r0[18,R2,Recover] = 0
+ R566: - _f[18,R3] + _r0[18,R3,Do_nothing] + _r0[18,R3,Recover] = 0
+ R567: - _f[24,Do_nothing] + _r0[24,Do_nothing,Do_nothing]
    + _r0[24,Do_nothing,Recover] = 0
- R542: - _f[24,R1] + _r0[24,R1,Do_nothing] + _r0[24,R1,Recover] = 0
- R543: - _f[24,R2] + _r0[24,R2,Do_nothing] + _r0[24,R2,Recover] = 0
- R544: - _f[24,R3] + _r0[24,R3,Do_nothing] + _r0[24,R3,Recover] = 0
- R545: - _f[94,Do_nothing] + _r0[94,Do_nothing,Do_nothing]
+ R568: - _f[24,R1] + _r0[24,R1,Do_nothing] + _r0[24,R1,Recover] = 0
+ R569: - _f[24,R2] + _r0[24,R2,Do_nothing] + _r0[24,R2,Recover] = 0
+ R570: - _f[24,R3] + _r0[24,R3,Do_nothing] + _r0[24,R3,Recover] = 0
+ R571: - _f[94,Do_nothing] + _r0[94,Do_nothing,Do_nothing]
    + _r0[94,Do_nothing,Recover] = 0
- R546: - _f[94,R1] + _r0[94,R1,Do_nothing] + _r0[94,R1,Recover] = 0
- R547: - _f[94,R2] + _r0[94,R2,Do_nothing] + _r0[94,R2,Recover] = 0
- R548: - _f[94,R3] + _r0[94,R3,Do_nothing] + _r0[94,R3,Recover] = 0
- R549: - _f[33,Do_nothing] + _r0[33,Do_nothing,Do_nothing]
+ R572: - _f[94,R1] + _r0[94,R1,Do_nothing] + _r0[94,R1,Recover] = 0
+ R573: - _f[94,R2] + _r0[94,R2,Do_nothing] + _r0[94,R2,Recover] = 0
+ R574: - _f[94,R3] + _r0[94,R3,Do_nothing] + _r0[94,R3,Recover] = 0
+ R575: - _f[33,Do_nothing] + _r0[33,Do_nothing,Do_nothing]
    + _r0[33,Do_nothing,Recover] = 0
- R550: - _f[33,R1] + _r0[33,R1,Do_nothing] + _r0[33,R1,Recover] = 0
- R551: - _f[33,R2] + _r0[33,R2,Do_nothing] + _r0[33,R2,Recover] = 0
- R552: - _f[33,R3] + _r0[33,R3,Do_nothing] + _r0[33,R3,Recover] = 0
- R553: - _f[12,Do_nothing] + _r0[12,Do_nothing,Do_nothing]
+ R576: - _f[33,R1] + _r0[33,R1,Do_nothing] + _r0[33,R1,Recover] = 0
+ R577: - _f[33,R2] + _r0[33,R2,Do_nothing] + _r0[33,R2,Recover] = 0
+ R578: - _f[33,R3] + _r0[33,R3,Do_nothing] + _r0[33,R3,Recover] = 0
+ R579: - _f[12,Do_nothing] + _r0[12,Do_nothing,Do_nothing]
    + _r0[12,Do_nothing,Recover] = 0
- R554: - _f[12,R1] + _r0[12,R1,Do_nothing] + _r0[12,R1,Recover] = 0
- R555: - _f[12,R2] + _r0[12,R2,Do_nothing] + _r0[12,R2,Recover] = 0
- R556: - _f[12,R3] + _r0[12,R3,Do_nothing] + _r0[12,R3,Recover] = 0
- R557: - _f[57,Do_nothing] + _r0[57,Do_nothing,Do_nothing]
+ R580: - _f[12,R1] + _r0[12,R1,Do_nothing] + _r0[12,R1,Recover] = 0
+ R581: - _f[12,R2] + _r0[12,R2,Do_nothing] + _r0[12,R2,Recover] = 0
+ R582: - _f[12,R3] + _r0[12,R3,Do_nothing] + _r0[12,R3,Recover] = 0
+ R583: - _f[57,Do_nothing] + _r0[57,Do_nothing,Do_nothing]
    + _r0[57,Do_nothing,Recover] = 0
- R558: - _f[57,R1] + _r0[57,R1,Do_nothing] + _r0[57,R1,Recover] = 0
- R559: - _f[57,R2] + _r0[57,R2,Do_nothing] + _r0[57,R2,Recover] = 0
- R560: - _f[57,R3] + _r0[57,R3,Do_nothing] + _r0[57,R3,Recover] = 0
- R561: - _f[97,Do_nothing] + _r0[97,Do_nothing,Do_nothing]
+ R584: - _f[57,R1] + _r0[57,R1,Do_nothing] + _r0[57,R1,Recover] = 0
+ R585: - _f[57,R2] + _r0[57,R2,Do_nothing] + _r0[57,R2,Recover] = 0
+ R586: - _f[57,R3] + _r0[57,R3,Do_nothing] + _r0[57,R3,Recover] = 0
+ R587: - _f[97,Do_nothing] + _r0[97,Do_nothing,Do_nothing]
    + _r0[97,Do_nothing,Recover] = 0
- R562: - _f[97,R1] + _r0[97,R1,Do_nothing] + _r0[97,R1,Recover] = 0
- R563: - _f[97,R2] + _r0[97,R2,Do_nothing] + _r0[97,R2,Recover] = 0
- R564: - _f[97,R3] + _r0[97,R3,Do_nothing] + _r0[97,R3,Recover] = 0
- R565: - _f[69,Do_nothing] + _r0[69,Do_nothing,Do_nothing]
+ R588: - _f[97,R1] + _r0[97,R1,Do_nothing] + _r0[97,R1,Recover] = 0
+ R589: - _f[97,R2] + _r0[97,R2,Do_nothing] + _r0[97,R2,Recover] = 0
+ R590: - _f[97,R3] + _r0[97,R3,Do_nothing] + _r0[97,R3,Recover] = 0
+ R591: - _f[69,Do_nothing] + _r0[69,Do_nothing,Do_nothing]
    + _r0[69,Do_nothing,Recover] = 0
- R566: - _f[69,R1] + _r0[69,R1,Do_nothing] + _r0[69,R1,Recover] = 0
- R567: - _f[69,R2] + _r0[69,R2,Do_nothing] + _r0[69,R2,Recover] = 0
- R568: - _f[69,R3] + _r0[69,R3,Do_nothing] + _r0[69,R3,Recover] = 0
- R569: - _f[3,Do_nothing] + _r0[3,Do_nothing,Do_nothing]
+ R592: - _f[69,R1] + _r0[69,R1,Do_nothing] + _r0[69,R1,Recover] = 0
+ R593: - _f[69,R2] + _r0[69,R2,Do_nothing] + _r0[69,R2,Recover] = 0
+ R594: - _f[69,R3] + _r0[69,R3,Do_nothing] + _r0[69,R3,Recover] = 0
+ R595: - _f[3,Do_nothing] + _r0[3,Do_nothing,Do_nothing]
    + _r0[3,Do_nothing,Recover] = 0
- R570: - _f[3,R1] + _r0[3,R1,Do_nothing] + _r0[3,R1,Recover] = 0
- R571: - _f[3,R2] + _r0[3,R2,Do_nothing] + _r0[3,R2,Recover] = 0
- R572: - _f[3,R3] + _r0[3,R3,Do_nothing] + _r0[3,R3,Recover] = 0
- R573: - _f[66,Do_nothing] + _r0[66,Do_nothing,Do_nothing]
+ R596: - _f[3,R1] + _r0[3,R1,Do_nothing] + _r0[3,R1,Recover] = 0
+ R597: - _f[3,R2] + _r0[3,R2,Do_nothing] + _r0[3,R2,Recover] = 0
+ R598: - _f[3,R3] + _r0[3,R3,Do_nothing] + _r0[3,R3,Recover] = 0
+ R599: - _f[66,Do_nothing] + _r0[66,Do_nothing,Do_nothing]
    + _r0[66,Do_nothing,Recover] = 0
- R574: - _f[66,R1] + _r0[66,R1,Do_nothing] + _r0[66,R1,Recover] = 0
- R575: - _f[66,R2] + _r0[66,R2,Do_nothing] + _r0[66,R2,Recover] = 0
- R576: - _f[66,R3] + _r0[66,R3,Do_nothing] + _r0[66,R3,Recover] = 0
- R577: _Theta - 803 _r1[32,Do_nothing,Do_nothing]
+ R600: - _f[66,R1] + _r0[66,R1,Do_nothing] + _r0[66,R1,Recover] = 0
+ R601: - _f[66,R2] + _r0[66,R2,Do_nothing] + _r0[66,R2,Recover] = 0
+ R602: - _f[66,R3] + _r0[66,R3,Do_nothing] + _r0[66,R3,Recover] = 0
+ R603: _Theta - 803 _r1[32,Do_nothing,Do_nothing]
    - 795 _r1[32,Do_nothing,Recover] - 803 _r1[32,R1,Do_nothing]
    - 795 _r1[32,R1,Recover] - 709 _r1[32,R2,Do_nothing]
    - 607 _r1[32,R2,Recover] - 659 _r1[32,R3,Do_nothing]
@@ -1247,7 +1273,7 @@ Subject To
    - 1170 _r1[46,R1,Recover] - 1043 _r1[46,R2,Do_nothing]
    - 894 _r1[46,R2,Recover] - 970 _r1[46,R3,Do_nothing]
    - 748 _r1[46,R3,Recover] >= 0
- R578: 184945 _f[32,R1] + 232438 _f[32,R2] + 417219 _f[32,R3]
+ R604: 184945 _f[32,R1] + 232438 _f[32,R2] + 417219 _f[32,R3]
    + 77012 _f[70,R1] + 96789 _f[70,R2] + 173733 _f[70,R3] + 42150 _f[5,R1]
    + 52975 _f[5,R2] + 95089 _f[5,R3] + 83838 _f[85,R1] + 105366 _f[85,R2]
    + 189129 _f[85,R3] + 19605 _f[71,R1] + 24639 _f[71,R2] + 44226 _f[71,R3]
@@ -1631,507 +1657,507 @@ Subject To
    + 1.8384607e+07 _r1[3,R1,Recover] + 1.3190225e+07 _r1[3,R2,Recover]
    + 8.030579e+06 _r1[3,R3,Recover] + 396329 _r1[66,Do_nothing,Recover]
    + 396210 _r1[66,R1,Recover] + 284265 _r1[66,R2,Recover]
-   + 173069 _r1[66,R3,Recover] <= 1.5e+07
- R579: - _f[32,Do_nothing] + _r1[32,Do_nothing,Do_nothing]
+   + 173069 _r1[66,R3,Recover] <= 3e+07
+ R605: - _f[32,Do_nothing] + _r1[32,Do_nothing,Do_nothing]
    + _r1[32,Do_nothing,Recover] = 0
- R580: - _f[32,R1] + _r1[32,R1,Do_nothing] + _r1[32,R1,Recover] = 0
- R581: - _f[32,R2] + _r1[32,R2,Do_nothing] + _r1[32,R2,Recover] = 0
- R582: - _f[32,R3] + _r1[32,R3,Do_nothing] + _r1[32,R3,Recover] = 0
- R583: - _f[70,Do_nothing] + _r1[70,Do_nothing,Do_nothing]
+ R606: - _f[32,R1] + _r1[32,R1,Do_nothing] + _r1[32,R1,Recover] = 0
+ R607: - _f[32,R2] + _r1[32,R2,Do_nothing] + _r1[32,R2,Recover] = 0
+ R608: - _f[32,R3] + _r1[32,R3,Do_nothing] + _r1[32,R3,Recover] = 0
+ R609: - _f[70,Do_nothing] + _r1[70,Do_nothing,Do_nothing]
    + _r1[70,Do_nothing,Recover] = 0
- R584: - _f[70,R1] + _r1[70,R1,Do_nothing] + _r1[70,R1,Recover] = 0
- R585: - _f[70,R2] + _r1[70,R2,Do_nothing] + _r1[70,R2,Recover] = 0
- R586: - _f[70,R3] + _r1[70,R3,Do_nothing] + _r1[70,R3,Recover] = 0
- R587: - _f[5,Do_nothing] + _r1[5,Do_nothing,Do_nothing]
+ R610: - _f[70,R1] + _r1[70,R1,Do_nothing] + _r1[70,R1,Recover] = 0
+ R611: - _f[70,R2] + _r1[70,R2,Do_nothing] + _r1[70,R2,Recover] = 0
+ R612: - _f[70,R3] + _r1[70,R3,Do_nothing] + _r1[70,R3,Recover] = 0
+ R613: - _f[5,Do_nothing] + _r1[5,Do_nothing,Do_nothing]
    + _r1[5,Do_nothing,Recover] = 0
- R588: - _f[5,R1] + _r1[5,R1,Do_nothing] + _r1[5,R1,Recover] = 0
- R589: - _f[5,R2] + _r1[5,R2,Do_nothing] + _r1[5,R2,Recover] = 0
- R590: - _f[5,R3] + _r1[5,R3,Do_nothing] + _r1[5,R3,Recover] = 0
- R591: - _f[85,Do_nothing] + _r1[85,Do_nothing,Do_nothing]
+ R614: - _f[5,R1] + _r1[5,R1,Do_nothing] + _r1[5,R1,Recover] = 0
+ R615: - _f[5,R2] + _r1[5,R2,Do_nothing] + _r1[5,R2,Recover] = 0
+ R616: - _f[5,R3] + _r1[5,R3,Do_nothing] + _r1[5,R3,Recover] = 0
+ R617: - _f[85,Do_nothing] + _r1[85,Do_nothing,Do_nothing]
    + _r1[85,Do_nothing,Recover] = 0
- R592: - _f[85,R1] + _r1[85,R1,Do_nothing] + _r1[85,R1,Recover] = 0
- R593: - _f[85,R2] + _r1[85,R2,Do_nothing] + _r1[85,R2,Recover] = 0
- R594: - _f[85,R3] + _r1[85,R3,Do_nothing] + _r1[85,R3,Recover] = 0
- R595: - _f[71,Do_nothing] + _r1[71,Do_nothing,Do_nothing]
+ R618: - _f[85,R1] + _r1[85,R1,Do_nothing] + _r1[85,R1,Recover] = 0
+ R619: - _f[85,R2] + _r1[85,R2,Do_nothing] + _r1[85,R2,Recover] = 0
+ R620: - _f[85,R3] + _r1[85,R3,Do_nothing] + _r1[85,R3,Recover] = 0
+ R621: - _f[71,Do_nothing] + _r1[71,Do_nothing,Do_nothing]
    + _r1[71,Do_nothing,Recover] = 0
- R596: - _f[71,R1] + _r1[71,R1,Do_nothing] + _r1[71,R1,Recover] = 0
- R597: - _f[71,R2] + _r1[71,R2,Do_nothing] + _r1[71,R2,Recover] = 0
- R598: - _f[71,R3] + _r1[71,R3,Do_nothing] + _r1[71,R3,Recover] = 0
- R599: - _f[92,Do_nothing] + _r1[92,Do_nothing,Do_nothing]
+ R622: - _f[71,R1] + _r1[71,R1,Do_nothing] + _r1[71,R1,Recover] = 0
+ R623: - _f[71,R2] + _r1[71,R2,Do_nothing] + _r1[71,R2,Recover] = 0
+ R624: - _f[71,R3] + _r1[71,R3,Do_nothing] + _r1[71,R3,Recover] = 0
+ R625: - _f[92,Do_nothing] + _r1[92,Do_nothing,Do_nothing]
    + _r1[92,Do_nothing,Recover] = 0
- R600: - _f[92,R1] + _r1[92,R1,Do_nothing] + _r1[92,R1,Recover] = 0
- R601: - _f[92,R2] + _r1[92,R2,Do_nothing] + _r1[92,R2,Recover] = 0
- R602: - _f[92,R3] + _r1[92,R3,Do_nothing] + _r1[92,R3,Recover] = 0
- R603: - _f[38,Do_nothing] + _r1[38,Do_nothing,Do_nothing]
+ R626: - _f[92,R1] + _r1[92,R1,Do_nothing] + _r1[92,R1,Recover] = 0
+ R627: - _f[92,R2] + _r1[92,R2,Do_nothing] + _r1[92,R2,Recover] = 0
+ R628: - _f[92,R3] + _r1[92,R3,Do_nothing] + _r1[92,R3,Recover] = 0
+ R629: - _f[38,Do_nothing] + _r1[38,Do_nothing,Do_nothing]
    + _r1[38,Do_nothing,Recover] = 0
- R604: - _f[38,R1] + _r1[38,R1,Do_nothing] + _r1[38,R1,Recover] = 0
- R605: - _f[38,R2] + _r1[38,R2,Do_nothing] + _r1[38,R2,Recover] = 0
- R606: - _f[38,R3] + _r1[38,R3,Do_nothing] + _r1[38,R3,Recover] = 0
- R607: - _f[21,Do_nothing] + _r1[21,Do_nothing,Do_nothing]
+ R630: - _f[38,R1] + _r1[38,R1,Do_nothing] + _r1[38,R1,Recover] = 0
+ R631: - _f[38,R2] + _r1[38,R2,Do_nothing] + _r1[38,R2,Recover] = 0
+ R632: - _f[38,R3] + _r1[38,R3,Do_nothing] + _r1[38,R3,Recover] = 0
+ R633: - _f[21,Do_nothing] + _r1[21,Do_nothing,Do_nothing]
    + _r1[21,Do_nothing,Recover] = 0
- R608: - _f[21,R1] + _r1[21,R1,Do_nothing] + _r1[21,R1,Recover] = 0
- R609: - _f[21,R2] + _r1[21,R2,Do_nothing] + _r1[21,R2,Recover] = 0
- R610: - _f[21,R3] + _r1[21,R3,Do_nothing] + _r1[21,R3,Recover] = 0
- R611: - _f[41,Do_nothing] + _r1[41,Do_nothing,Do_nothing]
+ R634: - _f[21,R1] + _r1[21,R1,Do_nothing] + _r1[21,R1,Recover] = 0
+ R635: - _f[21,R2] + _r1[21,R2,Do_nothing] + _r1[21,R2,Recover] = 0
+ R636: - _f[21,R3] + _r1[21,R3,Do_nothing] + _r1[21,R3,Recover] = 0
+ R637: - _f[41,Do_nothing] + _r1[41,Do_nothing,Do_nothing]
    + _r1[41,Do_nothing,Recover] = 0
- R612: - _f[41,R1] + _r1[41,R1,Do_nothing] + _r1[41,R1,Recover] = 0
- R613: - _f[41,R2] + _r1[41,R2,Do_nothing] + _r1[41,R2,Recover] = 0
- R614: - _f[41,R3] + _r1[41,R3,Do_nothing] + _r1[41,R3,Recover] = 0
- R615: - _f[56,Do_nothing] + _r1[56,Do_nothing,Do_nothing]
+ R638: - _f[41,R1] + _r1[41,R1,Do_nothing] + _r1[41,R1,Recover] = 0
+ R639: - _f[41,R2] + _r1[41,R2,Do_nothing] + _r1[41,R2,Recover] = 0
+ R640: - _f[41,R3] + _r1[41,R3,Do_nothing] + _r1[41,R3,Recover] = 0
+ R641: - _f[56,Do_nothing] + _r1[56,Do_nothing,Do_nothing]
    + _r1[56,Do_nothing,Recover] = 0
- R616: - _f[56,R1] + _r1[56,R1,Do_nothing] + _r1[56,R1,Recover] = 0
- R617: - _f[56,R2] + _r1[56,R2,Do_nothing] + _r1[56,R2,Recover] = 0
- R618: - _f[56,R3] + _r1[56,R3,Do_nothing] + _r1[56,R3,Recover] = 0
- R619: - _f[80,Do_nothing] + _r1[80,Do_nothing,Do_nothing]
+ R642: - _f[56,R1] + _r1[56,R1,Do_nothing] + _r1[56,R1,Recover] = 0
+ R643: - _f[56,R2] + _r1[56,R2,Do_nothing] + _r1[56,R2,Recover] = 0
+ R644: - _f[56,R3] + _r1[56,R3,Do_nothing] + _r1[56,R3,Recover] = 0
+ R645: - _f[80,Do_nothing] + _r1[80,Do_nothing,Do_nothing]
    + _r1[80,Do_nothing,Recover] = 0
- R620: - _f[80,R1] + _r1[80,R1,Do_nothing] + _r1[80,R1,Recover] = 0
- R621: - _f[80,R2] + _r1[80,R2,Do_nothing] + _r1[80,R2,Recover] = 0
- R622: - _f[80,R3] + _r1[80,R3,Do_nothing] + _r1[80,R3,Recover] = 0
- R623: - _f[62,Do_nothing] + _r1[62,Do_nothing,Do_nothing]
+ R646: - _f[80,R1] + _r1[80,R1,Do_nothing] + _r1[80,R1,Recover] = 0
+ R647: - _f[80,R2] + _r1[80,R2,Do_nothing] + _r1[80,R2,Recover] = 0
+ R648: - _f[80,R3] + _r1[80,R3,Do_nothing] + _r1[80,R3,Recover] = 0
+ R649: - _f[62,Do_nothing] + _r1[62,Do_nothing,Do_nothing]
    + _r1[62,Do_nothing,Recover] = 0
- R624: - _f[62,R1] + _r1[62,R1,Do_nothing] + _r1[62,R1,Recover] = 0
- R625: - _f[62,R2] + _r1[62,R2,Do_nothing] + _r1[62,R2,Recover] = 0
- R626: - _f[62,R3] + _r1[62,R3,Do_nothing] + _r1[62,R3,Recover] = 0
- R627: - _f[20,Do_nothing] + _r1[20,Do_nothing,Do_nothing]
+ R650: - _f[62,R1] + _r1[62,R1,Do_nothing] + _r1[62,R1,Recover] = 0
+ R651: - _f[62,R2] + _r1[62,R2,Do_nothing] + _r1[62,R2,Recover] = 0
+ R652: - _f[62,R3] + _r1[62,R3,Do_nothing] + _r1[62,R3,Recover] = 0
+ R653: - _f[20,Do_nothing] + _r1[20,Do_nothing,Do_nothing]
    + _r1[20,Do_nothing,Recover] = 0
- R628: - _f[20,R1] + _r1[20,R1,Do_nothing] + _r1[20,R1,Recover] = 0
- R629: - _f[20,R2] + _r1[20,R2,Do_nothing] + _r1[20,R2,Recover] = 0
- R630: - _f[20,R3] + _r1[20,R3,Do_nothing] + _r1[20,R3,Recover] = 0
- R631: - _f[10,Do_nothing] + _r1[10,Do_nothing,Do_nothing]
+ R654: - _f[20,R1] + _r1[20,R1,Do_nothing] + _r1[20,R1,Recover] = 0
+ R655: - _f[20,R2] + _r1[20,R2,Do_nothing] + _r1[20,R2,Recover] = 0
+ R656: - _f[20,R3] + _r1[20,R3,Do_nothing] + _r1[20,R3,Recover] = 0
+ R657: - _f[10,Do_nothing] + _r1[10,Do_nothing,Do_nothing]
    + _r1[10,Do_nothing,Recover] = 0
- R632: - _f[10,R1] + _r1[10,R1,Do_nothing] + _r1[10,R1,Recover] = 0
- R633: - _f[10,R2] + _r1[10,R2,Do_nothing] + _r1[10,R2,Recover] = 0
- R634: - _f[10,R3] + _r1[10,R3,Do_nothing] + _r1[10,R3,Recover] = 0
- R635: - _f[55,Do_nothing] + _r1[55,Do_nothing,Do_nothing]
+ R658: - _f[10,R1] + _r1[10,R1,Do_nothing] + _r1[10,R1,Recover] = 0
+ R659: - _f[10,R2] + _r1[10,R2,Do_nothing] + _r1[10,R2,Recover] = 0
+ R660: - _f[10,R3] + _r1[10,R3,Do_nothing] + _r1[10,R3,Recover] = 0
+ R661: - _f[55,Do_nothing] + _r1[55,Do_nothing,Do_nothing]
    + _r1[55,Do_nothing,Recover] = 0
- R636: - _f[55,R1] + _r1[55,R1,Do_nothing] + _r1[55,R1,Recover] = 0
- R637: - _f[55,R2] + _r1[55,R2,Do_nothing] + _r1[55,R2,Recover] = 0
- R638: - _f[55,R3] + _r1[55,R3,Do_nothing] + _r1[55,R3,Recover] = 0
- R639: - _f[36,Do_nothing] + _r1[36,Do_nothing,Do_nothing]
+ R662: - _f[55,R1] + _r1[55,R1,Do_nothing] + _r1[55,R1,Recover] = 0
+ R663: - _f[55,R2] + _r1[55,R2,Do_nothing] + _r1[55,R2,Recover] = 0
+ R664: - _f[55,R3] + _r1[55,R3,Do_nothing] + _r1[55,R3,Recover] = 0
+ R665: - _f[36,Do_nothing] + _r1[36,Do_nothing,Do_nothing]
    + _r1[36,Do_nothing,Recover] = 0
- R640: - _f[36,R1] + _r1[36,R1,Do_nothing] + _r1[36,R1,Recover] = 0
- R641: - _f[36,R2] + _r1[36,R2,Do_nothing] + _r1[36,R2,Recover] = 0
- R642: - _f[36,R3] + _r1[36,R3,Do_nothing] + _r1[36,R3,Recover] = 0
- R643: - _f[44,Do_nothing] + _r1[44,Do_nothing,Do_nothing]
+ R666: - _f[36,R1] + _r1[36,R1,Do_nothing] + _r1[36,R1,Recover] = 0
+ R667: - _f[36,R2] + _r1[36,R2,Do_nothing] + _r1[36,R2,Recover] = 0
+ R668: - _f[36,R3] + _r1[36,R3,Do_nothing] + _r1[36,R3,Recover] = 0
+ R669: - _f[44,Do_nothing] + _r1[44,Do_nothing,Do_nothing]
    + _r1[44,Do_nothing,Recover] = 0
- R644: - _f[44,R1] + _r1[44,R1,Do_nothing] + _r1[44,R1,Recover] = 0
- R645: - _f[44,R2] + _r1[44,R2,Do_nothing] + _r1[44,R2,Recover] = 0
- R646: - _f[44,R3] + _r1[44,R3,Do_nothing] + _r1[44,R3,Recover] = 0
- R647: - _f[48,Do_nothing] + _r1[48,Do_nothing,Do_nothing]
+ R670: - _f[44,R1] + _r1[44,R1,Do_nothing] + _r1[44,R1,Recover] = 0
+ R671: - _f[44,R2] + _r1[44,R2,Do_nothing] + _r1[44,R2,Recover] = 0
+ R672: - _f[44,R3] + _r1[44,R3,Do_nothing] + _r1[44,R3,Recover] = 0
+ R673: - _f[48,Do_nothing] + _r1[48,Do_nothing,Do_nothing]
    + _r1[48,Do_nothing,Recover] = 0
- R648: - _f[48,R1] + _r1[48,R1,Do_nothing] + _r1[48,R1,Recover] = 0
- R649: - _f[48,R2] + _r1[48,R2,Do_nothing] + _r1[48,R2,Recover] = 0
- R650: - _f[48,R3] + _r1[48,R3,Do_nothing] + _r1[48,R3,Recover] = 0
- R651: - _f[8,Do_nothing] + _r1[8,Do_nothing,Do_nothing]
+ R674: - _f[48,R1] + _r1[48,R1,Do_nothing] + _r1[48,R1,Recover] = 0
+ R675: - _f[48,R2] + _r1[48,R2,Do_nothing] + _r1[48,R2,Recover] = 0
+ R676: - _f[48,R3] + _r1[48,R3,Do_nothing] + _r1[48,R3,Recover] = 0
+ R677: - _f[8,Do_nothing] + _r1[8,Do_nothing,Do_nothing]
    + _r1[8,Do_nothing,Recover] = 0
- R652: - _f[8,R1] + _r1[8,R1,Do_nothing] + _r1[8,R1,Recover] = 0
- R653: - _f[8,R2] + _r1[8,R2,Do_nothing] + _r1[8,R2,Recover] = 0
- R654: - _f[8,R3] + _r1[8,R3,Do_nothing] + _r1[8,R3,Recover] = 0
- R655: - _f[15,Do_nothing] + _r1[15,Do_nothing,Do_nothing]
+ R678: - _f[8,R1] + _r1[8,R1,Do_nothing] + _r1[8,R1,Recover] = 0
+ R679: - _f[8,R2] + _r1[8,R2,Do_nothing] + _r1[8,R2,Recover] = 0
+ R680: - _f[8,R3] + _r1[8,R3,Do_nothing] + _r1[8,R3,Recover] = 0
+ R681: - _f[15,Do_nothing] + _r1[15,Do_nothing,Do_nothing]
    + _r1[15,Do_nothing,Recover] = 0
- R656: - _f[15,R1] + _r1[15,R1,Do_nothing] + _r1[15,R1,Recover] = 0
- R657: - _f[15,R2] + _r1[15,R2,Do_nothing] + _r1[15,R2,Recover] = 0
- R658: - _f[15,R3] + _r1[15,R3,Do_nothing] + _r1[15,R3,Recover] = 0
- R659: - _f[61,Do_nothing] + _r1[61,Do_nothing,Do_nothing]
+ R682: - _f[15,R1] + _r1[15,R1,Do_nothing] + _r1[15,R1,Recover] = 0
+ R683: - _f[15,R2] + _r1[15,R2,Do_nothing] + _r1[15,R2,Recover] = 0
+ R684: - _f[15,R3] + _r1[15,R3,Do_nothing] + _r1[15,R3,Recover] = 0
+ R685: - _f[61,Do_nothing] + _r1[61,Do_nothing,Do_nothing]
    + _r1[61,Do_nothing,Recover] = 0
- R660: - _f[61,R1] + _r1[61,R1,Do_nothing] + _r1[61,R1,Recover] = 0
- R661: - _f[61,R2] + _r1[61,R2,Do_nothing] + _r1[61,R2,Recover] = 0
- R662: - _f[61,R3] + _r1[61,R3,Do_nothing] + _r1[61,R3,Recover] = 0
- R663: - _f[78,Do_nothing] + _r1[78,Do_nothing,Do_nothing]
+ R686: - _f[61,R1] + _r1[61,R1,Do_nothing] + _r1[61,R1,Recover] = 0
+ R687: - _f[61,R2] + _r1[61,R2,Do_nothing] + _r1[61,R2,Recover] = 0
+ R688: - _f[61,R3] + _r1[61,R3,Do_nothing] + _r1[61,R3,Recover] = 0
+ R689: - _f[78,Do_nothing] + _r1[78,Do_nothing,Do_nothing]
    + _r1[78,Do_nothing,Recover] = 0
- R664: - _f[78,R1] + _r1[78,R1,Do_nothing] + _r1[78,R1,Recover] = 0
- R665: - _f[78,R2] + _r1[78,R2,Do_nothing] + _r1[78,R2,Recover] = 0
- R666: - _f[78,R3] + _r1[78,R3,Do_nothing] + _r1[78,R3,Recover] = 0
- R667: - _f[34,Do_nothing] + _r1[34,Do_nothing,Do_nothing]
+ R690: - _f[78,R1] + _r1[78,R1,Do_nothing] + _r1[78,R1,Recover] = 0
+ R691: - _f[78,R2] + _r1[78,R2,Do_nothing] + _r1[78,R2,Recover] = 0
+ R692: - _f[78,R3] + _r1[78,R3,Do_nothing] + _r1[78,R3,Recover] = 0
+ R693: - _f[34,Do_nothing] + _r1[34,Do_nothing,Do_nothing]
    + _r1[34,Do_nothing,Recover] = 0
- R668: - _f[34,R1] + _r1[34,R1,Do_nothing] + _r1[34,R1,Recover] = 0
- R669: - _f[34,R2] + _r1[34,R2,Do_nothing] + _r1[34,R2,Recover] = 0
- R670: - _f[34,R3] + _r1[34,R3,Do_nothing] + _r1[34,R3,Recover] = 0
- R671: - _f[100,Do_nothing] + _r1[100,Do_nothing,Do_nothing]
+ R694: - _f[34,R1] + _r1[34,R1,Do_nothing] + _r1[34,R1,Recover] = 0
+ R695: - _f[34,R2] + _r1[34,R2,Do_nothing] + _r1[34,R2,Recover] = 0
+ R696: - _f[34,R3] + _r1[34,R3,Do_nothing] + _r1[34,R3,Recover] = 0
+ R697: - _f[100,Do_nothing] + _r1[100,Do_nothing,Do_nothing]
    + _r1[100,Do_nothing,Recover] = 0
- R672: - _f[100,R1] + _r1[100,R1,Do_nothing] + _r1[100,R1,Recover] = 0
- R673: - _f[100,R2] + _r1[100,R2,Do_nothing] + _r1[100,R2,Recover] = 0
- R674: - _f[100,R3] + _r1[100,R3,Do_nothing] + _r1[100,R3,Recover] = 0
- R675: - _f[90,Do_nothing] + _r1[90,Do_nothing,Do_nothing]
+ R698: - _f[100,R1] + _r1[100,R1,Do_nothing] + _r1[100,R1,Recover] = 0
+ R699: - _f[100,R2] + _r1[100,R2,Do_nothing] + _r1[100,R2,Recover] = 0
+ R700: - _f[100,R3] + _r1[100,R3,Do_nothing] + _r1[100,R3,Recover] = 0
+ R701: - _f[90,Do_nothing] + _r1[90,Do_nothing,Do_nothing]
    + _r1[90,Do_nothing,Recover] = 0
- R676: - _f[90,R1] + _r1[90,R1,Do_nothing] + _r1[90,R1,Recover] = 0
- R677: - _f[90,R2] + _r1[90,R2,Do_nothing] + _r1[90,R2,Recover] = 0
- R678: - _f[90,R3] + _r1[90,R3,Do_nothing] + _r1[90,R3,Recover] = 0
- R679: - _f[64,Do_nothing] + _r1[64,Do_nothing,Do_nothing]
+ R702: - _f[90,R1] + _r1[90,R1,Do_nothing] + _r1[90,R1,Recover] = 0
+ R703: - _f[90,R2] + _r1[90,R2,Do_nothing] + _r1[90,R2,Recover] = 0
+ R704: - _f[90,R3] + _r1[90,R3,Do_nothing] + _r1[90,R3,Recover] = 0
+ R705: - _f[64,Do_nothing] + _r1[64,Do_nothing,Do_nothing]
    + _r1[64,Do_nothing,Recover] = 0
- R680: - _f[64,R1] + _r1[64,R1,Do_nothing] + _r1[64,R1,Recover] = 0
- R681: - _f[64,R2] + _r1[64,R2,Do_nothing] + _r1[64,R2,Recover] = 0
- R682: - _f[64,R3] + _r1[64,R3,Do_nothing] + _r1[64,R3,Recover] = 0
- R683: - _f[79,Do_nothing] + _r1[79,Do_nothing,Do_nothing]
+ R706: - _f[64,R1] + _r1[64,R1,Do_nothing] + _r1[64,R1,Recover] = 0
+ R707: - _f[64,R2] + _r1[64,R2,Do_nothing] + _r1[64,R2,Recover] = 0
+ R708: - _f[64,R3] + _r1[64,R3,Do_nothing] + _r1[64,R3,Recover] = 0
+ R709: - _f[79,Do_nothing] + _r1[79,Do_nothing,Do_nothing]
    + _r1[79,Do_nothing,Recover] = 0
- R684: - _f[79,R1] + _r1[79,R1,Do_nothing] + _r1[79,R1,Recover] = 0
- R685: - _f[79,R2] + _r1[79,R2,Do_nothing] + _r1[79,R2,Recover] = 0
- R686: - _f[79,R3] + _r1[79,R3,Do_nothing] + _r1[79,R3,Recover] = 0
- R687: - _f[1,Do_nothing] + _r1[1,Do_nothing,Do_nothing]
+ R710: - _f[79,R1] + _r1[79,R1,Do_nothing] + _r1[79,R1,Recover] = 0
+ R711: - _f[79,R2] + _r1[79,R2,Do_nothing] + _r1[79,R2,Recover] = 0
+ R712: - _f[79,R3] + _r1[79,R3,Do_nothing] + _r1[79,R3,Recover] = 0
+ R713: - _f[1,Do_nothing] + _r1[1,Do_nothing,Do_nothing]
    + _r1[1,Do_nothing,Recover] = 0
- R688: - _f[1,R1] + _r1[1,R1,Do_nothing] + _r1[1,R1,Recover] = 0
- R689: - _f[1,R2] + _r1[1,R2,Do_nothing] + _r1[1,R2,Recover] = 0
- R690: - _f[1,R3] + _r1[1,R3,Do_nothing] + _r1[1,R3,Recover] = 0
- R691: - _f[22,Do_nothing] + _r1[22,Do_nothing,Do_nothing]
+ R714: - _f[1,R1] + _r1[1,R1,Do_nothing] + _r1[1,R1,Recover] = 0
+ R715: - _f[1,R2] + _r1[1,R2,Do_nothing] + _r1[1,R2,Recover] = 0
+ R716: - _f[1,R3] + _r1[1,R3,Do_nothing] + _r1[1,R3,Recover] = 0
+ R717: - _f[22,Do_nothing] + _r1[22,Do_nothing,Do_nothing]
    + _r1[22,Do_nothing,Recover] = 0
- R692: - _f[22,R1] + _r1[22,R1,Do_nothing] + _r1[22,R1,Recover] = 0
- R693: - _f[22,R2] + _r1[22,R2,Do_nothing] + _r1[22,R2,Recover] = 0
- R694: - _f[22,R3] + _r1[22,R3,Do_nothing] + _r1[22,R3,Recover] = 0
- R695: - _f[31,Do_nothing] + _r1[31,Do_nothing,Do_nothing]
+ R718: - _f[22,R1] + _r1[22,R1,Do_nothing] + _r1[22,R1,Recover] = 0
+ R719: - _f[22,R2] + _r1[22,R2,Do_nothing] + _r1[22,R2,Recover] = 0
+ R720: - _f[22,R3] + _r1[22,R3,Do_nothing] + _r1[22,R3,Recover] = 0
+ R721: - _f[31,Do_nothing] + _r1[31,Do_nothing,Do_nothing]
    + _r1[31,Do_nothing,Recover] = 0
- R696: - _f[31,R1] + _r1[31,R1,Do_nothing] + _r1[31,R1,Recover] = 0
- R697: - _f[31,R2] + _r1[31,R2,Do_nothing] + _r1[31,R2,Recover] = 0
- R698: - _f[31,R3] + _r1[31,R3,Do_nothing] + _r1[31,R3,Recover] = 0
- R699: - _f[54,Do_nothing] + _r1[54,Do_nothing,Do_nothing]
+ R722: - _f[31,R1] + _r1[31,R1,Do_nothing] + _r1[31,R1,Recover] = 0
+ R723: - _f[31,R2] + _r1[31,R2,Do_nothing] + _r1[31,R2,Recover] = 0
+ R724: - _f[31,R3] + _r1[31,R3,Do_nothing] + _r1[31,R3,Recover] = 0
+ R725: - _f[54,Do_nothing] + _r1[54,Do_nothing,Do_nothing]
    + _r1[54,Do_nothing,Recover] = 0
- R700: - _f[54,R1] + _r1[54,R1,Do_nothing] + _r1[54,R1,Recover] = 0
- R701: - _f[54,R2] + _r1[54,R2,Do_nothing] + _r1[54,R2,Recover] = 0
- R702: - _f[54,R3] + _r1[54,R3,Do_nothing] + _r1[54,R3,Recover] = 0
- R703: - _f[82,Do_nothing] + _r1[82,Do_nothing,Do_nothing]
+ R726: - _f[54,R1] + _r1[54,R1,Do_nothing] + _r1[54,R1,Recover] = 0
+ R727: - _f[54,R2] + _r1[54,R2,Do_nothing] + _r1[54,R2,Recover] = 0
+ R728: - _f[54,R3] + _r1[54,R3,Do_nothing] + _r1[54,R3,Recover] = 0
+ R729: - _f[82,Do_nothing] + _r1[82,Do_nothing,Do_nothing]
    + _r1[82,Do_nothing,Recover] = 0
- R704: - _f[82,R1] + _r1[82,R1,Do_nothing] + _r1[82,R1,Recover] = 0
- R705: - _f[82,R2] + _r1[82,R2,Do_nothing] + _r1[82,R2,Recover] = 0
- R706: - _f[82,R3] + _r1[82,R3,Do_nothing] + _r1[82,R3,Recover] = 0
- R707: - _f[11,Do_nothing] + _r1[11,Do_nothing,Do_nothing]
+ R730: - _f[82,R1] + _r1[82,R1,Do_nothing] + _r1[82,R1,Recover] = 0
+ R731: - _f[82,R2] + _r1[82,R2,Do_nothing] + _r1[82,R2,Recover] = 0
+ R732: - _f[82,R3] + _r1[82,R3,Do_nothing] + _r1[82,R3,Recover] = 0
+ R733: - _f[11,Do_nothing] + _r1[11,Do_nothing,Do_nothing]
    + _r1[11,Do_nothing,Recover] = 0
- R708: - _f[11,R1] + _r1[11,R1,Do_nothing] + _r1[11,R1,Recover] = 0
- R709: - _f[11,R2] + _r1[11,R2,Do_nothing] + _r1[11,R2,Recover] = 0
- R710: - _f[11,R3] + _r1[11,R3,Do_nothing] + _r1[11,R3,Recover] = 0
- R711: - _f[75,Do_nothing] + _r1[75,Do_nothing,Do_nothing]
+ R734: - _f[11,R1] + _r1[11,R1,Do_nothing] + _r1[11,R1,Recover] = 0
+ R735: - _f[11,R2] + _r1[11,R2,Do_nothing] + _r1[11,R2,Recover] = 0
+ R736: - _f[11,R3] + _r1[11,R3,Do_nothing] + _r1[11,R3,Recover] = 0
+ R737: - _f[75,Do_nothing] + _r1[75,Do_nothing,Do_nothing]
    + _r1[75,Do_nothing,Recover] = 0
- R712: - _f[75,R1] + _r1[75,R1,Do_nothing] + _r1[75,R1,Recover] = 0
- R713: - _f[75,R2] + _r1[75,R2,Do_nothing] + _r1[75,R2,Recover] = 0
- R714: - _f[75,R3] + _r1[75,R3,Do_nothing] + _r1[75,R3,Recover] = 0
- R715: - _f[50,Do_nothing] + _r1[50,Do_nothing,Do_nothing]
+ R738: - _f[75,R1] + _r1[75,R1,Do_nothing] + _r1[75,R1,Recover] = 0
+ R739: - _f[75,R2] + _r1[75,R2,Do_nothing] + _r1[75,R2,Recover] = 0
+ R740: - _f[75,R3] + _r1[75,R3,Do_nothing] + _r1[75,R3,Recover] = 0
+ R741: - _f[50,Do_nothing] + _r1[50,Do_nothing,Do_nothing]
    + _r1[50,Do_nothing,Recover] = 0
- R716: - _f[50,R1] + _r1[50,R1,Do_nothing] + _r1[50,R1,Recover] = 0
- R717: - _f[50,R2] + _r1[50,R2,Do_nothing] + _r1[50,R2,Recover] = 0
- R718: - _f[50,R3] + _r1[50,R3,Do_nothing] + _r1[50,R3,Recover] = 0
- R719: - _f[19,Do_nothing] + _r1[19,Do_nothing,Do_nothing]
+ R742: - _f[50,R1] + _r1[50,R1,Do_nothing] + _r1[50,R1,Recover] = 0
+ R743: - _f[50,R2] + _r1[50,R2,Do_nothing] + _r1[50,R2,Recover] = 0
+ R744: - _f[50,R3] + _r1[50,R3,Do_nothing] + _r1[50,R3,Recover] = 0
+ R745: - _f[19,Do_nothing] + _r1[19,Do_nothing,Do_nothing]
    + _r1[19,Do_nothing,Recover] = 0
- R720: - _f[19,R1] + _r1[19,R1,Do_nothing] + _r1[19,R1,Recover] = 0
- R721: - _f[19,R2] + _r1[19,R2,Do_nothing] + _r1[19,R2,Recover] = 0
- R722: - _f[19,R3] + _r1[19,R3,Do_nothing] + _r1[19,R3,Recover] = 0
- R723: - _f[99,Do_nothing] + _r1[99,Do_nothing,Do_nothing]
+ R746: - _f[19,R1] + _r1[19,R1,Do_nothing] + _r1[19,R1,Recover] = 0
+ R747: - _f[19,R2] + _r1[19,R2,Do_nothing] + _r1[19,R2,Recover] = 0
+ R748: - _f[19,R3] + _r1[19,R3,Do_nothing] + _r1[19,R3,Recover] = 0
+ R749: - _f[99,Do_nothing] + _r1[99,Do_nothing,Do_nothing]
    + _r1[99,Do_nothing,Recover] = 0
- R724: - _f[99,R1] + _r1[99,R1,Do_nothing] + _r1[99,R1,Recover] = 0
- R725: - _f[99,R2] + _r1[99,R2,Do_nothing] + _r1[99,R2,Recover] = 0
- R726: - _f[99,R3] + _r1[99,R3,Do_nothing] + _r1[99,R3,Recover] = 0
- R727: - _f[72,Do_nothing] + _r1[72,Do_nothing,Do_nothing]
+ R750: - _f[99,R1] + _r1[99,R1,Do_nothing] + _r1[99,R1,Recover] = 0
+ R751: - _f[99,R2] + _r1[99,R2,Do_nothing] + _r1[99,R2,Recover] = 0
+ R752: - _f[99,R3] + _r1[99,R3,Do_nothing] + _r1[99,R3,Recover] = 0
+ R753: - _f[72,Do_nothing] + _r1[72,Do_nothing,Do_nothing]
    + _r1[72,Do_nothing,Recover] = 0
- R728: - _f[72,R1] + _r1[72,R1,Do_nothing] + _r1[72,R1,Recover] = 0
- R729: - _f[72,R2] + _r1[72,R2,Do_nothing] + _r1[72,R2,Recover] = 0
- R730: - _f[72,R3] + _r1[72,R3,Do_nothing] + _r1[72,R3,Recover] = 0
- R731: - _f[47,Do_nothing] + _r1[47,Do_nothing,Do_nothing]
+ R754: - _f[72,R1] + _r1[72,R1,Do_nothing] + _r1[72,R1,Recover] = 0
+ R755: - _f[72,R2] + _r1[72,R2,Do_nothing] + _r1[72,R2,Recover] = 0
+ R756: - _f[72,R3] + _r1[72,R3,Do_nothing] + _r1[72,R3,Recover] = 0
+ R757: - _f[47,Do_nothing] + _r1[47,Do_nothing,Do_nothing]
    + _r1[47,Do_nothing,Recover] = 0
- R732: - _f[47,R1] + _r1[47,R1,Do_nothing] + _r1[47,R1,Recover] = 0
- R733: - _f[47,R2] + _r1[47,R2,Do_nothing] + _r1[47,R2,Recover] = 0
- R734: - _f[47,R3] + _r1[47,R3,Do_nothing] + _r1[47,R3,Recover] = 0
- R735: - _f[49,Do_nothing] + _r1[49,Do_nothing,Do_nothing]
+ R758: - _f[47,R1] + _r1[47,R1,Do_nothing] + _r1[47,R1,Recover] = 0
+ R759: - _f[47,R2] + _r1[47,R2,Do_nothing] + _r1[47,R2,Recover] = 0
+ R760: - _f[47,R3] + _r1[47,R3,Do_nothing] + _r1[47,R3,Recover] = 0
+ R761: - _f[49,Do_nothing] + _r1[49,Do_nothing,Do_nothing]
    + _r1[49,Do_nothing,Recover] = 0
- R736: - _f[49,R1] + _r1[49,R1,Do_nothing] + _r1[49,R1,Recover] = 0
- R737: - _f[49,R2] + _r1[49,R2,Do_nothing] + _r1[49,R2,Recover] = 0
- R738: - _f[49,R3] + _r1[49,R3,Do_nothing] + _r1[49,R3,Recover] = 0
- R739: - _f[77,Do_nothing] + _r1[77,Do_nothing,Do_nothing]
+ R762: - _f[49,R1] + _r1[49,R1,Do_nothing] + _r1[49,R1,Recover] = 0
+ R763: - _f[49,R2] + _r1[49,R2,Do_nothing] + _r1[49,R2,Recover] = 0
+ R764: - _f[49,R3] + _r1[49,R3,Do_nothing] + _r1[49,R3,Recover] = 0
+ R765: - _f[77,Do_nothing] + _r1[77,Do_nothing,Do_nothing]
    + _r1[77,Do_nothing,Recover] = 0
- R740: - _f[77,R1] + _r1[77,R1,Do_nothing] + _r1[77,R1,Recover] = 0
- R741: - _f[77,R2] + _r1[77,R2,Do_nothing] + _r1[77,R2,Recover] = 0
- R742: - _f[77,R3] + _r1[77,R3,Do_nothing] + _r1[77,R3,Recover] = 0
- R743: - _f[95,Do_nothing] + _r1[95,Do_nothing,Do_nothing]
+ R766: - _f[77,R1] + _r1[77,R1,Do_nothing] + _r1[77,R1,Recover] = 0
+ R767: - _f[77,R2] + _r1[77,R2,Do_nothing] + _r1[77,R2,Recover] = 0
+ R768: - _f[77,R3] + _r1[77,R3,Do_nothing] + _r1[77,R3,Recover] = 0
+ R769: - _f[95,Do_nothing] + _r1[95,Do_nothing,Do_nothing]
    + _r1[95,Do_nothing,Recover] = 0
- R744: - _f[95,R1] + _r1[95,R1,Do_nothing] + _r1[95,R1,Recover] = 0
- R745: - _f[95,R2] + _r1[95,R2,Do_nothing] + _r1[95,R2,Recover] = 0
- R746: - _f[95,R3] + _r1[95,R3,Do_nothing] + _r1[95,R3,Recover] = 0
- R747: - _f[98,Do_nothing] + _r1[98,Do_nothing,Do_nothing]
+ R770: - _f[95,R1] + _r1[95,R1,Do_nothing] + _r1[95,R1,Recover] = 0
+ R771: - _f[95,R2] + _r1[95,R2,Do_nothing] + _r1[95,R2,Recover] = 0
+ R772: - _f[95,R3] + _r1[95,R3,Do_nothing] + _r1[95,R3,Recover] = 0
+ R773: - _f[98,Do_nothing] + _r1[98,Do_nothing,Do_nothing]
    + _r1[98,Do_nothing,Recover] = 0
- R748: - _f[98,R1] + _r1[98,R1,Do_nothing] + _r1[98,R1,Recover] = 0
- R749: - _f[98,R2] + _r1[98,R2,Do_nothing] + _r1[98,R2,Recover] = 0
- R750: - _f[98,R3] + _r1[98,R3,Do_nothing] + _r1[98,R3,Recover] = 0
- R751: - _f[53,Do_nothing] + _r1[53,Do_nothing,Do_nothing]
+ R774: - _f[98,R1] + _r1[98,R1,Do_nothing] + _r1[98,R1,Recover] = 0
+ R775: - _f[98,R2] + _r1[98,R2,Do_nothing] + _r1[98,R2,Recover] = 0
+ R776: - _f[98,R3] + _r1[98,R3,Do_nothing] + _r1[98,R3,Recover] = 0
+ R777: - _f[53,Do_nothing] + _r1[53,Do_nothing,Do_nothing]
    + _r1[53,Do_nothing,Recover] = 0
- R752: - _f[53,R1] + _r1[53,R1,Do_nothing] + _r1[53,R1,Recover] = 0
- R753: - _f[53,R2] + _r1[53,R2,Do_nothing] + _r1[53,R2,Recover] = 0
- R754: - _f[53,R3] + _r1[53,R3,Do_nothing] + _r1[53,R3,Recover] = 0
- R755: - _f[65,Do_nothing] + _r1[65,Do_nothing,Do_nothing]
+ R778: - _f[53,R1] + _r1[53,R1,Do_nothing] + _r1[53,R1,Recover] = 0
+ R779: - _f[53,R2] + _r1[53,R2,Do_nothing] + _r1[53,R2,Recover] = 0
+ R780: - _f[53,R3] + _r1[53,R3,Do_nothing] + _r1[53,R3,Recover] = 0
+ R781: - _f[65,Do_nothing] + _r1[65,Do_nothing,Do_nothing]
    + _r1[65,Do_nothing,Recover] = 0
- R756: - _f[65,R1] + _r1[65,R1,Do_nothing] + _r1[65,R1,Recover] = 0
- R757: - _f[65,R2] + _r1[65,R2,Do_nothing] + _r1[65,R2,Recover] = 0
- R758: - _f[65,R3] + _r1[65,R3,Do_nothing] + _r1[65,R3,Recover] = 0
- R759: - _f[63,Do_nothing] + _r1[63,Do_nothing,Do_nothing]
+ R782: - _f[65,R1] + _r1[65,R1,Do_nothing] + _r1[65,R1,Recover] = 0
+ R783: - _f[65,R2] + _r1[65,R2,Do_nothing] + _r1[65,R2,Recover] = 0
+ R784: - _f[65,R3] + _r1[65,R3,Do_nothing] + _r1[65,R3,Recover] = 0
+ R785: - _f[63,Do_nothing] + _r1[63,Do_nothing,Do_nothing]
    + _r1[63,Do_nothing,Recover] = 0
- R760: - _f[63,R1] + _r1[63,R1,Do_nothing] + _r1[63,R1,Recover] = 0
- R761: - _f[63,R2] + _r1[63,R2,Do_nothing] + _r1[63,R2,Recover] = 0
- R762: - _f[63,R3] + _r1[63,R3,Do_nothing] + _r1[63,R3,Recover] = 0
- R763: - _f[14,Do_nothing] + _r1[14,Do_nothing,Do_nothing]
+ R786: - _f[63,R1] + _r1[63,R1,Do_nothing] + _r1[63,R1,Recover] = 0
+ R787: - _f[63,R2] + _r1[63,R2,Do_nothing] + _r1[63,R2,Recover] = 0
+ R788: - _f[63,R3] + _r1[63,R3,Do_nothing] + _r1[63,R3,Recover] = 0
+ R789: - _f[14,Do_nothing] + _r1[14,Do_nothing,Do_nothing]
    + _r1[14,Do_nothing,Recover] = 0
- R764: - _f[14,R1] + _r1[14,R1,Do_nothing] + _r1[14,R1,Recover] = 0
- R765: - _f[14,R2] + _r1[14,R2,Do_nothing] + _r1[14,R2,Recover] = 0
- R766: - _f[14,R3] + _r1[14,R3,Do_nothing] + _r1[14,R3,Recover] = 0
- R767: - _f[23,Do_nothing] + _r1[23,Do_nothing,Do_nothing]
+ R790: - _f[14,R1] + _r1[14,R1,Do_nothing] + _r1[14,R1,Recover] = 0
+ R791: - _f[14,R2] + _r1[14,R2,Do_nothing] + _r1[14,R2,Recover] = 0
+ R792: - _f[14,R3] + _r1[14,R3,Do_nothing] + _r1[14,R3,Recover] = 0
+ R793: - _f[23,Do_nothing] + _r1[23,Do_nothing,Do_nothing]
    + _r1[23,Do_nothing,Recover] = 0
- R768: - _f[23,R1] + _r1[23,R1,Do_nothing] + _r1[23,R1,Recover] = 0
- R769: - _f[23,R2] + _r1[23,R2,Do_nothing] + _r1[23,R2,Recover] = 0
- R770: - _f[23,R3] + _r1[23,R3,Do_nothing] + _r1[23,R3,Recover] = 0
- R771: - _f[93,Do_nothing] + _r1[93,Do_nothing,Do_nothing]
+ R794: - _f[23,R1] + _r1[23,R1,Do_nothing] + _r1[23,R1,Recover] = 0
+ R795: - _f[23,R2] + _r1[23,R2,Do_nothing] + _r1[23,R2,Recover] = 0
+ R796: - _f[23,R3] + _r1[23,R3,Do_nothing] + _r1[23,R3,Recover] = 0
+ R797: - _f[93,Do_nothing] + _r1[93,Do_nothing,Do_nothing]
    + _r1[93,Do_nothing,Recover] = 0
- R772: - _f[93,R1] + _r1[93,R1,Do_nothing] + _r1[93,R1,Recover] = 0
- R773: - _f[93,R2] + _r1[93,R2,Do_nothing] + _r1[93,R2,Recover] = 0
- R774: - _f[93,R3] + _r1[93,R3,Do_nothing] + _r1[93,R3,Recover] = 0
- R775: - _f[28,Do_nothing] + _r1[28,Do_nothing,Do_nothing]
+ R798: - _f[93,R1] + _r1[93,R1,Do_nothing] + _r1[93,R1,Recover] = 0
+ R799: - _f[93,R2] + _r1[93,R2,Do_nothing] + _r1[93,R2,Recover] = 0
+ R800: - _f[93,R3] + _r1[93,R3,Do_nothing] + _r1[93,R3,Recover] = 0
+ R801: - _f[28,Do_nothing] + _r1[28,Do_nothing,Do_nothing]
    + _r1[28,Do_nothing,Recover] = 0
- R776: - _f[28,R1] + _r1[28,R1,Do_nothing] + _r1[28,R1,Recover] = 0
- R777: - _f[28,R2] + _r1[28,R2,Do_nothing] + _r1[28,R2,Recover] = 0
- R778: - _f[28,R3] + _r1[28,R3,Do_nothing] + _r1[28,R3,Recover] = 0
- R779: - _f[2,Do_nothing] + _r1[2,Do_nothing,Do_nothing]
+ R802: - _f[28,R1] + _r1[28,R1,Do_nothing] + _r1[28,R1,Recover] = 0
+ R803: - _f[28,R2] + _r1[28,R2,Do_nothing] + _r1[28,R2,Recover] = 0
+ R804: - _f[28,R3] + _r1[28,R3,Do_nothing] + _r1[28,R3,Recover] = 0
+ R805: - _f[2,Do_nothing] + _r1[2,Do_nothing,Do_nothing]
    + _r1[2,Do_nothing,Recover] = 0
- R780: - _f[2,R1] + _r1[2,R1,Do_nothing] + _r1[2,R1,Recover] = 0
- R781: - _f[2,R2] + _r1[2,R2,Do_nothing] + _r1[2,R2,Recover] = 0
- R782: - _f[2,R3] + _r1[2,R3,Do_nothing] + _r1[2,R3,Recover] = 0
- R783: - _f[81,Do_nothing] + _r1[81,Do_nothing,Do_nothing]
+ R806: - _f[2,R1] + _r1[2,R1,Do_nothing] + _r1[2,R1,Recover] = 0
+ R807: - _f[2,R2] + _r1[2,R2,Do_nothing] + _r1[2,R2,Recover] = 0
+ R808: - _f[2,R3] + _r1[2,R3,Do_nothing] + _r1[2,R3,Recover] = 0
+ R809: - _f[81,Do_nothing] + _r1[81,Do_nothing,Do_nothing]
    + _r1[81,Do_nothing,Recover] = 0
- R784: - _f[81,R1] + _r1[81,R1,Do_nothing] + _r1[81,R1,Recover] = 0
- R785: - _f[81,R2] + _r1[81,R2,Do_nothing] + _r1[81,R2,Recover] = 0
- R786: - _f[81,R3] + _r1[81,R3,Do_nothing] + _r1[81,R3,Recover] = 0
- R787: - _f[45,Do_nothing] + _r1[45,Do_nothing,Do_nothing]
+ R810: - _f[81,R1] + _r1[81,R1,Do_nothing] + _r1[81,R1,Recover] = 0
+ R811: - _f[81,R2] + _r1[81,R2,Do_nothing] + _r1[81,R2,Recover] = 0
+ R812: - _f[81,R3] + _r1[81,R3,Do_nothing] + _r1[81,R3,Recover] = 0
+ R813: - _f[45,Do_nothing] + _r1[45,Do_nothing,Do_nothing]
    + _r1[45,Do_nothing,Recover] = 0
- R788: - _f[45,R1] + _r1[45,R1,Do_nothing] + _r1[45,R1,Recover] = 0
- R789: - _f[45,R2] + _r1[45,R2,Do_nothing] + _r1[45,R2,Recover] = 0
- R790: - _f[45,R3] + _r1[45,R3,Do_nothing] + _r1[45,R3,Recover] = 0
- R791: - _f[88,Do_nothing] + _r1[88,Do_nothing,Do_nothing]
+ R814: - _f[45,R1] + _r1[45,R1,Do_nothing] + _r1[45,R1,Recover] = 0
+ R815: - _f[45,R2] + _r1[45,R2,Do_nothing] + _r1[45,R2,Recover] = 0
+ R816: - _f[45,R3] + _r1[45,R3,Do_nothing] + _r1[45,R3,Recover] = 0
+ R817: - _f[88,Do_nothing] + _r1[88,Do_nothing,Do_nothing]
    + _r1[88,Do_nothing,Recover] = 0
- R792: - _f[88,R1] + _r1[88,R1,Do_nothing] + _r1[88,R1,Recover] = 0
- R793: - _f[88,R2] + _r1[88,R2,Do_nothing] + _r1[88,R2,Recover] = 0
- R794: - _f[88,R3] + _r1[88,R3,Do_nothing] + _r1[88,R3,Recover] = 0
- R795: - _f[89,Do_nothing] + _r1[89,Do_nothing,Do_nothing]
+ R818: - _f[88,R1] + _r1[88,R1,Do_nothing] + _r1[88,R1,Recover] = 0
+ R819: - _f[88,R2] + _r1[88,R2,Do_nothing] + _r1[88,R2,Recover] = 0
+ R820: - _f[88,R3] + _r1[88,R3,Do_nothing] + _r1[88,R3,Recover] = 0
+ R821: - _f[89,Do_nothing] + _r1[89,Do_nothing,Do_nothing]
    + _r1[89,Do_nothing,Recover] = 0
- R796: - _f[89,R1] + _r1[89,R1,Do_nothing] + _r1[89,R1,Recover] = 0
- R797: - _f[89,R2] + _r1[89,R2,Do_nothing] + _r1[89,R2,Recover] = 0
- R798: - _f[89,R3] + _r1[89,R3,Do_nothing] + _r1[89,R3,Recover] = 0
- R799: - _f[25,Do_nothing] + _r1[25,Do_nothing,Do_nothing]
+ R822: - _f[89,R1] + _r1[89,R1,Do_nothing] + _r1[89,R1,Recover] = 0
+ R823: - _f[89,R2] + _r1[89,R2,Do_nothing] + _r1[89,R2,Recover] = 0
+ R824: - _f[89,R3] + _r1[89,R3,Do_nothing] + _r1[89,R3,Recover] = 0
+ R825: - _f[25,Do_nothing] + _r1[25,Do_nothing,Do_nothing]
    + _r1[25,Do_nothing,Recover] = 0
- R800: - _f[25,R1] + _r1[25,R1,Do_nothing] + _r1[25,R1,Recover] = 0
- R801: - _f[25,R2] + _r1[25,R2,Do_nothing] + _r1[25,R2,Recover] = 0
- R802: - _f[25,R3] + _r1[25,R3,Do_nothing] + _r1[25,R3,Recover] = 0
- R803: - _f[91,Do_nothing] + _r1[91,Do_nothing,Do_nothing]
+ R826: - _f[25,R1] + _r1[25,R1,Do_nothing] + _r1[25,R1,Recover] = 0
+ R827: - _f[25,R2] + _r1[25,R2,Do_nothing] + _r1[25,R2,Recover] = 0
+ R828: - _f[25,R3] + _r1[25,R3,Do_nothing] + _r1[25,R3,Recover] = 0
+ R829: - _f[91,Do_nothing] + _r1[91,Do_nothing,Do_nothing]
    + _r1[91,Do_nothing,Recover] = 0
- R804: - _f[91,R1] + _r1[91,R1,Do_nothing] + _r1[91,R1,Recover] = 0
- R805: - _f[91,R2] + _r1[91,R2,Do_nothing] + _r1[91,R2,Recover] = 0
- R806: - _f[91,R3] + _r1[91,R3,Do_nothing] + _r1[91,R3,Recover] = 0
- R807: - _f[43,Do_nothing] + _r1[43,Do_nothing,Do_nothing]
+ R830: - _f[91,R1] + _r1[91,R1,Do_nothing] + _r1[91,R1,Recover] = 0
+ R831: - _f[91,R2] + _r1[91,R2,Do_nothing] + _r1[91,R2,Recover] = 0
+ R832: - _f[91,R3] + _r1[91,R3,Do_nothing] + _r1[91,R3,Recover] = 0
+ R833: - _f[43,Do_nothing] + _r1[43,Do_nothing,Do_nothing]
    + _r1[43,Do_nothing,Recover] = 0
- R808: - _f[43,R1] + _r1[43,R1,Do_nothing] + _r1[43,R1,Recover] = 0
- R809: - _f[43,R2] + _r1[43,R2,Do_nothing] + _r1[43,R2,Recover] = 0
- R810: - _f[43,R3] + _r1[43,R3,Do_nothing] + _r1[43,R3,Recover] = 0
- R811: - _f[76,Do_nothing] + _r1[76,Do_nothing,Do_nothing]
+ R834: - _f[43,R1] + _r1[43,R1,Do_nothing] + _r1[43,R1,Recover] = 0
+ R835: - _f[43,R2] + _r1[43,R2,Do_nothing] + _r1[43,R2,Recover] = 0
+ R836: - _f[43,R3] + _r1[43,R3,Do_nothing] + _r1[43,R3,Recover] = 0
+ R837: - _f[76,Do_nothing] + _r1[76,Do_nothing,Do_nothing]
    + _r1[76,Do_nothing,Recover] = 0
- R812: - _f[76,R1] + _r1[76,R1,Do_nothing] + _r1[76,R1,Recover] = 0
- R813: - _f[76,R2] + _r1[76,R2,Do_nothing] + _r1[76,R2,Recover] = 0
- R814: - _f[76,R3] + _r1[76,R3,Do_nothing] + _r1[76,R3,Recover] = 0
- R815: - _f[42,Do_nothing] + _r1[42,Do_nothing,Do_nothing]
+ R838: - _f[76,R1] + _r1[76,R1,Do_nothing] + _r1[76,R1,Recover] = 0
+ R839: - _f[76,R2] + _r1[76,R2,Do_nothing] + _r1[76,R2,Recover] = 0
+ R840: - _f[76,R3] + _r1[76,R3,Do_nothing] + _r1[76,R3,Recover] = 0
+ R841: - _f[42,Do_nothing] + _r1[42,Do_nothing,Do_nothing]
    + _r1[42,Do_nothing,Recover] = 0
- R816: - _f[42,R1] + _r1[42,R1,Do_nothing] + _r1[42,R1,Recover] = 0
- R817: - _f[42,R2] + _r1[42,R2,Do_nothing] + _r1[42,R2,Recover] = 0
- R818: - _f[42,R3] + _r1[42,R3,Do_nothing] + _r1[42,R3,Recover] = 0
- R819: - _f[7,Do_nothing] + _r1[7,Do_nothing,Do_nothing]
+ R842: - _f[42,R1] + _r1[42,R1,Do_nothing] + _r1[42,R1,Recover] = 0
+ R843: - _f[42,R2] + _r1[42,R2,Do_nothing] + _r1[42,R2,Recover] = 0
+ R844: - _f[42,R3] + _r1[42,R3,Do_nothing] + _r1[42,R3,Recover] = 0
+ R845: - _f[7,Do_nothing] + _r1[7,Do_nothing,Do_nothing]
    + _r1[7,Do_nothing,Recover] = 0
- R820: - _f[7,R1] + _r1[7,R1,Do_nothing] + _r1[7,R1,Recover] = 0
- R821: - _f[7,R2] + _r1[7,R2,Do_nothing] + _r1[7,R2,Recover] = 0
- R822: - _f[7,R3] + _r1[7,R3,Do_nothing] + _r1[7,R3,Recover] = 0
- R823: - _f[17,Do_nothing] + _r1[17,Do_nothing,Do_nothing]
+ R846: - _f[7,R1] + _r1[7,R1,Do_nothing] + _r1[7,R1,Recover] = 0
+ R847: - _f[7,R2] + _r1[7,R2,Do_nothing] + _r1[7,R2,Recover] = 0
+ R848: - _f[7,R3] + _r1[7,R3,Do_nothing] + _r1[7,R3,Recover] = 0
+ R849: - _f[17,Do_nothing] + _r1[17,Do_nothing,Do_nothing]
    + _r1[17,Do_nothing,Recover] = 0
- R824: - _f[17,R1] + _r1[17,R1,Do_nothing] + _r1[17,R1,Recover] = 0
- R825: - _f[17,R2] + _r1[17,R2,Do_nothing] + _r1[17,R2,Recover] = 0
- R826: - _f[17,R3] + _r1[17,R3,Do_nothing] + _r1[17,R3,Recover] = 0
- R827: - _f[37,Do_nothing] + _r1[37,Do_nothing,Do_nothing]
+ R850: - _f[17,R1] + _r1[17,R1,Do_nothing] + _r1[17,R1,Recover] = 0
+ R851: - _f[17,R2] + _r1[17,R2,Do_nothing] + _r1[17,R2,Recover] = 0
+ R852: - _f[17,R3] + _r1[17,R3,Do_nothing] + _r1[17,R3,Recover] = 0
+ R853: - _f[37,Do_nothing] + _r1[37,Do_nothing,Do_nothing]
    + _r1[37,Do_nothing,Recover] = 0
- R828: - _f[37,R1] + _r1[37,R1,Do_nothing] + _r1[37,R1,Recover] = 0
- R829: - _f[37,R2] + _r1[37,R2,Do_nothing] + _r1[37,R2,Recover] = 0
- R830: - _f[37,R3] + _r1[37,R3,Do_nothing] + _r1[37,R3,Recover] = 0
- R831: - _f[26,Do_nothing] + _r1[26,Do_nothing,Do_nothing]
+ R854: - _f[37,R1] + _r1[37,R1,Do_nothing] + _r1[37,R1,Recover] = 0
+ R855: - _f[37,R2] + _r1[37,R2,Do_nothing] + _r1[37,R2,Recover] = 0
+ R856: - _f[37,R3] + _r1[37,R3,Do_nothing] + _r1[37,R3,Recover] = 0
+ R857: - _f[26,Do_nothing] + _r1[26,Do_nothing,Do_nothing]
    + _r1[26,Do_nothing,Recover] = 0
- R832: - _f[26,R1] + _r1[26,R1,Do_nothing] + _r1[26,R1,Recover] = 0
- R833: - _f[26,R2] + _r1[26,R2,Do_nothing] + _r1[26,R2,Recover] = 0
- R834: - _f[26,R3] + _r1[26,R3,Do_nothing] + _r1[26,R3,Recover] = 0
- R835: - _f[9,Do_nothing] + _r1[9,Do_nothing,Do_nothing]
+ R858: - _f[26,R1] + _r1[26,R1,Do_nothing] + _r1[26,R1,Recover] = 0
+ R859: - _f[26,R2] + _r1[26,R2,Do_nothing] + _r1[26,R2,Recover] = 0
+ R860: - _f[26,R3] + _r1[26,R3,Do_nothing] + _r1[26,R3,Recover] = 0
+ R861: - _f[9,Do_nothing] + _r1[9,Do_nothing,Do_nothing]
    + _r1[9,Do_nothing,Recover] = 0
- R836: - _f[9,R1] + _r1[9,R1,Do_nothing] + _r1[9,R1,Recover] = 0
- R837: - _f[9,R2] + _r1[9,R2,Do_nothing] + _r1[9,R2,Recover] = 0
- R838: - _f[9,R3] + _r1[9,R3,Do_nothing] + _r1[9,R3,Recover] = 0
- R839: - _f[60,Do_nothing] + _r1[60,Do_nothing,Do_nothing]
+ R862: - _f[9,R1] + _r1[9,R1,Do_nothing] + _r1[9,R1,Recover] = 0
+ R863: - _f[9,R2] + _r1[9,R2,Do_nothing] + _r1[9,R2,Recover] = 0
+ R864: - _f[9,R3] + _r1[9,R3,Do_nothing] + _r1[9,R3,Recover] = 0
+ R865: - _f[60,Do_nothing] + _r1[60,Do_nothing,Do_nothing]
    + _r1[60,Do_nothing,Recover] = 0
- R840: - _f[60,R1] + _r1[60,R1,Do_nothing] + _r1[60,R1,Recover] = 0
- R841: - _f[60,R2] + _r1[60,R2,Do_nothing] + _r1[60,R2,Recover] = 0
- R842: - _f[60,R3] + _r1[60,R3,Do_nothing] + _r1[60,R3,Recover] = 0
- R843: - _f[16,Do_nothing] + _r1[16,Do_nothing,Do_nothing]
+ R866: - _f[60,R1] + _r1[60,R1,Do_nothing] + _r1[60,R1,Recover] = 0
+ R867: - _f[60,R2] + _r1[60,R2,Do_nothing] + _r1[60,R2,Recover] = 0
+ R868: - _f[60,R3] + _r1[60,R3,Do_nothing] + _r1[60,R3,Recover] = 0
+ R869: - _f[16,Do_nothing] + _r1[16,Do_nothing,Do_nothing]
    + _r1[16,Do_nothing,Recover] = 0
- R844: - _f[16,R1] + _r1[16,R1,Do_nothing] + _r1[16,R1,Recover] = 0
- R845: - _f[16,R2] + _r1[16,R2,Do_nothing] + _r1[16,R2,Recover] = 0
- R846: - _f[16,R3] + _r1[16,R3,Do_nothing] + _r1[16,R3,Recover] = 0
- R847: - _f[83,Do_nothing] + _r1[83,Do_nothing,Do_nothing]
+ R870: - _f[16,R1] + _r1[16,R1,Do_nothing] + _r1[16,R1,Recover] = 0
+ R871: - _f[16,R2] + _r1[16,R2,Do_nothing] + _r1[16,R2,Recover] = 0
+ R872: - _f[16,R3] + _r1[16,R3,Do_nothing] + _r1[16,R3,Recover] = 0
+ R873: - _f[83,Do_nothing] + _r1[83,Do_nothing,Do_nothing]
    + _r1[83,Do_nothing,Recover] = 0
- R848: - _f[83,R1] + _r1[83,R1,Do_nothing] + _r1[83,R1,Recover] = 0
- R849: - _f[83,R2] + _r1[83,R2,Do_nothing] + _r1[83,R2,Recover] = 0
- R850: - _f[83,R3] + _r1[83,R3,Do_nothing] + _r1[83,R3,Recover] = 0
- R851: - _f[13,Do_nothing] + _r1[13,Do_nothing,Do_nothing]
+ R874: - _f[83,R1] + _r1[83,R1,Do_nothing] + _r1[83,R1,Recover] = 0
+ R875: - _f[83,R2] + _r1[83,R2,Do_nothing] + _r1[83,R2,Recover] = 0
+ R876: - _f[83,R3] + _r1[83,R3,Do_nothing] + _r1[83,R3,Recover] = 0
+ R877: - _f[13,Do_nothing] + _r1[13,Do_nothing,Do_nothing]
    + _r1[13,Do_nothing,Recover] = 0
- R852: - _f[13,R1] + _r1[13,R1,Do_nothing] + _r1[13,R1,Recover] = 0
- R853: - _f[13,R2] + _r1[13,R2,Do_nothing] + _r1[13,R2,Recover] = 0
- R854: - _f[13,R3] + _r1[13,R3,Do_nothing] + _r1[13,R3,Recover] = 0
- R855: - _f[67,Do_nothing] + _r1[67,Do_nothing,Do_nothing]
+ R878: - _f[13,R1] + _r1[13,R1,Do_nothing] + _r1[13,R1,Recover] = 0
+ R879: - _f[13,R2] + _r1[13,R2,Do_nothing] + _r1[13,R2,Recover] = 0
+ R880: - _f[13,R3] + _r1[13,R3,Do_nothing] + _r1[13,R3,Recover] = 0
+ R881: - _f[67,Do_nothing] + _r1[67,Do_nothing,Do_nothing]
    + _r1[67,Do_nothing,Recover] = 0
- R856: - _f[67,R1] + _r1[67,R1,Do_nothing] + _r1[67,R1,Recover] = 0
- R857: - _f[67,R2] + _r1[67,R2,Do_nothing] + _r1[67,R2,Recover] = 0
- R858: - _f[67,R3] + _r1[67,R3,Do_nothing] + _r1[67,R3,Recover] = 0
- R859: - _f[59,Do_nothing] + _r1[59,Do_nothing,Do_nothing]
+ R882: - _f[67,R1] + _r1[67,R1,Do_nothing] + _r1[67,R1,Recover] = 0
+ R883: - _f[67,R2] + _r1[67,R2,Do_nothing] + _r1[67,R2,Recover] = 0
+ R884: - _f[67,R3] + _r1[67,R3,Do_nothing] + _r1[67,R3,Recover] = 0
+ R885: - _f[59,Do_nothing] + _r1[59,Do_nothing,Do_nothing]
    + _r1[59,Do_nothing,Recover] = 0
- R860: - _f[59,R1] + _r1[59,R1,Do_nothing] + _r1[59,R1,Recover] = 0
- R861: - _f[59,R2] + _r1[59,R2,Do_nothing] + _r1[59,R2,Recover] = 0
- R862: - _f[59,R3] + _r1[59,R3,Do_nothing] + _r1[59,R3,Recover] = 0
- R863: - _f[58,Do_nothing] + _r1[58,Do_nothing,Do_nothing]
+ R886: - _f[59,R1] + _r1[59,R1,Do_nothing] + _r1[59,R1,Recover] = 0
+ R887: - _f[59,R2] + _r1[59,R2,Do_nothing] + _r1[59,R2,Recover] = 0
+ R888: - _f[59,R3] + _r1[59,R3,Do_nothing] + _r1[59,R3,Recover] = 0
+ R889: - _f[58,Do_nothing] + _r1[58,Do_nothing,Do_nothing]
    + _r1[58,Do_nothing,Recover] = 0
- R864: - _f[58,R1] + _r1[58,R1,Do_nothing] + _r1[58,R1,Recover] = 0
- R865: - _f[58,R2] + _r1[58,R2,Do_nothing] + _r1[58,R2,Recover] = 0
- R866: - _f[58,R3] + _r1[58,R3,Do_nothing] + _r1[58,R3,Recover] = 0
- R867: - _f[4,Do_nothing] + _r1[4,Do_nothing,Do_nothing]
+ R890: - _f[58,R1] + _r1[58,R1,Do_nothing] + _r1[58,R1,Recover] = 0
+ R891: - _f[58,R2] + _r1[58,R2,Do_nothing] + _r1[58,R2,Recover] = 0
+ R892: - _f[58,R3] + _r1[58,R3,Do_nothing] + _r1[58,R3,Recover] = 0
+ R893: - _f[4,Do_nothing] + _r1[4,Do_nothing,Do_nothing]
    + _r1[4,Do_nothing,Recover] = 0
- R868: - _f[4,R1] + _r1[4,R1,Do_nothing] + _r1[4,R1,Recover] = 0
- R869: - _f[4,R2] + _r1[4,R2,Do_nothing] + _r1[4,R2,Recover] = 0
- R870: - _f[4,R3] + _r1[4,R3,Do_nothing] + _r1[4,R3,Recover] = 0
- R871: - _f[68,Do_nothing] + _r1[68,Do_nothing,Do_nothing]
+ R894: - _f[4,R1] + _r1[4,R1,Do_nothing] + _r1[4,R1,Recover] = 0
+ R895: - _f[4,R2] + _r1[4,R2,Do_nothing] + _r1[4,R2,Recover] = 0
+ R896: - _f[4,R3] + _r1[4,R3,Do_nothing] + _r1[4,R3,Recover] = 0
+ R897: - _f[68,Do_nothing] + _r1[68,Do_nothing,Do_nothing]
    + _r1[68,Do_nothing,Recover] = 0
- R872: - _f[68,R1] + _r1[68,R1,Do_nothing] + _r1[68,R1,Recover] = 0
- R873: - _f[68,R2] + _r1[68,R2,Do_nothing] + _r1[68,R2,Recover] = 0
- R874: - _f[68,R3] + _r1[68,R3,Do_nothing] + _r1[68,R3,Recover] = 0
- R875: - _f[87,Do_nothing] + _r1[87,Do_nothing,Do_nothing]
+ R898: - _f[68,R1] + _r1[68,R1,Do_nothing] + _r1[68,R1,Recover] = 0
+ R899: - _f[68,R2] + _r1[68,R2,Do_nothing] + _r1[68,R2,Recover] = 0
+ R900: - _f[68,R3] + _r1[68,R3,Do_nothing] + _r1[68,R3,Recover] = 0
+ R901: - _f[87,Do_nothing] + _r1[87,Do_nothing,Do_nothing]
    + _r1[87,Do_nothing,Recover] = 0
- R876: - _f[87,R1] + _r1[87,R1,Do_nothing] + _r1[87,R1,Recover] = 0
- R877: - _f[87,R2] + _r1[87,R2,Do_nothing] + _r1[87,R2,Recover] = 0
- R878: - _f[87,R3] + _r1[87,R3,Do_nothing] + _r1[87,R3,Recover] = 0
- R879: - _f[40,Do_nothing] + _r1[40,Do_nothing,Do_nothing]
+ R902: - _f[87,R1] + _r1[87,R1,Do_nothing] + _r1[87,R1,Recover] = 0
+ R903: - _f[87,R2] + _r1[87,R2,Do_nothing] + _r1[87,R2,Recover] = 0
+ R904: - _f[87,R3] + _r1[87,R3,Do_nothing] + _r1[87,R3,Recover] = 0
+ R905: - _f[40,Do_nothing] + _r1[40,Do_nothing,Do_nothing]
    + _r1[40,Do_nothing,Recover] = 0
- R880: - _f[40,R1] + _r1[40,R1,Do_nothing] + _r1[40,R1,Recover] = 0
- R881: - _f[40,R2] + _r1[40,R2,Do_nothing] + _r1[40,R2,Recover] = 0
- R882: - _f[40,R3] + _r1[40,R3,Do_nothing] + _r1[40,R3,Recover] = 0
- R883: - _f[30,Do_nothing] + _r1[30,Do_nothing,Do_nothing]
+ R906: - _f[40,R1] + _r1[40,R1,Do_nothing] + _r1[40,R1,Recover] = 0
+ R907: - _f[40,R2] + _r1[40,R2,Do_nothing] + _r1[40,R2,Recover] = 0
+ R908: - _f[40,R3] + _r1[40,R3,Do_nothing] + _r1[40,R3,Recover] = 0
+ R909: - _f[30,Do_nothing] + _r1[30,Do_nothing,Do_nothing]
    + _r1[30,Do_nothing,Recover] = 0
- R884: - _f[30,R1] + _r1[30,R1,Do_nothing] + _r1[30,R1,Recover] = 0
- R885: - _f[30,R2] + _r1[30,R2,Do_nothing] + _r1[30,R2,Recover] = 0
- R886: - _f[30,R3] + _r1[30,R3,Do_nothing] + _r1[30,R3,Recover] = 0
- R887: - _f[27,Do_nothing] + _r1[27,Do_nothing,Do_nothing]
+ R910: - _f[30,R1] + _r1[30,R1,Do_nothing] + _r1[30,R1,Recover] = 0
+ R911: - _f[30,R2] + _r1[30,R2,Do_nothing] + _r1[30,R2,Recover] = 0
+ R912: - _f[30,R3] + _r1[30,R3,Do_nothing] + _r1[30,R3,Recover] = 0
+ R913: - _f[27,Do_nothing] + _r1[27,Do_nothing,Do_nothing]
    + _r1[27,Do_nothing,Recover] = 0
- R888: - _f[27,R1] + _r1[27,R1,Do_nothing] + _r1[27,R1,Recover] = 0
- R889: - _f[27,R2] + _r1[27,R2,Do_nothing] + _r1[27,R2,Recover] = 0
- R890: - _f[27,R3] + _r1[27,R3,Do_nothing] + _r1[27,R3,Recover] = 0
- R891: - _f[73,Do_nothing] + _r1[73,Do_nothing,Do_nothing]
+ R914: - _f[27,R1] + _r1[27,R1,Do_nothing] + _r1[27,R1,Recover] = 0
+ R915: - _f[27,R2] + _r1[27,R2,Do_nothing] + _r1[27,R2,Recover] = 0
+ R916: - _f[27,R3] + _r1[27,R3,Do_nothing] + _r1[27,R3,Recover] = 0
+ R917: - _f[73,Do_nothing] + _r1[73,Do_nothing,Do_nothing]
    + _r1[73,Do_nothing,Recover] = 0
- R892: - _f[73,R1] + _r1[73,R1,Do_nothing] + _r1[73,R1,Recover] = 0
- R893: - _f[73,R2] + _r1[73,R2,Do_nothing] + _r1[73,R2,Recover] = 0
- R894: - _f[73,R3] + _r1[73,R3,Do_nothing] + _r1[73,R3,Recover] = 0
- R895: - _f[84,Do_nothing] + _r1[84,Do_nothing,Do_nothing]
+ R918: - _f[73,R1] + _r1[73,R1,Do_nothing] + _r1[73,R1,Recover] = 0
+ R919: - _f[73,R2] + _r1[73,R2,Do_nothing] + _r1[73,R2,Recover] = 0
+ R920: - _f[73,R3] + _r1[73,R3,Do_nothing] + _r1[73,R3,Recover] = 0
+ R921: - _f[84,Do_nothing] + _r1[84,Do_nothing,Do_nothing]
    + _r1[84,Do_nothing,Recover] = 0
- R896: - _f[84,R1] + _r1[84,R1,Do_nothing] + _r1[84,R1,Recover] = 0
- R897: - _f[84,R2] + _r1[84,R2,Do_nothing] + _r1[84,R2,Recover] = 0
- R898: - _f[84,R3] + _r1[84,R3,Do_nothing] + _r1[84,R3,Recover] = 0
- R899: - _f[35,Do_nothing] + _r1[35,Do_nothing,Do_nothing]
+ R922: - _f[84,R1] + _r1[84,R1,Do_nothing] + _r1[84,R1,Recover] = 0
+ R923: - _f[84,R2] + _r1[84,R2,Do_nothing] + _r1[84,R2,Recover] = 0
+ R924: - _f[84,R3] + _r1[84,R3,Do_nothing] + _r1[84,R3,Recover] = 0
+ R925: - _f[35,Do_nothing] + _r1[35,Do_nothing,Do_nothing]
    + _r1[35,Do_nothing,Recover] = 0
- R900: - _f[35,R1] + _r1[35,R1,Do_nothing] + _r1[35,R1,Recover] = 0
- R901: - _f[35,R2] + _r1[35,R2,Do_nothing] + _r1[35,R2,Recover] = 0
- R902: - _f[35,R3] + _r1[35,R3,Do_nothing] + _r1[35,R3,Recover] = 0
- R903: - _f[46,Do_nothing] + _r1[46,Do_nothing,Do_nothing]
+ R926: - _f[35,R1] + _r1[35,R1,Do_nothing] + _r1[35,R1,Recover] = 0
+ R927: - _f[35,R2] + _r1[35,R2,Do_nothing] + _r1[35,R2,Recover] = 0
+ R928: - _f[35,R3] + _r1[35,R3,Do_nothing] + _r1[35,R3,Recover] = 0
+ R929: - _f[46,Do_nothing] + _r1[46,Do_nothing,Do_nothing]
    + _r1[46,Do_nothing,Recover] = 0
- R904: - _f[46,R1] + _r1[46,R1,Do_nothing] + _r1[46,R1,Recover] = 0
- R905: - _f[46,R2] + _r1[46,R2,Do_nothing] + _r1[46,R2,Recover] = 0
- R906: - _f[46,R3] + _r1[46,R3,Do_nothing] + _r1[46,R3,Recover] = 0
- R907: - _f[39,Do_nothing] + _r1[39,Do_nothing,Do_nothing]
+ R930: - _f[46,R1] + _r1[46,R1,Do_nothing] + _r1[46,R1,Recover] = 0
+ R931: - _f[46,R2] + _r1[46,R2,Do_nothing] + _r1[46,R2,Recover] = 0
+ R932: - _f[46,R3] + _r1[46,R3,Do_nothing] + _r1[46,R3,Recover] = 0
+ R933: - _f[39,Do_nothing] + _r1[39,Do_nothing,Do_nothing]
    + _r1[39,Do_nothing,Recover] = 0
- R908: - _f[39,R1] + _r1[39,R1,Do_nothing] + _r1[39,R1,Recover] = 0
- R909: - _f[39,R2] + _r1[39,R2,Do_nothing] + _r1[39,R2,Recover] = 0
- R910: - _f[39,R3] + _r1[39,R3,Do_nothing] + _r1[39,R3,Recover] = 0
- R911: - _f[51,Do_nothing] + _r1[51,Do_nothing,Do_nothing]
+ R934: - _f[39,R1] + _r1[39,R1,Do_nothing] + _r1[39,R1,Recover] = 0
+ R935: - _f[39,R2] + _r1[39,R2,Do_nothing] + _r1[39,R2,Recover] = 0
+ R936: - _f[39,R3] + _r1[39,R3,Do_nothing] + _r1[39,R3,Recover] = 0
+ R937: - _f[51,Do_nothing] + _r1[51,Do_nothing,Do_nothing]
    + _r1[51,Do_nothing,Recover] = 0
- R912: - _f[51,R1] + _r1[51,R1,Do_nothing] + _r1[51,R1,Recover] = 0
- R913: - _f[51,R2] + _r1[51,R2,Do_nothing] + _r1[51,R2,Recover] = 0
- R914: - _f[51,R3] + _r1[51,R3,Do_nothing] + _r1[51,R3,Recover] = 0
- R915: - _f[52,Do_nothing] + _r1[52,Do_nothing,Do_nothing]
+ R938: - _f[51,R1] + _r1[51,R1,Do_nothing] + _r1[51,R1,Recover] = 0
+ R939: - _f[51,R2] + _r1[51,R2,Do_nothing] + _r1[51,R2,Recover] = 0
+ R940: - _f[51,R3] + _r1[51,R3,Do_nothing] + _r1[51,R3,Recover] = 0
+ R941: - _f[52,Do_nothing] + _r1[52,Do_nothing,Do_nothing]
    + _r1[52,Do_nothing,Recover] = 0
- R916: - _f[52,R1] + _r1[52,R1,Do_nothing] + _r1[52,R1,Recover] = 0
- R917: - _f[52,R2] + _r1[52,R2,Do_nothing] + _r1[52,R2,Recover] = 0
- R918: - _f[52,R3] + _r1[52,R3,Do_nothing] + _r1[52,R3,Recover] = 0
- R919: - _f[6,Do_nothing] + _r1[6,Do_nothing,Do_nothing]
+ R942: - _f[52,R1] + _r1[52,R1,Do_nothing] + _r1[52,R1,Recover] = 0
+ R943: - _f[52,R2] + _r1[52,R2,Do_nothing] + _r1[52,R2,Recover] = 0
+ R944: - _f[52,R3] + _r1[52,R3,Do_nothing] + _r1[52,R3,Recover] = 0
+ R945: - _f[6,Do_nothing] + _r1[6,Do_nothing,Do_nothing]
    + _r1[6,Do_nothing,Recover] = 0
- R920: - _f[6,R1] + _r1[6,R1,Do_nothing] + _r1[6,R1,Recover] = 0
- R921: - _f[6,R2] + _r1[6,R2,Do_nothing] + _r1[6,R2,Recover] = 0
- R922: - _f[6,R3] + _r1[6,R3,Do_nothing] + _r1[6,R3,Recover] = 0
- R923: - _f[96,Do_nothing] + _r1[96,Do_nothing,Do_nothing]
+ R946: - _f[6,R1] + _r1[6,R1,Do_nothing] + _r1[6,R1,Recover] = 0
+ R947: - _f[6,R2] + _r1[6,R2,Do_nothing] + _r1[6,R2,Recover] = 0
+ R948: - _f[6,R3] + _r1[6,R3,Do_nothing] + _r1[6,R3,Recover] = 0
+ R949: - _f[96,Do_nothing] + _r1[96,Do_nothing,Do_nothing]
    + _r1[96,Do_nothing,Recover] = 0
- R924: - _f[96,R1] + _r1[96,R1,Do_nothing] + _r1[96,R1,Recover] = 0
- R925: - _f[96,R2] + _r1[96,R2,Do_nothing] + _r1[96,R2,Recover] = 0
- R926: - _f[96,R3] + _r1[96,R3,Do_nothing] + _r1[96,R3,Recover] = 0
- R927: - _f[74,Do_nothing] + _r1[74,Do_nothing,Do_nothing]
+ R950: - _f[96,R1] + _r1[96,R1,Do_nothing] + _r1[96,R1,Recover] = 0
+ R951: - _f[96,R2] + _r1[96,R2,Do_nothing] + _r1[96,R2,Recover] = 0
+ R952: - _f[96,R3] + _r1[96,R3,Do_nothing] + _r1[96,R3,Recover] = 0
+ R953: - _f[74,Do_nothing] + _r1[74,Do_nothing,Do_nothing]
    + _r1[74,Do_nothing,Recover] = 0
- R928: - _f[74,R1] + _r1[74,R1,Do_nothing] + _r1[74,R1,Recover] = 0
- R929: - _f[74,R2] + _r1[74,R2,Do_nothing] + _r1[74,R2,Recover] = 0
- R930: - _f[74,R3] + _r1[74,R3,Do_nothing] + _r1[74,R3,Recover] = 0
- R931: - _f[86,Do_nothing] + _r1[86,Do_nothing,Do_nothing]
+ R954: - _f[74,R1] + _r1[74,R1,Do_nothing] + _r1[74,R1,Recover] = 0
+ R955: - _f[74,R2] + _r1[74,R2,Do_nothing] + _r1[74,R2,Recover] = 0
+ R956: - _f[74,R3] + _r1[74,R3,Do_nothing] + _r1[74,R3,Recover] = 0
+ R957: - _f[86,Do_nothing] + _r1[86,Do_nothing,Do_nothing]
    + _r1[86,Do_nothing,Recover] = 0
- R932: - _f[86,R1] + _r1[86,R1,Do_nothing] + _r1[86,R1,Recover] = 0
- R933: - _f[86,R2] + _r1[86,R2,Do_nothing] + _r1[86,R2,Recover] = 0
- R934: - _f[86,R3] + _r1[86,R3,Do_nothing] + _r1[86,R3,Recover] = 0
- R935: - _f[29,Do_nothing] + _r1[29,Do_nothing,Do_nothing]
+ R958: - _f[86,R1] + _r1[86,R1,Do_nothing] + _r1[86,R1,Recover] = 0
+ R959: - _f[86,R2] + _r1[86,R2,Do_nothing] + _r1[86,R2,Recover] = 0
+ R960: - _f[86,R3] + _r1[86,R3,Do_nothing] + _r1[86,R3,Recover] = 0
+ R961: - _f[29,Do_nothing] + _r1[29,Do_nothing,Do_nothing]
    + _r1[29,Do_nothing,Recover] = 0
- R936: - _f[29,R1] + _r1[29,R1,Do_nothing] + _r1[29,R1,Recover] = 0
- R937: - _f[29,R2] + _r1[29,R2,Do_nothing] + _r1[29,R2,Recover] = 0
- R938: - _f[29,R3] + _r1[29,R3,Do_nothing] + _r1[29,R3,Recover] = 0
- R939: - _f[18,Do_nothing] + _r1[18,Do_nothing,Do_nothing]
+ R962: - _f[29,R1] + _r1[29,R1,Do_nothing] + _r1[29,R1,Recover] = 0
+ R963: - _f[29,R2] + _r1[29,R2,Do_nothing] + _r1[29,R2,Recover] = 0
+ R964: - _f[29,R3] + _r1[29,R3,Do_nothing] + _r1[29,R3,Recover] = 0
+ R965: - _f[18,Do_nothing] + _r1[18,Do_nothing,Do_nothing]
    + _r1[18,Do_nothing,Recover] = 0
- R940: - _f[18,R1] + _r1[18,R1,Do_nothing] + _r1[18,R1,Recover] = 0
- R941: - _f[18,R2] + _r1[18,R2,Do_nothing] + _r1[18,R2,Recover] = 0
- R942: - _f[18,R3] + _r1[18,R3,Do_nothing] + _r1[18,R3,Recover] = 0
- R943: - _f[24,Do_nothing] + _r1[24,Do_nothing,Do_nothing]
+ R966: - _f[18,R1] + _r1[18,R1,Do_nothing] + _r1[18,R1,Recover] = 0
+ R967: - _f[18,R2] + _r1[18,R2,Do_nothing] + _r1[18,R2,Recover] = 0
+ R968: - _f[18,R3] + _r1[18,R3,Do_nothing] + _r1[18,R3,Recover] = 0
+ R969: - _f[24,Do_nothing] + _r1[24,Do_nothing,Do_nothing]
    + _r1[24,Do_nothing,Recover] = 0
- R944: - _f[24,R1] + _r1[24,R1,Do_nothing] + _r1[24,R1,Recover] = 0
- R945: - _f[24,R2] + _r1[24,R2,Do_nothing] + _r1[24,R2,Recover] = 0
- R946: - _f[24,R3] + _r1[24,R3,Do_nothing] + _r1[24,R3,Recover] = 0
- R947: - _f[94,Do_nothing] + _r1[94,Do_nothing,Do_nothing]
+ R970: - _f[24,R1] + _r1[24,R1,Do_nothing] + _r1[24,R1,Recover] = 0
+ R971: - _f[24,R2] + _r1[24,R2,Do_nothing] + _r1[24,R2,Recover] = 0
+ R972: - _f[24,R3] + _r1[24,R3,Do_nothing] + _r1[24,R3,Recover] = 0
+ R973: - _f[94,Do_nothing] + _r1[94,Do_nothing,Do_nothing]
    + _r1[94,Do_nothing,Recover] = 0
- R948: - _f[94,R1] + _r1[94,R1,Do_nothing] + _r1[94,R1,Recover] = 0
- R949: - _f[94,R2] + _r1[94,R2,Do_nothing] + _r1[94,R2,Recover] = 0
- R950: - _f[94,R3] + _r1[94,R3,Do_nothing] + _r1[94,R3,Recover] = 0
- R951: - _f[33,Do_nothing] + _r1[33,Do_nothing,Do_nothing]
+ R974: - _f[94,R1] + _r1[94,R1,Do_nothing] + _r1[94,R1,Recover] = 0
+ R975: - _f[94,R2] + _r1[94,R2,Do_nothing] + _r1[94,R2,Recover] = 0
+ R976: - _f[94,R3] + _r1[94,R3,Do_nothing] + _r1[94,R3,Recover] = 0
+ R977: - _f[33,Do_nothing] + _r1[33,Do_nothing,Do_nothing]
    + _r1[33,Do_nothing,Recover] = 0
- R952: - _f[33,R1] + _r1[33,R1,Do_nothing] + _r1[33,R1,Recover] = 0
- R953: - _f[33,R2] + _r1[33,R2,Do_nothing] + _r1[33,R2,Recover] = 0
- R954: - _f[33,R3] + _r1[33,R3,Do_nothing] + _r1[33,R3,Recover] = 0
- R955: - _f[12,Do_nothing] + _r1[12,Do_nothing,Do_nothing]
+ R978: - _f[33,R1] + _r1[33,R1,Do_nothing] + _r1[33,R1,Recover] = 0
+ R979: - _f[33,R2] + _r1[33,R2,Do_nothing] + _r1[33,R2,Recover] = 0
+ R980: - _f[33,R3] + _r1[33,R3,Do_nothing] + _r1[33,R3,Recover] = 0
+ R981: - _f[12,Do_nothing] + _r1[12,Do_nothing,Do_nothing]
    + _r1[12,Do_nothing,Recover] = 0
- R956: - _f[12,R1] + _r1[12,R1,Do_nothing] + _r1[12,R1,Recover] = 0
- R957: - _f[12,R2] + _r1[12,R2,Do_nothing] + _r1[12,R2,Recover] = 0
- R958: - _f[12,R3] + _r1[12,R3,Do_nothing] + _r1[12,R3,Recover] = 0
- R959: - _f[57,Do_nothing] + _r1[57,Do_nothing,Do_nothing]
+ R982: - _f[12,R1] + _r1[12,R1,Do_nothing] + _r1[12,R1,Recover] = 0
+ R983: - _f[12,R2] + _r1[12,R2,Do_nothing] + _r1[12,R2,Recover] = 0
+ R984: - _f[12,R3] + _r1[12,R3,Do_nothing] + _r1[12,R3,Recover] = 0
+ R985: - _f[57,Do_nothing] + _r1[57,Do_nothing,Do_nothing]
    + _r1[57,Do_nothing,Recover] = 0
- R960: - _f[57,R1] + _r1[57,R1,Do_nothing] + _r1[57,R1,Recover] = 0
- R961: - _f[57,R2] + _r1[57,R2,Do_nothing] + _r1[57,R2,Recover] = 0
- R962: - _f[57,R3] + _r1[57,R3,Do_nothing] + _r1[57,R3,Recover] = 0
- R963: - _f[97,Do_nothing] + _r1[97,Do_nothing,Do_nothing]
+ R986: - _f[57,R1] + _r1[57,R1,Do_nothing] + _r1[57,R1,Recover] = 0
+ R987: - _f[57,R2] + _r1[57,R2,Do_nothing] + _r1[57,R2,Recover] = 0
+ R988: - _f[57,R3] + _r1[57,R3,Do_nothing] + _r1[57,R3,Recover] = 0
+ R989: - _f[97,Do_nothing] + _r1[97,Do_nothing,Do_nothing]
    + _r1[97,Do_nothing,Recover] = 0
- R964: - _f[97,R1] + _r1[97,R1,Do_nothing] + _r1[97,R1,Recover] = 0
- R965: - _f[97,R2] + _r1[97,R2,Do_nothing] + _r1[97,R2,Recover] = 0
- R966: - _f[97,R3] + _r1[97,R3,Do_nothing] + _r1[97,R3,Recover] = 0
- R967: - _f[69,Do_nothing] + _r1[69,Do_nothing,Do_nothing]
+ R990: - _f[97,R1] + _r1[97,R1,Do_nothing] + _r1[97,R1,Recover] = 0
+ R991: - _f[97,R2] + _r1[97,R2,Do_nothing] + _r1[97,R2,Recover] = 0
+ R992: - _f[97,R3] + _r1[97,R3,Do_nothing] + _r1[97,R3,Recover] = 0
+ R993: - _f[69,Do_nothing] + _r1[69,Do_nothing,Do_nothing]
    + _r1[69,Do_nothing,Recover] = 0
- R968: - _f[69,R1] + _r1[69,R1,Do_nothing] + _r1[69,R1,Recover] = 0
- R969: - _f[69,R2] + _r1[69,R2,Do_nothing] + _r1[69,R2,Recover] = 0
- R970: - _f[69,R3] + _r1[69,R3,Do_nothing] + _r1[69,R3,Recover] = 0
- R971: - _f[3,Do_nothing] + _r1[3,Do_nothing,Do_nothing]
+ R994: - _f[69,R1] + _r1[69,R1,Do_nothing] + _r1[69,R1,Recover] = 0
+ R995: - _f[69,R2] + _r1[69,R2,Do_nothing] + _r1[69,R2,Recover] = 0
+ R996: - _f[69,R3] + _r1[69,R3,Do_nothing] + _r1[69,R3,Recover] = 0
+ R997: - _f[3,Do_nothing] + _r1[3,Do_nothing,Do_nothing]
    + _r1[3,Do_nothing,Recover] = 0
- R972: - _f[3,R1] + _r1[3,R1,Do_nothing] + _r1[3,R1,Recover] = 0
- R973: - _f[3,R2] + _r1[3,R2,Do_nothing] + _r1[3,R2,Recover] = 0
- R974: - _f[3,R3] + _r1[3,R3,Do_nothing] + _r1[3,R3,Recover] = 0
- R975: - _f[66,Do_nothing] + _r1[66,Do_nothing,Do_nothing]
+ R998: - _f[3,R1] + _r1[3,R1,Do_nothing] + _r1[3,R1,Recover] = 0
+ R999: - _f[3,R2] + _r1[3,R2,Do_nothing] + _r1[3,R2,Recover] = 0
+ R1000: - _f[3,R3] + _r1[3,R3,Do_nothing] + _r1[3,R3,Recover] = 0
+ R1001: - _f[66,Do_nothing] + _r1[66,Do_nothing,Do_nothing]
    + _r1[66,Do_nothing,Recover] = 0
- R976: - _f[66,R1] + _r1[66,R1,Do_nothing] + _r1[66,R1,Recover] = 0
- R977: - _f[66,R2] + _r1[66,R2,Do_nothing] + _r1[66,R2,Recover] = 0
- R978: - _f[66,R3] + _r1[66,R3,Do_nothing] + _r1[66,R3,Recover] = 0
+ R1002: - _f[66,R1] + _r1[66,R1,Do_nothing] + _r1[66,R1,Recover] = 0
+ R1003: - _f[66,R2] + _r1[66,R2,Do_nothing] + _r1[66,R2,Recover] = 0
+ R1004: - _f[66,R3] + _r1[66,R3,Do_nothing] + _r1[66,R3,Recover] = 0
 Bounds
  _Theta free
 Binaries
