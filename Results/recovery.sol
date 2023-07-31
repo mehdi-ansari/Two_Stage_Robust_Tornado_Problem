@@ -1,13 +1,13 @@
 # Solution for model recoveryProblem_model
-# Objective value = 13387
+# Objective value = 15602
 _r[32,Do_nothing,Do_nothing] 0
 _r[32,Do_nothing,Recover] 0
 _r[32,R1,Do_nothing] 0
 _r[32,R1,Recover] 0
 _r[32,R2,Do_nothing] 0
 _r[32,R2,Recover] 0
-_r[32,R3,Do_nothing] 1
-_r[32,R3,Recover] 0
+_r[32,R3,Do_nothing] 0
+_r[32,R3,Recover] 1
 _r[70,Do_nothing,Do_nothing] 1
 _r[70,Do_nothing,Recover] 0
 _r[70,R1,Do_nothing] 0
@@ -20,10 +20,10 @@ _r[5,Do_nothing,Do_nothing] 0
 _r[5,Do_nothing,Recover] 0
 _r[5,R1,Do_nothing] 0
 _r[5,R1,Recover] 0
-_r[5,R2,Do_nothing] 1
+_r[5,R2,Do_nothing] 0
 _r[5,R2,Recover] 0
 _r[5,R3,Do_nothing] 0
-_r[5,R3,Recover] 0
+_r[5,R3,Recover] 1
 _r[85,Do_nothing,Do_nothing] 1
 _r[85,Do_nothing,Recover] 0
 _r[85,R1,Do_nothing] 0
@@ -174,8 +174,8 @@ _r[78,R1,Do_nothing] 0
 _r[78,R1,Recover] 0
 _r[78,R2,Do_nothing] 0
 _r[78,R2,Recover] 0
-_r[78,R3,Do_nothing] 1
-_r[78,R3,Recover] 0
+_r[78,R3,Do_nothing] 0
+_r[78,R3,Recover] 1
 _r[34,Do_nothing,Do_nothing] 0
 _r[34,Do_nothing,Recover] 0
 _r[34,R1,Do_nothing] 0
@@ -230,8 +230,8 @@ _r[22,R1,Do_nothing] 0
 _r[22,R1,Recover] 0
 _r[22,R2,Do_nothing] 0
 _r[22,R2,Recover] 0
-_r[22,R3,Do_nothing] 0
-_r[22,R3,Recover] 1
+_r[22,R3,Do_nothing] 1
+_r[22,R3,Recover] 0
 _r[31,Do_nothing,Do_nothing] 1
 _r[31,Do_nothing,Recover] 0
 _r[31,R1,Do_nothing] 0
@@ -692,9 +692,9 @@ _r[96,Do_nothing,Do_nothing] 0
 _r[96,Do_nothing,Recover] 0
 _r[96,R1,Do_nothing] 0
 _r[96,R1,Recover] 0
-_r[96,R2,Do_nothing] 1
+_r[96,R2,Do_nothing] 0
 _r[96,R2,Recover] 0
-_r[96,R3,Do_nothing] 0
+_r[96,R3,Do_nothing] 1
 _r[96,R3,Recover] 0
 _r[74,Do_nothing,Do_nothing] 1
 _r[74,Do_nothing,Recover] 0
@@ -712,14 +712,14 @@ _r[86,R2,Do_nothing] 0
 _r[86,R2,Recover] 0
 _r[86,R3,Do_nothing] 0
 _r[86,R3,Recover] 0
-_r[29,Do_nothing,Do_nothing] 1
+_r[29,Do_nothing,Do_nothing] 0
 _r[29,Do_nothing,Recover] 0
 _r[29,R1,Do_nothing] 0
 _r[29,R1,Recover] 0
 _r[29,R2,Do_nothing] 0
 _r[29,R2,Recover] 0
 _r[29,R3,Do_nothing] 0
-_r[29,R3,Recover] 0
+_r[29,R3,Recover] 1
 _r[18,Do_nothing,Do_nothing] 1
 _r[18,Do_nothing,Recover] 0
 _r[18,R1,Do_nothing] 0
