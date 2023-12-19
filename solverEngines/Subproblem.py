@@ -44,8 +44,16 @@ class Subproblem:
             self.model.addConstr(self.z_var[pair[0]] + self.z_var[pair[1]] <= 1)
                 
     def add_infeasible_triple_cuts(self):
+        numHigherPopulated = int(0.2 * len(self.location_indx))
+        sorted_locs = sorted(self.Param.InputData.second_stage_dislocation.items(), key=lambda x: x[1]['Do_nothing']['Do_nothing'], reverse=True)[:numHigherPopulated]
+        listLocs = [l[0] for l in sorted_locs]
+
         for trip in self.ValidCuts.infeasible_tri:
-            self.model.addConstr(self.z_var[trip[0]] + self.z_var[trip[1]] + self.z_var[trip[2]] <= 2)
+            if (trip[0] in listLocs) or (trip[1] in listLocs) or (trip[2] in listLocs):
+                self.model.addConstr(self.z_var[trip[0]] + self.z_var[trip[1]] + self.z_var[trip[2]] <= 2)
+        
+        '''for trip in self.ValidCuts.infeasible_tri:
+            self.model.addConstr(self.z_var[trip[0]] + self.z_var[trip[1]] + self.z_var[trip[2]] <= 2)'''
         
     def add_infeasible_quadruple_cuts(self):
         for quad in self.infeasible_quadruple:
