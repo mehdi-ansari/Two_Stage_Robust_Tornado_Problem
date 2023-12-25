@@ -26,6 +26,7 @@ class Subproblem:
         self.eta = self.model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "_eta")
         self.z_var = self.model.addVars(self.location_indx, vtype=GRB.BINARY, name= "_z")
         
+        self.fix_sol([86,97])
         #objective function
         self.model.setObjective(self.eta, GRB.MAXIMIZE)
         
@@ -63,3 +64,7 @@ class Subproblem:
     def generate_constraint(self, r_sol):
         self.model.addConstr(self.eta <= gb.quicksum(self.Param.InputData.second_stage_dislocation[l][s][p] * self.z_var[l] * r_sol[(l,s,p)]
                                             for l in self.location_indx for s in self.retrofit_indx for p in self.recovery_indx))
+        
+    def fix_sol(self, indxList):
+        for i in indxList:
+            self.model.addConstr(self.z_var[i] == 1)

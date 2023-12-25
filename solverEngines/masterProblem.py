@@ -37,6 +37,7 @@ class masterProblem:
         self.master_sol_dict = {}
         
         #self.fix_random_solution()        
+        self.fix_solution()
         
         
     def generate_column(self, iteration):
@@ -96,3 +97,20 @@ class masterProblem:
                     fixed_index.append(pair[0])
                     
                     self.model.addConstr(self.f_var[pair[0], pair[1]] == 1)
+    
+    
+    def fix_solution(self):
+        constrList = {l:{s:0 for s in self.retrofit_indx} for l in self.location_indx}
+
+        for l in self.location_indx:
+            for s in self.retrofit_indx:
+                constrList[l][s] = self.model.addConstr(self.f_var[l, s] <= 0, "fixed"+str(l)+"_"+str(s))
+            constrList[l]['Do_nothing'].rhs = 1
+
+        solPair_15M = ((43,'R3'), (9,'R3'), (2,'R3'), (54,'R3'), (21,'R3'), (8,'R3'), (40,'R3'), (46,'R3'), (32,'R3'), (34,'R3'),
+                   (55,'R3'), (75,'R3'), (78,'R3'), (72,'R3'), (56,'R3'), (92,'R3'), (80,'R3'), (53,'R3'), (22,'R3'), (27,'R3'),
+                   (89,'R3'), (5,'R3'))
+        
+        for pair in solPair_15M:
+            constrList[pair[0]][pair[1]].rhs = 1
+            self.model.addConstr(self.f_var[pair[0], pair[1]] == 1)
