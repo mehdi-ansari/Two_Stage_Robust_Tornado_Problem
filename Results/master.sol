@@ -1,5 +1,5 @@
 # Solution for model master_model
-# Objective value = 4710
+# Objective value = 1.2058999999999998e+04
 _f[32,Do_nothing] 0
 _f[32,R1] 0
 _f[32,R2] 0
@@ -400,7 +400,7 @@ _f[66,Do_nothing] 1
 _f[66,R1] 0
 _f[66,R2] 0
 _f[66,R3] 0
-_Theta 4710
+_Theta 1.2058999999999998e+04
 _r0[32,Do_nothing,Do_nothing] 0
 _r0[32,Do_nothing,Recover] 0
 _r0[32,R1,Do_nothing] 0
@@ -1247,8 +1247,8 @@ _r1[92,R1,Do_nothing] 0
 _r1[92,R1,Recover] 0
 _r1[92,R2,Do_nothing] 0
 _r1[92,R2,Recover] 0
-_r1[92,R3,Do_nothing] 1
-_r1[92,R3,Recover] 0
+_r1[92,R3,Do_nothing] 0
+_r1[92,R3,Recover] 1
 _r1[38,Do_nothing,Do_nothing] 1
 _r1[38,Do_nothing,Recover] 0
 _r1[38,R1,Do_nothing] 0
@@ -1937,8 +1937,8 @@ _r1[24,R2,Do_nothing] 0
 _r1[24,R2,Recover] 0
 _r1[24,R3,Do_nothing] 0
 _r1[24,R3,Recover] 0
-_r1[94,Do_nothing,Do_nothing] 0
-_r1[94,Do_nothing,Recover] 1
+_r1[94,Do_nothing,Do_nothing] 1
+_r1[94,Do_nothing,Recover] 0
 _r1[94,R1,Do_nothing] 0
 _r1[94,R1,Recover] 0
 _r1[94,R2,Do_nothing] 0
@@ -1969,8 +1969,8 @@ _r1[57,R2,Do_nothing] 0
 _r1[57,R2,Recover] 0
 _r1[57,R3,Do_nothing] 0
 _r1[57,R3,Recover] 0
-_r1[97,Do_nothing,Do_nothing] 0
-_r1[97,Do_nothing,Recover] 1
+_r1[97,Do_nothing,Do_nothing] 1
+_r1[97,Do_nothing,Recover] 0
 _r1[97,R1,Do_nothing] 0
 _r1[97,R1,Recover] 0
 _r1[97,R2,Do_nothing] 0
