@@ -26,7 +26,7 @@ class Subproblem:
         self.eta = self.model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "_eta")
         self.z_var = self.model.addVars(self.location_indx, vtype=GRB.BINARY, name= "_z")
         
-        self.fix_sol([38,6])
+        self.fix_sol([56,74])
         #objective function
         self.model.setObjective(self.eta, GRB.MAXIMIZE)
         
