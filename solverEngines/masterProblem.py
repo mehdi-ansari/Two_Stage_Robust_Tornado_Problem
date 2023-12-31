@@ -111,6 +111,6 @@ class masterProblem:
                    (55,'R3'), (75,'R3'), (78,'R3'), (72,'R3'), (56,'R3'), (92,'R3'), (80,'R3'), (53,'R3'), (22,'R3'), (27,'R3'),
                    (89,'R3'), (5,'R3'))
         
-        for pair in solPair_15M:
+        '''for pair in solPair_15M:
             constrList[pair[0]][pair[1]].rhs = 1
-            self.model.addConstr(self.f_var[pair[0], pair[1]] == 1)
+            self.model.addConstr(self.f_var[pair[0], pair[1]] == 1)'''
