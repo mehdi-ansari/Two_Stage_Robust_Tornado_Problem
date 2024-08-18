@@ -3,4 +3,4 @@ subproblem_formulation Decomposed
 budget 15000000
 length 5
 width 0.375
-number_of_clusters 100
+number_of_clusters 150
