@@ -1,5 +1,5 @@
 # Solution for model recoveryProblem_model
-# Objective value = 11025
+# Objective value = 16318
 _r[32,Do_nothing,Do_nothing] 1
 _r[32,Do_nothing,Recover] 0
 _r[32,R1,Do_nothing] 0

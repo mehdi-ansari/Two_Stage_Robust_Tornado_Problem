@@ -1,0 +1,37 @@
+Best Bound: 0
+Best Objective: 16318
+Gap: 1631800000.0
+CCG Run time: 3606.26
+CCG Iteration: 1
+Subproblem Run time: 3605.02
+Number of Subproblem Callbacks: 3875
+Subproblem Callbacks Run Time: 369.63
+Number of Uncertainty Set Check Call: 3
+Uncertainty Set Check Run Time: 0.46
+
+
+30M
+
+Best Bound: 0
+Best Objective: 16318
+Gap: 1631800000.0
+CCG Run time: 3603.33
+CCG Iteration: 1
+Subproblem Run time: 3603.21
+Number of Subproblem Callbacks: 3875
+Subproblem Callbacks Run Time: 239.04
+Number of Uncertainty Set Check Call: 3
+Uncertainty Set Check Run Time: 0.26
+
+0M 
+
+Best Bound: 0
+Best Objective: 16318
+Gap: 1631800000.0
+CCG Run time: 3602.57
+CCG Iteration: 1
+Subproblem Run time: 3602.46
+Number of Subproblem Callbacks: 3875
+Subproblem Callbacks Run Time: 206.67
+Number of Uncertainty Set Check Call: 3
+Uncertainty Set Check Run Time: 0.25

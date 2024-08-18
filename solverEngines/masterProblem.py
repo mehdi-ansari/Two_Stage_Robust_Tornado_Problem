@@ -37,7 +37,7 @@ class masterProblem:
         self.master_sol_dict = {}
         
         #self.fix_random_solution()        
-        self.fix_solution()
+        #self.fix_solution()
         
         
     def generate_column(self, iteration):
@@ -107,9 +107,28 @@ class masterProblem:
                 constrList[l][s] = self.model.addConstr(self.f_var[l, s] <= 0, "fixed"+str(l)+"_"+str(s))
             constrList[l]['Do_nothing'].rhs = 1
 
-        solPair_15M = ((43,'R3'), (9,'R3'), (2,'R3'), (54,'R3'), (21,'R3'), (8,'R3'), (40,'R3'), (46,'R3'), (32,'R3'), (34,'R3'),
+        list_l = [54,53,2,72,75,22,34,78,9,8,40,43,89,55,51,88,27,46,23,42,98,13,19,58,81,56,80,21,92,49,5,82,52,18,32]
+        
+        budgetToRetrofit = 0
+        
+        budgetUsed = 0
+        for l in list_l:
+            if budgetUsed > budgetToRetrofit:
+                break
+            
+            for s in ['R3', 'R2', 'R1']:
+                if budgetUsed + self.Param.InputData.cost_retrofitting[l][s] <= budgetToRetrofit:
+                    budgetUsed += self.Param.InputData.cost_retrofitting[l][s]
+                
+                    constrList[l][s].rhs = 1
+                    self.model.addConstr(self.f_var[l,s] == 1)
+                    
+                    break
+        
+
+        '''solPair_15M = ((43,'R3'), (9,'R3'), (2,'R3'), (54,'R3'), (21,'R3'), (8,'R3'), (40,'R3'), (46,'R3'), (32,'R3'), (34,'R3'),
                    (55,'R3'), (75,'R3'), (78,'R3'), (72,'R3'), (56,'R3'), (92,'R3'), (80,'R3'), (53,'R3'), (22,'R3'), (27,'R3'),
-                   (89,'R3'), (5,'R3'))
+                   (89,'R3'), (5,'R3'))'''
         
         '''for pair in solPair_15M:
             constrList[pair[0]][pair[1]].rhs = 1
