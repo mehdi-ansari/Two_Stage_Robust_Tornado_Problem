@@ -1,0 +1,16 @@
+Budget :,15000000.0,Tornado Length:,5.0
+Best Bound:,13277
+Best Objective:,13333
+Gap:,0.0
+CCG Run time:,137.87
+CCG Iteration:,3
+Subproblem Run time:,137.58
+Number of Subproblem Callbacks:,73
+Subproblem Callbacks Run Time:,8.36
+Number of Uncertainty Set Check Call:,18
+Uncertainty Set Check Run Time:,3.49
+Head of worst tornado:,-94.567,37.06
+Tail of worst tornado:,-94.479,37.078
+
+Block ID,coordinate_x,coordinate_y,Population,Retrofitting,Retrofitting Cost,Damaged?,r_ls1,Recovery Cost,Dislocation
+32,-94.574,37.061,810,R3,417219,YES,

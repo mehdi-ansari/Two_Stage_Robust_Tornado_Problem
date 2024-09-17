@@ -94,6 +94,7 @@ class Results:
                            'Retrofitting' + ',' + 
                            'Retrofitting Cost' + ','
                             + 'Damaged?' + ','+
+                            'Recover' + ','+
                             'Recovery Cost' + ','+
                             'Dislocation' +'\n')
             
@@ -110,13 +111,21 @@ class Results:
                         
                 if self.z_worst[ID] > 0.5: 
                     csv_file.write('YES' + ',')
+                    dislocationCost = 0
+                    second_dislocation = 0
+                    r_val = 0
                     for s in self.retrofit_indx:
                         for p in self.recovery_indx:
-                            if self.r_worst[(ID,s,p)] > 0.5:
-                                csv_file.write(str(self.Param.InputData.cost_recovery[ID][s][p]) + ',')
-                                csv_file.write(str(self.Param.InputData.second_stage_dislocation[ID][s][p]) + ',')
+                            dislocationCost += self.r_worst[(ID,s,p)] * self.Param.InputData.cost_recovery[ID][s][p]
+                            second_dislocation += self.r_worst[(ID,s,p)] * self.Param.InputData.second_stage_dislocation[ID][s][p]
+                            if self.r_worst[(ID,s,'Recover')] > 0.5:
+                                r_val = self.r_worst[(ID,s,'Recover')]
+                    csv_file.write(str(round(r_val,2)) + ',')
+                    csv_file.write(str(round(dislocationCost)) + ',')
+                    csv_file.write(str(round(second_dislocation)) + ',')
                 else: 
                     csv_file.write('NO' + ',')
+                    csv_file.write(str(0) + ',')
                     csv_file.write(str(0) + ',')
                     csv_file.write(str(0) + ',')
                 

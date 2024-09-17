@@ -40,7 +40,8 @@ class masterProblem:
         
         
     def generate_column(self, iteration):
-        self.r_var[iteration] = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, vtype=GRB.BINARY, name= "_r{i}".format(i=iteration))
+        #self.r_var[iteration] = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, vtype=GRB.BINARY, name= "_r{i}".format(i=iteration))
+        self.r_var[iteration] = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, lb = 0, ub = 1, name= "_r{i}".format(i=iteration))
         
         
         

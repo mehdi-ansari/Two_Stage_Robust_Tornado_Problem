@@ -18,7 +18,8 @@ class RecoveryProblem:
         self.retrofit_indx = list(Param.InputData.retrofitting_strategies)
         self.recovery_indx = list(Param.InputData.recovery_strategies)
         
-        self.r_var = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, vtype=GRB.BINARY, name = "_r")
+        #self.r_var = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, vtype=GRB.BINARY, name = "_r")
+        self.r_var = self.model.addVars(self.location_indx, self.retrofit_indx, self.recovery_indx, lb = 0, ub = 1, name = "_r")
         
         #budget constraint
         self.model.addConstr(gb.quicksum(gb.quicksum(self.Param.InputData.cost_recovery[l][s][p]*self.r_var[l,s,p] for p in self.recovery_indx)
