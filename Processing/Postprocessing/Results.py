@@ -118,8 +118,8 @@ class Results:
                         for p in self.recovery_indx:
                             dislocationCost += self.r_worst[(ID,s,p)] * self.Param.InputData.cost_recovery[ID][s][p]
                             second_dislocation += self.r_worst[(ID,s,p)] * self.Param.InputData.second_stage_dislocation[ID][s][p]
-                            if self.r_worst[(ID,s,'Recover')] > 0.5:
-                                r_val = self.r_worst[(ID,s,'Recover')]
+                            #if self.r_worst[(ID,s,'Recover')] > 0.5:
+                            r_val = self.r_worst[(ID,s,'Recover')]
                     csv_file.write(str(round(r_val,2)) + ',')
                     csv_file.write(str(round(dislocationCost)) + ',')
                     csv_file.write(str(round(second_dislocation)) + ',')

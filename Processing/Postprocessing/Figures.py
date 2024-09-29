@@ -81,7 +81,7 @@ class Figures:
                 
                 for s in Results.retrofit_indx:
                     for p in Results.recovery_indx:
-                        if Results.r_worst[(ID,s,p)] > 0.5 and p != 'Do_nothing':
+                        if Results.r_worst[(ID,s,p)] > 0.00001 and p != 'Do_nothing':
                             if symbol == 'D':
                                 symbol = '^'
                                 color = 'green'
