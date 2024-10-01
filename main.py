@@ -13,16 +13,16 @@ from Processing.Postprocessing.Figures import Figures
 
 
 def main():
-    
-    modelParameter = Parameter(ROOT_DIR)
-    CCG = CCGAlgorithm(modelParameter)
-    CCG.run()
-    
-    results = Results(CCG, ROOT_DIR)
-    results.print_results()
-    results.make_file()
-    
-    Figures(results)
+    for i in range(1):
+        modelParameter = Parameter(ROOT_DIR)
+        CCG = CCGAlgorithm(modelParameter)
+        CCG.run()
+        
+        results = Results(CCG, ROOT_DIR, i+1)
+        results.print_results()
+        results.make_file()
+        
+        Figures(results)
     
     
 

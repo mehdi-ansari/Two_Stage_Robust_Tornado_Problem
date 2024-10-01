@@ -8,7 +8,7 @@ from datetime import datetime
 from solverEngines.UncertaintySet import UncertaintySet
 
 class Results:
-    def __init__(self, CCGAlgorithm, ROOT_DIR):
+    def __init__(self, CCGAlgorithm, ROOT_DIR, n):
         self.ROOT_DIR = ROOT_DIR
         self.CCGAlgorithm = CCGAlgorithm
         self.Param = CCGAlgorithm.Param
@@ -31,6 +31,8 @@ class Results:
         
         self.print_results()
         self.find_worst_case_tornado()
+        
+        self.n = n
         
     def print_results(self):
         print('Best Bound:', self.lower_bound)
@@ -69,10 +71,11 @@ class Results:
                 break
         
     def make_file(self):
+        n = self.n
         now = datetime.now()
         now = str(now.date())+'_'+now.strftime("%H-%M-%S")
         
-        with open(str(self.ROOT_DIR)+'/Results/{}_{}_{}Clusters_Budget{}M_{}Miles.csv'.format(now, self.Param.user.input_dict['input_data_name'], len(self.Param.InputData.coordinates) ,round(self.Param.budget/1000000),self.Param.length),'w') as csv_file:
+        with open(str(self.ROOT_DIR)+'/Results/{}_{}_{}Clusters_Budget{}M_{}Miles_0M_{}.csv'.format(now, self.Param.user.input_dict['input_data_name'], len(self.Param.InputData.coordinates) ,round(self.Param.budget/1000000),self.Param.length, n), 'w') as csv_file:
             csv_file.write("Budget :" + "," + str(self.Param.budget) + ',' + "Tornado Length:" + "," + str(self.Param.length) +'\n')
             csv_file.write('Best Bound:'+ "," + str(self.lower_bound)+ '\n')
             csv_file.write('Best Objective:'+ "," + str(self.upper_bound)+ '\n')

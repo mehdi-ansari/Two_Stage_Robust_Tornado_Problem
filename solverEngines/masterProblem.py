@@ -36,7 +36,7 @@ class masterProblem:
         
         self.master_sol_dict = {}
         
-        #self.fix_random_solution()        
+        self.fix_random_solution()        
         
         
     def generate_column(self, iteration):
@@ -77,7 +77,7 @@ class masterProblem:
             
             
     def fix_random_solution(self):
-        budget_to_retrofit = 0.6 * self.Param.budget
+        budget_to_retrofit = 0.0 * self.Param.budget
         self.model.addConstr(gb.quicksum(self.Param.InputData.cost_retrofitting[l][s] * self.f_var[l,s] for l in self.location_indx for s in self.retrofit_indx)
                              <= budget_to_retrofit)
         
