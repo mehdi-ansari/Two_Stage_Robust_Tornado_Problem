@@ -32,7 +32,14 @@ class ReferenceData:
         
         #The probability of not being in %100 functionality after x days
         elapsed_days = kwargs['elapsed_days']
+        num_bracket = 6
+        days = [int(elapsed_days/num_bracket * (i+1)) for i in range(num_bracket)]
+        
         mean_sd_lognormal = ((3.09, 0.51), (3.52, 0.55), (4.62, 0.55), (5.19, 0.52))    #Table 5
         self.P_NotRecoverd = [0.00]    
         for (mu, sigma) in mean_sd_lognormal:
-            self.P_NotRecoverd.append(round(1-lognorm_cdf(elapsed_days, mu, sigma), 3))
+            p_d = []
+            for d in days:
+                p_d.append(1-lognorm_cdf(d, mu, sigma))
+                
+            self.P_NotRecoverd.append(round(np.mean(p_d),3))
