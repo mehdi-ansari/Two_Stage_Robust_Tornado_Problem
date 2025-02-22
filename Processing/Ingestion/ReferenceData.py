@@ -32,7 +32,7 @@ class ReferenceData:
         
         #The probability of not being in %100 functionality after x days
         elapsed_days = kwargs['elapsed_days']
-        num_bracket = 6
+        num_bracket = 12
         days = [int(elapsed_days/num_bracket * (i+1)) for i in range(num_bracket)]
         
         mean_sd_lognormal = ((3.09, 0.51), (3.52, 0.55), (4.62, 0.55), (5.19, 0.52))    #Table 5
