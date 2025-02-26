@@ -37,7 +37,7 @@ class masterProblem:
         self.master_sol_dict = {}
         
         #self.fix_random_solution()        
-        #self.fix_solution()
+        self.fix_solution()
         
         
     def generate_column(self, iteration):
@@ -109,8 +109,8 @@ class masterProblem:
 
         list_l = [54,53,2,72,75,22,34,78,9,8,40,43,89,55,51,88,27,46,23,42,98,13,19,58,81,56,80,21,92,49,5,82,52,18,32]
         
-        budgetToRetrofit = 0
-        
+        budgetToRetrofit = self.Param.budget
+
         budgetUsed = 0
         for l in list_l:
             if budgetUsed > budgetToRetrofit:

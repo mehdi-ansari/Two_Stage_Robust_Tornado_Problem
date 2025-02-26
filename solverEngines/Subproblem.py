@@ -26,14 +26,14 @@ class Subproblem:
         self.eta = self.model.addVar(lb=-GRB.INFINITY, vtype=GRB.CONTINUOUS, name = "_eta")
         self.z_var = self.model.addVars(self.location_indx, vtype=GRB.BINARY, name= "_z")
         
-        #self.fix_sol([9,32])
+        self.fix_sol([5,96])
         #objective function
         self.model.setObjective(self.eta, GRB.MAXIMIZE)
         
         
         #add cuts
         self.add_infeasible_pair_cuts()
-        #self.add_infeasible_triple_cuts()
+        self.add_infeasible_triple_cuts()
         # self.add_infeasible_quadruple_cuts()   #It is not ready to use!
         
         self.head = []
@@ -43,7 +43,7 @@ class Subproblem:
         valuee = [vvvv for vv in self.Param.InputData.second_stage_dislocation.values() for vvv in vv.values() for vvvv in vvv.values()]
         print(valuee)
         print(min(valuee), max(valuee))
-        input()
+        #input()
         
         
     def add_infeasible_pair_cuts(self):
